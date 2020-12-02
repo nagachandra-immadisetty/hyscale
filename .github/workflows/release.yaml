@@ -22,10 +22,13 @@ jobs:
           GPG_PASSPHRASE: GPG_KEY
       - name: Publish package
         run: |
+           mkdir -p ~/.gnupg/
+           printf "$GPG_PASSPHRASE" | base64 --decode > ~/.gnupg/private.key
+           gpg --import ~/.gnupg/private.key
            echo "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
            echo "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
            mvn -B deploy
         env:
           MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}
           MAVEN_PASSWORD: ${{ secrets.OSSRH_TOKEN }}
-          GPG_KEY: ${{ secrets.GPG_KEY }}
+          GPG_PASSPHRASE: ${{ secrets.GPG_KEY }}
