@@ -371,7 +371,7 @@
       </activation>
       <properties>
         <gpg.executable>gpg2</gpg.executable>
-        <gpg.passphrase>test123</gpg.passphrase>
+        <gpg.passphrase>${env.GPG_PASSPHRASE}</gpg.passphrase>
       </properties>
     </profile>
   </profiles>
