@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.builder.core.models;
+package com.github.srujankujmar.builder.core.models;
 
-import io.hyscale.commons.models.Activity;
+import com.github.srujankujmar.commons.models.Activity;
 
 public enum ImageBuilderActivity implements Activity {
 

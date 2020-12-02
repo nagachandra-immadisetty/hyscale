@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.builder;
+package com.github.srujankujmar.generator.services.builder;
 
-import io.hyscale.commons.models.ResourceLabelKey;
-import io.hyscale.commons.utils.ResourceLabelBuilder;
-import io.hyscale.generator.services.model.ServiceMetadata;
+import com.github.srujankujmar.commons.models.ResourceLabelKey;
+import com.github.srujankujmar.commons.utils.ResourceLabelBuilder;
+import com.github.srujankujmar.generator.services.model.ServiceMetadata;
 
 import java.util.Map;
 import java.util.stream.Collectors;

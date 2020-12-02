@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.json;
+package com.github.srujankujmar.generator.services.json;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -23,7 +23,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 import com.jayway.jsonpath.DocumentContext;
 import com.jayway.jsonpath.JsonPath;
-import io.hyscale.servicespec.commons.json.config.JsonPathConfiguration;
+import com.github.srujankujmar.servicespec.commons.json.config.JsonPathConfiguration;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;

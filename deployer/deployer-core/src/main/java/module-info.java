@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 module deployerModel {
-	exports io.hyscale.deployer.core.model;
+	exports com.github.srujankujmar.deployer.core.model;
 
 	requires joda.time;
 	requires org.apache.commons.lang3;

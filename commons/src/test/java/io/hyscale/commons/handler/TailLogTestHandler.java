@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.handler;
+package com.github.srujankujmar.commons.handler;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import io.hyscale.commons.utils.TailHandler;
+import com.github.srujankujmar.commons.utils.TailHandler;
 
 public class TailLogTestHandler implements TailHandler {
 

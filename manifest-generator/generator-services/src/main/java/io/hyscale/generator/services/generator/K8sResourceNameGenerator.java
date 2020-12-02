@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.generator;
+package com.github.srujankujmar.generator.services.generator;
 
-import io.hyscale.commons.utils.NormalizationUtil;
-import io.hyscale.generator.services.constants.ManifestGenConstants;
+import com.github.srujankujmar.commons.utils.NormalizationUtil;
+import com.github.srujankujmar.generator.services.constants.ManifestGenConstants;
 
 public class K8sResourceNameGenerator {
 

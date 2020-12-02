@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.builder.services.exception;
+package com.github.srujankujmar.builder.services.exception;
 
-import io.hyscale.commons.exception.HyscaleErrorCode;
+import com.github.srujankujmar.commons.exception.HyscaleErrorCode;
 
 public enum ImageBuilderErrorCodes implements HyscaleErrorCode {
     DOCKER_NOT_INSTALLED("Docker is not installed"),

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.exception;
+package com.github.srujankujmar.commons.exception;
 
 public interface HyscaleErrorCode {
 

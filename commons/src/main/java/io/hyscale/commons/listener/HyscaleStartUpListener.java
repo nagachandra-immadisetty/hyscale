@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.listener;
+package com.github.srujankujmar.commons.listener;
 
-import io.hyscale.commons.utils.HyscaleContextUtil;
+import com.github.srujankujmar.commons.utils.HyscaleContextUtil;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;

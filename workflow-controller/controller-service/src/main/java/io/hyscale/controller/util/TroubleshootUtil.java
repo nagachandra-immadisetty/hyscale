@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.util;
+package com.github.srujankujmar.controller.util;
 
 import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
 
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.troubleshooting.integration.models.DiagnosisReport;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.troubleshooting.integration.models.DiagnosisReport;
 
 /**
  * Helper class to provide troubleshoot related utilities

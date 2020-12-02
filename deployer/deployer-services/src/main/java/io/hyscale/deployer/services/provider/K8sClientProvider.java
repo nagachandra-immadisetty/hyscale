@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.provider;
+package com.github.srujankujmar.deployer.services.provider;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.K8sAuthorisation;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.K8sAuthorisation;
 import io.kubernetes.client.openapi.ApiClient;
 
 public interface K8sClientProvider {

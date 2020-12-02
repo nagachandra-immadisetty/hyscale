@@ -13,40 +13,40 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.commands.deploy;
+package com.github.srujankujmar.controller.commands.deploy;
 
 import java.io.File;
 import java.util.*;
 import java.util.concurrent.Callable;
 import java.util.stream.Collectors;
 
-import io.hyscale.commons.component.ComponentInvoker;
-import io.hyscale.commons.config.SetupConfig;
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.commons.constants.ValidationConstants;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.validator.Validator;
-import io.hyscale.controller.builder.K8sAuthConfigBuilder;
-import io.hyscale.controller.constants.WorkflowConstants;
-import io.hyscale.controller.invoker.DockerfileGeneratorComponentInvoker;
-import io.hyscale.controller.model.*;
-import io.hyscale.controller.profile.ServiceSpecProcessor;
-import io.hyscale.controller.util.CommandUtil;
-import io.hyscale.controller.util.ServiceSpecUtil;
-import io.hyscale.controller.validator.impl.*;
+import com.github.srujankujmar.commons.component.ComponentInvoker;
+import com.github.srujankujmar.commons.config.SetupConfig;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.constants.ValidationConstants;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.validator.Validator;
+import com.github.srujankujmar.controller.builder.K8sAuthConfigBuilder;
+import com.github.srujankujmar.controller.constants.WorkflowConstants;
+import com.github.srujankujmar.controller.invoker.DockerfileGeneratorComponentInvoker;
+import com.github.srujankujmar.controller.model.*;
+import com.github.srujankujmar.controller.profile.ServiceSpecProcessor;
+import com.github.srujankujmar.controller.util.CommandUtil;
+import com.github.srujankujmar.controller.util.ServiceSpecUtil;
+import com.github.srujankujmar.controller.validator.impl.*;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.models.Manifest;
-import io.hyscale.controller.activity.ControllerActivity;
-import io.hyscale.controller.model.WorkflowContextBuilder;
-import io.hyscale.controller.commands.input.ProfileArg;
-import io.hyscale.controller.invoker.DeployComponentInvoker;
-import io.hyscale.controller.invoker.ImageBuildComponentInvoker;
-import io.hyscale.controller.invoker.ManifestGeneratorComponentInvoker;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.models.Manifest;
+import com.github.srujankujmar.controller.activity.ControllerActivity;
+import com.github.srujankujmar.controller.model.WorkflowContextBuilder;
+import com.github.srujankujmar.controller.commands.input.ProfileArg;
+import com.github.srujankujmar.controller.invoker.DeployComponentInvoker;
+import com.github.srujankujmar.controller.invoker.ImageBuildComponentInvoker;
+import com.github.srujankujmar.controller.invoker.ManifestGeneratorComponentInvoker;
 import picocli.CommandLine;
 import picocli.CommandLine.ArgGroup;
 

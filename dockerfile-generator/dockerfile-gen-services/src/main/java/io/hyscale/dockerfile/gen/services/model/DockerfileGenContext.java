@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.dockerfile.gen.services.model;
+package com.github.srujankujmar.dockerfile.gen.services.model;
 
 import java.util.List;
 
-import io.hyscale.servicespec.commons.model.service.Artifact;
+import com.github.srujankujmar.servicespec.commons.model.service.Artifact;
 
 public class DockerfileGenContext {
 

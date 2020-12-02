@@ -13,26 +13,26 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.plugins;
+package com.github.srujankujmar.generator.services.plugins;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.models.ConfigTemplate;
-import io.hyscale.commons.models.ManifestContext;
-import io.hyscale.commons.utils.MustacheTemplateResolver;
-import io.hyscale.generator.services.constants.ManifestGenConstants;
-import io.hyscale.generator.services.exception.ManifestErrorCodes;
-import io.hyscale.generator.services.model.ServiceMetadata;
-import io.hyscale.generator.services.model.ManifestGeneratorActivity;
-import io.hyscale.generator.services.model.ManifestResource;
-import io.hyscale.generator.services.predicates.ManifestPredicates;
-import io.hyscale.generator.services.provider.PluginTemplateProvider;
-import io.hyscale.plugin.framework.annotation.ManifestPlugin;
-import io.hyscale.plugin.framework.handler.ManifestHandler;
-import io.hyscale.plugin.framework.models.ManifestSnippet;
-import io.hyscale.servicespec.commons.fields.HyscaleSpecFields;
-import io.hyscale.servicespec.commons.model.service.Replicas;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.models.ConfigTemplate;
+import com.github.srujankujmar.commons.models.ManifestContext;
+import com.github.srujankujmar.commons.utils.MustacheTemplateResolver;
+import com.github.srujankujmar.generator.services.constants.ManifestGenConstants;
+import com.github.srujankujmar.generator.services.exception.ManifestErrorCodes;
+import com.github.srujankujmar.generator.services.model.ServiceMetadata;
+import com.github.srujankujmar.generator.services.model.ManifestGeneratorActivity;
+import com.github.srujankujmar.generator.services.model.ManifestResource;
+import com.github.srujankujmar.generator.services.predicates.ManifestPredicates;
+import com.github.srujankujmar.generator.services.provider.PluginTemplateProvider;
+import com.github.srujankujmar.plugin.framework.annotation.ManifestPlugin;
+import com.github.srujankujmar.plugin.framework.handler.ManifestHandler;
+import com.github.srujankujmar.plugin.framework.models.ManifestSnippet;
+import com.github.srujankujmar.servicespec.commons.fields.HyscaleSpecFields;
+import com.github.srujankujmar.servicespec.commons.model.service.Replicas;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

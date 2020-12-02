@@ -13,19 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.deployer;
+package com.github.srujankujmar.deployer.services.deployer;
 
 import java.io.InputStream;
 import java.util.List;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.AuthConfig;
-import io.hyscale.commons.models.DeploymentContext;
-import io.hyscale.commons.models.Manifest;
-import io.hyscale.deployer.core.model.AppMetadata;
-import io.hyscale.deployer.core.model.DeploymentStatus;
-import io.hyscale.deployer.services.model.*;
-import io.hyscale.deployer.services.progress.ProgressHandler;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.AuthConfig;
+import com.github.srujankujmar.commons.models.DeploymentContext;
+import com.github.srujankujmar.commons.models.Manifest;
+import com.github.srujankujmar.deployer.core.model.AppMetadata;
+import com.github.srujankujmar.deployer.core.model.DeploymentStatus;
+import com.github.srujankujmar.deployer.services.model.*;
+import com.github.srujankujmar.deployer.services.progress.ProgressHandler;
 
 /**
  * Interface for service deployments.

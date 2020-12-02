@@ -13,18 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.builder.cleanup.services.impl;
+package com.github.srujankujmar.builder.cleanup.services.impl;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.builder.cleanup.services.ImageCleanupProcessor;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.builder.cleanup.services.ImageCleanupProcessor;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 
 /**
  * This class preserves all service images built by hyscale, where
- * (n = {@link io.hyscale.builder.services.config.ImageBuilderConfig#getNoOfPreservedImages() }).
+ * (n = {@link com.github.srujankujmar.builder.services.config.ImageBuilderConfig#getNoOfPreservedImages() }).
  * Hyscale adds a label to the image as imageowner = hyscale. No images are deleted with this
  * property enabled.
  * <p>

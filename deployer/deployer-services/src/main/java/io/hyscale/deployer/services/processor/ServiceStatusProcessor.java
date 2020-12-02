@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.processor;
+package com.github.srujankujmar.deployer.services.processor;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -24,19 +24,19 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.AuthConfig;
-import io.hyscale.commons.models.DeploymentContext;
-import io.hyscale.commons.models.K8sAuthorisation;
-import io.hyscale.deployer.core.model.DeploymentStatus;
-import io.hyscale.deployer.services.deployer.Deployer;
-import io.hyscale.deployer.services.exception.DeployerErrorCodes;
-import io.hyscale.deployer.services.factory.PodParentFactory;
-import io.hyscale.deployer.services.handler.PodParentHandler;
-import io.hyscale.deployer.services.model.PodParent;
-import io.hyscale.deployer.services.model.ServiceAddress;
-import io.hyscale.deployer.services.provider.K8sClientProvider;
-import io.hyscale.deployer.services.util.DeploymentStatusUtil;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.AuthConfig;
+import com.github.srujankujmar.commons.models.DeploymentContext;
+import com.github.srujankujmar.commons.models.K8sAuthorisation;
+import com.github.srujankujmar.deployer.core.model.DeploymentStatus;
+import com.github.srujankujmar.deployer.services.deployer.Deployer;
+import com.github.srujankujmar.deployer.services.exception.DeployerErrorCodes;
+import com.github.srujankujmar.deployer.services.factory.PodParentFactory;
+import com.github.srujankujmar.deployer.services.handler.PodParentHandler;
+import com.github.srujankujmar.deployer.services.model.PodParent;
+import com.github.srujankujmar.deployer.services.model.ServiceAddress;
+import com.github.srujankujmar.deployer.services.provider.K8sClientProvider;
+import com.github.srujankujmar.deployer.services.util.DeploymentStatusUtil;
 import io.kubernetes.client.openapi.ApiClient;
 
 @Component

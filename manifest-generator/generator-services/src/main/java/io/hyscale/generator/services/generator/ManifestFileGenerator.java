@@ -13,20 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.generator;
+package com.github.srujankujmar.generator.services.generator;
 
 import java.io.File;
 
-import io.hyscale.commons.models.YAMLManifest;
-import io.hyscale.commons.utils.NormalizationUtil;
-import io.hyscale.generator.services.constants.ManifestGenConstants;
-import io.hyscale.generator.services.exception.ManifestErrorCodes;
-import io.hyscale.plugin.framework.models.ManifestMeta;
+import com.github.srujankujmar.commons.models.YAMLManifest;
+import com.github.srujankujmar.commons.utils.NormalizationUtil;
+import com.github.srujankujmar.generator.services.constants.ManifestGenConstants;
+import com.github.srujankujmar.generator.services.exception.ManifestErrorCodes;
+import com.github.srujankujmar.plugin.framework.models.ManifestMeta;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.io.HyscaleFilesUtil;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.io.HyscaleFilesUtil;
 
 /**
  * Generate Manifest File with yaml

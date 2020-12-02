@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.models;
+package com.github.srujankujmar.commons.models;
 
 public enum ResourceLabelKey {
 	RELEASE_VERSION("hyscale.io/release-version"), APP_NAME("hyscale.io/app-name"),

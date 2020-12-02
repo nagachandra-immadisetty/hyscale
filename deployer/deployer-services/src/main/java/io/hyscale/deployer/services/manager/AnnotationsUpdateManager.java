@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.manager;
+package com.github.srujankujmar.deployer.services.manager;
 
-import io.hyscale.commons.models.AnnotationKey;
-import io.hyscale.commons.models.KubernetesResource;
+import com.github.srujankujmar.commons.models.AnnotationKey;
+import com.github.srujankujmar.commons.models.KubernetesResource;
 import io.kubernetes.client.openapi.models.V1ObjectMeta;
 
 import java.util.HashMap;

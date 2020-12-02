@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.provider;
+package com.github.srujankujmar.generator.services.provider;
 
-import io.hyscale.commons.models.ConfigTemplate;
+import com.github.srujankujmar.commons.models.ConfigTemplate;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;

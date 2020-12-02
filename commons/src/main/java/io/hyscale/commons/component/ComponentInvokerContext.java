@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.component;
+package com.github.srujankujmar.commons.component;
 
-import io.hyscale.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.exception.HyscaleException;
 
 /**
  *  This class provides the invocation context

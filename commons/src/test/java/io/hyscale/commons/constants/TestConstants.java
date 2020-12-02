@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.constants;
+package com.github.srujankujmar.commons.constants;
 
 public class TestConstants {
     public static final String TMP_DIR = System.getProperty("java.io.tmpdir");

@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.utils;
+package com.github.srujankujmar.generator.services.utils;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import io.hyscale.generator.services.model.ManifestResource;
-import io.hyscale.plugin.framework.models.ManifestSnippet;
-import io.hyscale.plugin.framework.util.JsonSnippetConvertor;
-import io.hyscale.servicespec.commons.model.service.MapBasedSecrets;
-import io.hyscale.servicespec.commons.model.service.Secrets;
-import io.hyscale.servicespec.commons.model.service.SecretType;
+import com.github.srujankujmar.generator.services.model.ManifestResource;
+import com.github.srujankujmar.plugin.framework.models.ManifestSnippet;
+import com.github.srujankujmar.plugin.framework.util.JsonSnippetConvertor;
+import com.github.srujankujmar.servicespec.commons.model.service.MapBasedSecrets;
+import com.github.srujankujmar.servicespec.commons.model.service.Secrets;
+import com.github.srujankujmar.servicespec.commons.model.service.SecretType;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;

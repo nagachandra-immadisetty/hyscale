@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.manager;
+package com.github.srujankujmar.controller.manager;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
@@ -31,10 +31,10 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.ImageRegistry;
-import io.hyscale.controller.config.ControllerConfig;
-import io.hyscale.controller.manager.impl.LocalRegistryManagerImpl;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.ImageRegistry;
+import com.github.srujankujmar.controller.config.ControllerConfig;
+import com.github.srujankujmar.controller.manager.impl.LocalRegistryManagerImpl;
 
 public class RegistryManagerTest {
 

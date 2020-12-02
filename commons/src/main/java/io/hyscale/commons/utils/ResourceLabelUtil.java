@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.utils;
+package com.github.srujankujmar.commons.utils;
 
 import java.util.Map;
 
-import io.hyscale.commons.models.ResourceLabelKey;
+import com.github.srujankujmar.commons.models.ResourceLabelKey;
 
 public class ResourceLabelUtil {
 

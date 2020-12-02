@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.builder.services.config;
+package com.github.srujankujmar.builder.services.config;
 
-import io.hyscale.builder.core.models.ImageBuilder;
+import com.github.srujankujmar.builder.core.models.ImageBuilder;
 import org.springframework.context.annotation.Condition;
 import org.springframework.context.annotation.ConditionContext;
 import org.springframework.core.type.AnnotatedTypeMetadata;

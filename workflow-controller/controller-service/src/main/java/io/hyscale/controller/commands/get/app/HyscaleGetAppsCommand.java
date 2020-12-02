@@ -13,32 +13,32 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.commands.get.app;
+package com.github.srujankujmar.controller.commands.get.app;
 
 import java.util.Comparator;
 import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.stream.Collectors;
 
-import io.hyscale.controller.builder.K8sAuthConfigBuilder;
-import io.hyscale.controller.model.WorkflowContext;
-import io.hyscale.controller.validator.impl.ClusterValidator;
+import com.github.srujankujmar.controller.builder.K8sAuthConfigBuilder;
+import com.github.srujankujmar.controller.model.WorkflowContext;
+import com.github.srujankujmar.controller.validator.impl.ClusterValidator;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.constants.K8SRuntimeConstants;
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.logger.TableFields;
-import io.hyscale.commons.logger.TableFormatter;
-import io.hyscale.commons.logger.TableFormatter.Builder;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.controller.activity.ControllerActivity;
-import io.hyscale.controller.model.WorkflowContextBuilder;
-import io.hyscale.deployer.core.model.AppMetadata;
-import io.hyscale.deployer.services.deployer.Deployer;
+import com.github.srujankujmar.commons.constants.K8SRuntimeConstants;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.logger.TableFields;
+import com.github.srujankujmar.commons.logger.TableFormatter;
+import com.github.srujankujmar.commons.logger.TableFormatter.Builder;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.controller.activity.ControllerActivity;
+import com.github.srujankujmar.controller.model.WorkflowContextBuilder;
+import com.github.srujankujmar.deployer.core.model.AppMetadata;
+import com.github.srujankujmar.deployer.services.deployer.Deployer;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 
@@ -47,7 +47,7 @@ import picocli.CommandLine.Option;
  * It is a sub-command of the 'hyscale get' command
  *
  * @author tushar
- * @see io.hyscale.controller.commands.get.HyscaleGetCommand .
+ * @see com.github.srujankujmar.controller.commands.get.HyscaleGetCommand .
  * It also act as parent command to perform app level operation like get status
  * @see HyscaleAppStatusCommand
  * Every command/sub-command has to implement the {@link Callable} so that

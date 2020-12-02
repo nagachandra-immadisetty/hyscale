@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.exception;
+package com.github.srujankujmar.deployer.services.exception;
 
-import io.hyscale.commons.exception.HyscaleErrorCode;
+import com.github.srujankujmar.commons.exception.HyscaleErrorCode;
 
 /**
  * Error Codes for Deployer Service

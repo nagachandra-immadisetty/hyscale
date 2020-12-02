@@ -13,19 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.generator.impl;
+package com.github.srujankujmar.generator.services.generator.impl;
 
 import java.util.List;
 
-import io.hyscale.generator.services.generator.ManifestGenerator;
-import io.hyscale.generator.services.processor.PluginProcessor;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.generator.services.generator.ManifestGenerator;
+import com.github.srujankujmar.generator.services.processor.PluginProcessor;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.Manifest;
-import io.hyscale.commons.models.ManifestContext;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.Manifest;
+import com.github.srujankujmar.commons.models.ManifestContext;
 
 @Component
 public class K8sManifestGeneratorImpl implements ManifestGenerator {

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.deployer.impl;
+package com.github.srujankujmar.deployer.services.deployer.impl;
 
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -24,44 +24,44 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import io.hyscale.deployer.services.manager.ScaleServiceManager;
-import io.hyscale.deployer.services.model.*;
-import io.hyscale.deployer.services.processor.PodParentProvider;
-import io.hyscale.deployer.services.processor.ServiceStatusProcessor;
+import com.github.srujankujmar.deployer.services.manager.ScaleServiceManager;
+import com.github.srujankujmar.deployer.services.model.*;
+import com.github.srujankujmar.deployer.services.processor.PodParentProvider;
+import com.github.srujankujmar.deployer.services.processor.ServiceStatusProcessor;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.models.DeploymentContext;
-import io.hyscale.commons.models.K8sAuthorisation;
-import io.hyscale.commons.models.KubernetesResource;
-import io.hyscale.commons.models.Manifest;
-import io.hyscale.commons.models.YAMLManifest;
-import io.hyscale.commons.utils.ResourceSelectorUtil;
-import io.hyscale.deployer.core.model.AppMetadata;
-import io.hyscale.deployer.core.model.DeploymentStatus;
-import io.hyscale.deployer.core.model.ResourceKind;
-import io.hyscale.deployer.services.builder.AppMetadataBuilder;
-import io.hyscale.deployer.services.builder.PodBuilder;
-import io.hyscale.deployer.services.config.DeployerConfig;
-import io.hyscale.deployer.services.deployer.Deployer;
-import io.hyscale.deployer.services.exception.DeployerErrorCodes;
-import io.hyscale.deployer.services.handler.AuthenticationHandler;
-import io.hyscale.deployer.services.handler.ResourceHandlers;
-import io.hyscale.deployer.services.handler.ResourceLifeCycleHandler;
-import io.hyscale.deployer.services.handler.impl.V1PersistentVolumeClaimHandler;
-import io.hyscale.deployer.services.handler.impl.V1PodHandler;
-import io.hyscale.deployer.services.handler.impl.V1ServiceHandler;
-import io.hyscale.deployer.services.provider.K8sClientProvider;
-import io.hyscale.deployer.services.util.K8sDeployerUtil;
-import io.hyscale.deployer.services.util.K8sPodUtil;
-import io.hyscale.deployer.services.util.K8sReplicaUtil;
-import io.hyscale.deployer.services.util.K8sResourceDispatcher;
-import io.hyscale.deployer.services.util.KubernetesResourceUtil;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.models.DeploymentContext;
+import com.github.srujankujmar.commons.models.K8sAuthorisation;
+import com.github.srujankujmar.commons.models.KubernetesResource;
+import com.github.srujankujmar.commons.models.Manifest;
+import com.github.srujankujmar.commons.models.YAMLManifest;
+import com.github.srujankujmar.commons.utils.ResourceSelectorUtil;
+import com.github.srujankujmar.deployer.core.model.AppMetadata;
+import com.github.srujankujmar.deployer.core.model.DeploymentStatus;
+import com.github.srujankujmar.deployer.core.model.ResourceKind;
+import com.github.srujankujmar.deployer.services.builder.AppMetadataBuilder;
+import com.github.srujankujmar.deployer.services.builder.PodBuilder;
+import com.github.srujankujmar.deployer.services.config.DeployerConfig;
+import com.github.srujankujmar.deployer.services.deployer.Deployer;
+import com.github.srujankujmar.deployer.services.exception.DeployerErrorCodes;
+import com.github.srujankujmar.deployer.services.handler.AuthenticationHandler;
+import com.github.srujankujmar.deployer.services.handler.ResourceHandlers;
+import com.github.srujankujmar.deployer.services.handler.ResourceLifeCycleHandler;
+import com.github.srujankujmar.deployer.services.handler.impl.V1PersistentVolumeClaimHandler;
+import com.github.srujankujmar.deployer.services.handler.impl.V1PodHandler;
+import com.github.srujankujmar.deployer.services.handler.impl.V1ServiceHandler;
+import com.github.srujankujmar.deployer.services.provider.K8sClientProvider;
+import com.github.srujankujmar.deployer.services.util.K8sDeployerUtil;
+import com.github.srujankujmar.deployer.services.util.K8sPodUtil;
+import com.github.srujankujmar.deployer.services.util.K8sReplicaUtil;
+import com.github.srujankujmar.deployer.services.util.K8sResourceDispatcher;
+import com.github.srujankujmar.deployer.services.util.KubernetesResourceUtil;
 import io.kubernetes.client.openapi.ApiClient;
 import io.kubernetes.client.openapi.models.V1PersistentVolumeClaim;
 import io.kubernetes.client.openapi.models.V1Pod;

@@ -13,24 +13,24 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.util;
+package com.github.srujankujmar.deployer.services.util;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 
-import io.hyscale.deployer.services.config.DeployerConfig;
-import io.hyscale.deployer.services.exception.DeployerErrorCodes;
+import com.github.srujankujmar.deployer.services.config.DeployerConfig;
+import com.github.srujankujmar.deployer.services.exception.DeployerErrorCodes;
 import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.io.LogProcessor;
-import io.hyscale.commons.models.AuthConfig;
-import io.hyscale.deployer.services.deployer.Deployer;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.io.LogProcessor;
+import com.github.srujankujmar.commons.models.AuthConfig;
+import com.github.srujankujmar.deployer.services.deployer.Deployer;
 
 /**
  * Utility to handle deployment related logs

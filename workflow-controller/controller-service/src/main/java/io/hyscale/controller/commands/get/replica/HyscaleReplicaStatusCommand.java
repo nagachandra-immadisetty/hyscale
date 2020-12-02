@@ -13,21 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.commands.get.replica;
+package com.github.srujankujmar.controller.commands.get.replica;
 
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.commons.constants.ValidationConstants;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.controller.activity.ControllerActivity;
-import io.hyscale.controller.builder.K8sAuthConfigBuilder;
-import io.hyscale.controller.model.WorkflowContextBuilder;
-import io.hyscale.controller.model.WorkflowContext;
-import io.hyscale.controller.service.ReplicaProcessingService;
-import io.hyscale.controller.util.CommandUtil;
-import io.hyscale.controller.validator.impl.ClusterValidator;
-import io.hyscale.deployer.core.model.DeploymentStatus;
-import io.hyscale.deployer.services.model.DeployerActivity;
-import io.hyscale.deployer.services.model.ReplicaInfo;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.constants.ValidationConstants;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.controller.activity.ControllerActivity;
+import com.github.srujankujmar.controller.builder.K8sAuthConfigBuilder;
+import com.github.srujankujmar.controller.model.WorkflowContextBuilder;
+import com.github.srujankujmar.controller.model.WorkflowContext;
+import com.github.srujankujmar.controller.service.ReplicaProcessingService;
+import com.github.srujankujmar.controller.util.CommandUtil;
+import com.github.srujankujmar.controller.validator.impl.ClusterValidator;
+import com.github.srujankujmar.deployer.core.model.DeploymentStatus;
+import com.github.srujankujmar.deployer.services.model.DeployerActivity;
+import com.github.srujankujmar.deployer.services.model.ReplicaInfo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

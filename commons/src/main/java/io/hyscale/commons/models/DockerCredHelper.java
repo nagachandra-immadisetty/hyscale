@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.models;
+package com.github.srujankujmar.commons.models;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.hyscale.commons.commands.CommandExecutor;
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.commons.utils.ObjectMapperFactory;
+import com.github.srujankujmar.commons.commands.CommandExecutor;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.utils.ObjectMapperFactory;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

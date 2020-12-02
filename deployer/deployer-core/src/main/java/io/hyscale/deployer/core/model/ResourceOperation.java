@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.core.model;
+package com.github.srujankujmar.deployer.core.model;
 
 public enum ResourceOperation {
 

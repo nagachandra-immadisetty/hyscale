@@ -13,33 +13,33 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.util;
+package com.github.srujankujmar.deployer.services.util;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import io.hyscale.commons.models.AnnotationKey;
-import io.hyscale.deployer.services.broker.K8sResourceBroker;
-import io.hyscale.deployer.services.builder.NamespaceBuilder;
-import io.hyscale.deployer.services.exception.DeployerErrorCodes;
-import io.hyscale.deployer.services.handler.ResourceHandlers;
-import io.hyscale.deployer.services.handler.ResourceLifeCycleHandler;
-import io.hyscale.deployer.services.manager.AnnotationsUpdateManager;
-import io.hyscale.deployer.services.model.DeployerActivity;
+import com.github.srujankujmar.commons.models.AnnotationKey;
+import com.github.srujankujmar.deployer.services.broker.K8sResourceBroker;
+import com.github.srujankujmar.deployer.services.builder.NamespaceBuilder;
+import com.github.srujankujmar.deployer.services.exception.DeployerErrorCodes;
+import com.github.srujankujmar.deployer.services.handler.ResourceHandlers;
+import com.github.srujankujmar.deployer.services.handler.ResourceLifeCycleHandler;
+import com.github.srujankujmar.deployer.services.manager.AnnotationsUpdateManager;
+import com.github.srujankujmar.deployer.services.model.DeployerActivity;
 import org.apache.commons.lang3.StringUtils;
 import org.joda.time.DateTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import io.hyscale.commons.constants.K8SRuntimeConstants;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.models.KubernetesResource;
-import io.hyscale.commons.models.Manifest;
-import io.hyscale.commons.utils.ResourceSelectorUtil;
-import io.hyscale.deployer.core.model.ResourceKind;
-import io.hyscale.deployer.services.handler.impl.NamespaceHandler;
+import com.github.srujankujmar.commons.constants.K8SRuntimeConstants;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.models.KubernetesResource;
+import com.github.srujankujmar.commons.models.Manifest;
+import com.github.srujankujmar.commons.utils.ResourceSelectorUtil;
+import com.github.srujankujmar.deployer.core.model.ResourceKind;
+import com.github.srujankujmar.deployer.services.handler.impl.NamespaceHandler;
 import io.kubernetes.client.openapi.ApiClient;
 import io.kubernetes.client.openapi.models.V1Namespace;
 

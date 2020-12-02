@@ -1,2 +1,2 @@
-io.hyscale.deployer.services.handler.impl.V1StatefulSetHandler
-io.hyscale.deployer.services.handler.impl.V1DeploymentHandler
+com.github.srujankujmar.deployer.services.handler.impl.V1StatefulSetHandler
+com.github.srujankujmar.deployer.services.handler.impl.V1DeploymentHandler

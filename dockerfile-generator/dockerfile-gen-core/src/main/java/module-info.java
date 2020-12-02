@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 module dockerfilegencore {
-	exports io.hyscale.dockerfile.gen.core.models;
+	exports com.github.srujankujmar.dockerfile.gen.core.models;
 
 	requires commons;
 }

@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.initializer;
+package com.github.srujankujmar.controller.initializer;
 
-import io.hyscale.controller.exception.ParameterExceptionHandler;
-import io.hyscale.controller.piccoli.ProfileArgsManipulator;
+import com.github.srujankujmar.controller.exception.ParameterExceptionHandler;
+import com.github.srujankujmar.controller.piccoli.ProfileArgsManipulator;
 
 import java.util.Map;
 
@@ -28,15 +28,15 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
-import io.hyscale.builder.core.models.ImageBuilder;
-import io.hyscale.builder.services.config.ImageBuilderConfig;
-import io.hyscale.commons.config.SetupConfig;
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.controller.commands.HyscaleCommand;
-import io.hyscale.controller.exception.ControllerErrorCodes;
-import io.hyscale.controller.exception.ExceptionHandler;
-import io.hyscale.controller.util.ResourceCleanUpUtil;
-import io.hyscale.controller.util.ShutdownHook;
+import com.github.srujankujmar.builder.core.models.ImageBuilder;
+import com.github.srujankujmar.builder.services.config.ImageBuilderConfig;
+import com.github.srujankujmar.commons.config.SetupConfig;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.controller.commands.HyscaleCommand;
+import com.github.srujankujmar.controller.exception.ControllerErrorCodes;
+import com.github.srujankujmar.controller.exception.ExceptionHandler;
+import com.github.srujankujmar.controller.util.ResourceCleanUpUtil;
+import com.github.srujankujmar.controller.util.ShutdownHook;
 import picocli.CommandLine;
 import picocli.CommandLine.IFactory;
 import picocli.CommandLine.IHelpSectionRenderer;
@@ -52,7 +52,7 @@ import picocli.CommandLine.ParameterException;
  * </p>
  */
 @SpringBootApplication
-@ComponentScan(basePackages = "io.hyscale")
+@ComponentScan(basePackages = "com.github.srujankujmar")
 public class HyscaleInitializer implements CommandLineRunner {
 
     private final Logger logger = LoggerFactory.getLogger(HyscaleInitializer.class);

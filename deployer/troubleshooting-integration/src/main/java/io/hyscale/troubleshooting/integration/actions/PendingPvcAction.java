@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.troubleshooting.integration.actions;
+package com.github.srujankujmar.troubleshooting.integration.actions;
 
-import io.hyscale.deployer.core.model.ResourceKind;
-import io.hyscale.troubleshooting.integration.models.*;
+import com.github.srujankujmar.deployer.core.model.ResourceKind;
+import com.github.srujankujmar.troubleshooting.integration.models.*;
 import io.kubernetes.client.openapi.models.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

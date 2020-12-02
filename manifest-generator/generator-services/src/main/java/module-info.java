@@ -13,21 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import io.hyscale.plugin.framework.handler.ManifestHandler;
+import com.github.srujankujmar.plugin.framework.handler.ManifestHandler;
 
 module manifestGenerator {
-	exports io.hyscale.generator.services.config;
-	exports io.hyscale.generator.services.constants;
-	exports io.hyscale.generator.services.exception;
-	exports io.hyscale.generator.services.generator;
-	exports io.hyscale.generator.services.json;
-	exports io.hyscale.generator.services.listener;
-	exports io.hyscale.generator.services.model;
-	exports io.hyscale.generator.services.predicates;
-	exports io.hyscale.generator.services.plugins;
-	exports io.hyscale.generator.services.processor;
-	exports io.hyscale.generator.services.provider;
-	exports io.hyscale.generator.services.utils;
+	exports com.github.srujankujmar.generator.services.config;
+	exports com.github.srujankujmar.generator.services.constants;
+	exports com.github.srujankujmar.generator.services.exception;
+	exports com.github.srujankujmar.generator.services.generator;
+	exports com.github.srujankujmar.generator.services.json;
+	exports com.github.srujankujmar.generator.services.listener;
+	exports com.github.srujankujmar.generator.services.model;
+	exports com.github.srujankujmar.generator.services.predicates;
+	exports com.github.srujankujmar.generator.services.plugins;
+	exports com.github.srujankujmar.generator.services.processor;
+	exports com.github.srujankujmar.generator.services.provider;
+	exports com.github.srujankujmar.generator.services.utils;
 
 	uses ManifestHandler;
 

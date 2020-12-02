@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.directive.impl;
+package com.github.srujankujmar.controller.directive.impl;
 
 import java.util.List;
 
@@ -22,11 +22,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.utils.WindowsUtil;
-import io.hyscale.controller.directive.ServiceSpecDirectiveUpdateHandler;
-import io.hyscale.servicespec.commons.fields.HyscaleSpecFields;
-import io.hyscale.servicespec.commons.model.service.Artifact;
-import io.hyscale.servicespec.commons.model.service.BuildSpec;
+import com.github.srujankujmar.commons.utils.WindowsUtil;
+import com.github.srujankujmar.controller.directive.ServiceSpecDirectiveUpdateHandler;
+import com.github.srujankujmar.servicespec.commons.fields.HyscaleSpecFields;
+import com.github.srujankujmar.servicespec.commons.model.service.Artifact;
+import com.github.srujankujmar.servicespec.commons.model.service.BuildSpec;
 
 /**
  * Updates the "build spec" directive from the service spec before processing the

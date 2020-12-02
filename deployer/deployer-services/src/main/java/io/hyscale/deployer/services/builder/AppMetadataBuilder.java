@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.builder;
+package com.github.srujankujmar.deployer.services.builder;
 
 import java.util.HashMap;
 import java.util.List;
@@ -23,10 +23,10 @@ import java.util.stream.Collectors;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.utils.ResourceLabelUtil;
-import io.hyscale.deployer.core.model.AppMetadata;
-import io.hyscale.deployer.core.model.ResourceKind;
-import io.hyscale.deployer.services.model.PodParent;
+import com.github.srujankujmar.commons.utils.ResourceLabelUtil;
+import com.github.srujankujmar.deployer.core.model.AppMetadata;
+import com.github.srujankujmar.deployer.core.model.ResourceKind;
+import com.github.srujankujmar.deployer.services.model.PodParent;
 import io.kubernetes.client.openapi.models.V1Deployment;
 import io.kubernetes.client.openapi.models.V1ObjectMeta;
 import io.kubernetes.client.openapi.models.V1StatefulSet;

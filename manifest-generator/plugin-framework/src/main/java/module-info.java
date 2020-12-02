@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 module pluginframework {
-	exports io.hyscale.plugin.framework.models;
-	exports io.hyscale.plugin.framework.util;
-	exports io.hyscale.plugin.framework.annotation;
-	exports io.hyscale.plugin.framework.handler;
+	exports com.github.srujankujmar.plugin.framework.models;
+	exports com.github.srujankujmar.plugin.framework.util;
+	exports com.github.srujankujmar.plugin.framework.annotation;
+	exports com.github.srujankujmar.plugin.framework.handler;
 
 	requires service_spec_commons;
 	requires commons;

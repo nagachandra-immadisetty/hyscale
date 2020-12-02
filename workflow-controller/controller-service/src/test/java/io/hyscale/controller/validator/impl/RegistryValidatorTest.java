@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.validator.impl;
+package com.github.srujankujmar.controller.validator.impl;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
@@ -21,7 +21,7 @@ import static org.junit.jupiter.api.Assertions.fail;
 import java.io.IOException;
 import java.util.stream.Stream;
 
-import io.hyscale.controller.model.WorkflowContextBuilder;
+import com.github.srujankujmar.controller.model.WorkflowContextBuilder;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -32,14 +32,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.ImageRegistry;
-import io.hyscale.controller.manager.RegistryManager;
-import io.hyscale.controller.model.WorkflowContext;
-import io.hyscale.controller.util.ServiceSpecTestUtil;
-import io.hyscale.servicespec.commons.fields.HyscaleSpecFields;
-import io.hyscale.servicespec.commons.model.service.Image;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.ImageRegistry;
+import com.github.srujankujmar.controller.manager.RegistryManager;
+import com.github.srujankujmar.controller.model.WorkflowContext;
+import com.github.srujankujmar.controller.util.ServiceSpecTestUtil;
+import com.github.srujankujmar.servicespec.commons.fields.HyscaleSpecFields;
+import com.github.srujankujmar.servicespec.commons.model.service.Image;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 
 @SpringBootTest
 public class RegistryValidatorTest {

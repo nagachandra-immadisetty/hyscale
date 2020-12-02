@@ -13,22 +13,22 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.plugins;
+package com.github.srujankujmar.generator.services.plugins;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.models.DockerConfig;
-import io.hyscale.generator.services.constants.ManifestGenConstants;
-import io.hyscale.generator.services.model.ManifestGeneratorActivity;
-import io.hyscale.generator.services.builder.DefaultLabelBuilder;
-import io.hyscale.generator.services.model.ManifestResource;
-import io.hyscale.generator.services.model.ServiceMetadata;
-import io.hyscale.generator.services.model.ResourceName;
-import io.hyscale.generator.services.generator.MetadataManifestSnippetGenerator;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.models.DockerConfig;
+import com.github.srujankujmar.generator.services.constants.ManifestGenConstants;
+import com.github.srujankujmar.generator.services.model.ManifestGeneratorActivity;
+import com.github.srujankujmar.generator.services.builder.DefaultLabelBuilder;
+import com.github.srujankujmar.generator.services.model.ManifestResource;
+import com.github.srujankujmar.generator.services.model.ServiceMetadata;
+import com.github.srujankujmar.generator.services.model.ResourceName;
+import com.github.srujankujmar.generator.services.generator.MetadataManifestSnippetGenerator;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -38,18 +38,18 @@ import org.springframework.stereotype.Component;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import io.hyscale.plugin.framework.annotation.ManifestPlugin;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.Auth;
-import io.hyscale.commons.models.ManifestContext;
-import io.hyscale.commons.models.ImageRegistry;
-import io.hyscale.commons.utils.ObjectMapperFactory;
-import io.hyscale.commons.utils.NormalizationUtil;
-import io.hyscale.plugin.framework.handler.ManifestHandler;
-import io.hyscale.plugin.framework.models.ManifestSnippet;
-import io.hyscale.servicespec.commons.fields.HyscaleSpecFields;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
-import io.hyscale.plugin.framework.util.JsonSnippetConvertor;
+import com.github.srujankujmar.plugin.framework.annotation.ManifestPlugin;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.Auth;
+import com.github.srujankujmar.commons.models.ManifestContext;
+import com.github.srujankujmar.commons.models.ImageRegistry;
+import com.github.srujankujmar.commons.utils.ObjectMapperFactory;
+import com.github.srujankujmar.commons.utils.NormalizationUtil;
+import com.github.srujankujmar.plugin.framework.handler.ManifestHandler;
+import com.github.srujankujmar.plugin.framework.models.ManifestSnippet;
+import com.github.srujankujmar.servicespec.commons.fields.HyscaleSpecFields;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.plugin.framework.util.JsonSnippetConvertor;
 import io.kubernetes.client.openapi.models.V1ObjectMeta;
 
 @Component

@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 module builderservices {
-	exports io.hyscale.builder.services.util;
-	exports io.hyscale.builder.services.constants;
-	exports io.hyscale.builder.services.config;
-	exports io.hyscale.builder.services.exception;
-	exports io.hyscale.builder.services.impl;
+	exports com.github.srujankujmar.builder.services.util;
+	exports com.github.srujankujmar.builder.services.constants;
+	exports com.github.srujankujmar.builder.services.config;
+	exports com.github.srujankujmar.builder.services.exception;
+	exports com.github.srujankujmar.builder.services.impl;
 
 	requires transitive commons;
 	requires transitive service_spec_commons;

@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.commands.get.replica;
+package com.github.srujankujmar.controller.commands.get.replica;
 
-import io.hyscale.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.constants.ToolConstants;
 import org.springframework.stereotype.Component;
 import picocli.CommandLine;
 

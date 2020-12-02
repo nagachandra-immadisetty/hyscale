@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.dockerfile.gen.services.config;
+package com.github.srujankujmar.dockerfile.gen.services.config;
 
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.commons.utils.WindowsUtil;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.utils.WindowsUtil;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.config.SetupConfig;
+import com.github.srujankujmar.commons.config.SetupConfig;
 
 @Component
 public class DockerfileGenConfig {

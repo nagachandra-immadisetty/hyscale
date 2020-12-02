@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.troubleshooting.integration.models;
+package com.github.srujankujmar.troubleshooting.integration.models;
 
-import io.hyscale.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.exception.HyscaleException;
 
 //TODO JAVADOC
 public interface Node<C extends NodeContext> {

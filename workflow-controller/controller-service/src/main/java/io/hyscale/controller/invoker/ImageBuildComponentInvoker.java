@@ -13,32 +13,32 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.invoker;
+package com.github.srujankujmar.controller.invoker;
 
 import javax.annotation.PostConstruct;
 
-import io.hyscale.builder.services.exception.ImageBuilderErrorCodes;
-import io.hyscale.controller.activity.ControllerActivity;
-import io.hyscale.controller.constants.WorkflowConstants;
-import io.hyscale.controller.exception.ControllerErrorCodes;
-import io.hyscale.controller.manager.RegistryManager;
-import io.hyscale.controller.model.WorkflowContext;
+import com.github.srujankujmar.builder.services.exception.ImageBuilderErrorCodes;
+import com.github.srujankujmar.controller.activity.ControllerActivity;
+import com.github.srujankujmar.controller.constants.WorkflowConstants;
+import com.github.srujankujmar.controller.exception.ControllerErrorCodes;
+import com.github.srujankujmar.controller.manager.RegistryManager;
+import com.github.srujankujmar.controller.model.WorkflowContext;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.builder.core.models.BuildContext;
-import io.hyscale.commons.component.ComponentInvoker;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.models.DockerfileEntity;
-import io.hyscale.controller.hooks.ImageCleanUpHook;
-import io.hyscale.builder.services.service.ImageBuildPushService;
-import io.hyscale.servicespec.commons.exception.ServiceSpecErrorCodes;
-import io.hyscale.servicespec.commons.fields.HyscaleSpecFields;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.builder.core.models.BuildContext;
+import com.github.srujankujmar.commons.component.ComponentInvoker;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.models.DockerfileEntity;
+import com.github.srujankujmar.controller.hooks.ImageCleanUpHook;
+import com.github.srujankujmar.builder.services.service.ImageBuildPushService;
+import com.github.srujankujmar.servicespec.commons.exception.ServiceSpecErrorCodes;
+import com.github.srujankujmar.servicespec.commons.fields.HyscaleSpecFields;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 
 /**
  *	Image builder component acts as a bridge between workflow controller and image-builder

@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.model;
+package com.github.srujankujmar.generator.services.model;
 
-import io.hyscale.commons.models.Activity;
+import com.github.srujankujmar.commons.models.Activity;
 
 public enum ManifestGeneratorActivity implements Activity {
     MISSING_FIELD("Missing field {}"),

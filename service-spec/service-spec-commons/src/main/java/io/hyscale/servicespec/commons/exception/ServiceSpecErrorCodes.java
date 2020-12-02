@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.servicespec.commons.exception;
+package com.github.srujankujmar.servicespec.commons.exception;
 
-import io.hyscale.commons.exception.HyscaleErrorCode;
+import com.github.srujankujmar.commons.exception.HyscaleErrorCode;
 
 /**
  * Error codes for Service Spec related operations

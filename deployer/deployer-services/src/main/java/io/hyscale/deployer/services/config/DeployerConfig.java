@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.config;
+package com.github.srujankujmar.deployer.services.config;
 
-import io.hyscale.commons.config.SetupConfig;
-import io.hyscale.deployer.services.model.ResourceUpdatePolicy;
+import com.github.srujankujmar.commons.config.SetupConfig;
+import com.github.srujankujmar.deployer.services.model.ResourceUpdatePolicy;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

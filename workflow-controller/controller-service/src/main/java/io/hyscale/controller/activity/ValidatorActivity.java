@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.activity;
+package com.github.srujankujmar.controller.activity;
 
-import io.hyscale.commons.models.Activity;
+import com.github.srujankujmar.commons.models.Activity;
 
 /**
  * Activities list for validation

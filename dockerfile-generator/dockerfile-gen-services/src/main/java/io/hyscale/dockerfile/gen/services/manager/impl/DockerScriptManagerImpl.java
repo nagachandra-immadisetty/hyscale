@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.dockerfile.gen.services.manager.impl;
+package com.github.srujankujmar.dockerfile.gen.services.manager.impl;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -21,27 +21,27 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import io.hyscale.commons.config.SetupConfig;
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.dockerfile.gen.services.manager.DockerfileEntityManager;
-import io.hyscale.dockerfile.gen.services.constants.DockerfileGenConstants;
-import io.hyscale.dockerfile.gen.services.templates.CommandsTemplateProvider;
+import com.github.srujankujmar.commons.config.SetupConfig;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.dockerfile.gen.services.manager.DockerfileEntityManager;
+import com.github.srujankujmar.dockerfile.gen.services.constants.DockerfileGenConstants;
+import com.github.srujankujmar.dockerfile.gen.services.templates.CommandsTemplateProvider;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.exception.CommonErrorCode;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.servicespec.commons.model.service.BuildSpec;
-import io.hyscale.commons.models.ConfigTemplate;
-import io.hyscale.commons.utils.MustacheTemplateResolver;
-import io.hyscale.dockerfile.gen.services.model.DockerfileGenContext;
-import io.hyscale.dockerfile.gen.services.model.CommandType;
-import io.hyscale.commons.models.FileSpec;
-import io.hyscale.commons.models.SupportingFile;
-import io.hyscale.dockerfile.gen.services.config.DockerfileGenConfig;
-import io.hyscale.servicespec.commons.fields.HyscaleSpecFields;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.commons.exception.CommonErrorCode;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.servicespec.commons.model.service.BuildSpec;
+import com.github.srujankujmar.commons.models.ConfigTemplate;
+import com.github.srujankujmar.commons.utils.MustacheTemplateResolver;
+import com.github.srujankujmar.dockerfile.gen.services.model.DockerfileGenContext;
+import com.github.srujankujmar.dockerfile.gen.services.model.CommandType;
+import com.github.srujankujmar.commons.models.FileSpec;
+import com.github.srujankujmar.commons.models.SupportingFile;
+import com.github.srujankujmar.dockerfile.gen.services.config.DockerfileGenConfig;
+import com.github.srujankujmar.servicespec.commons.fields.HyscaleSpecFields;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 
 @Component
 public class DockerScriptManagerImpl implements DockerfileEntityManager {

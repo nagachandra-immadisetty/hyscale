@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.builder.services.config;
+package com.github.srujankujmar.builder.services.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.config.SetupConfig;
+import com.github.srujankujmar.commons.config.SetupConfig;
 
 @Component
 @PropertySource("classpath:config/image-builder.props")

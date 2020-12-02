@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.exception;
+package com.github.srujankujmar.controller.exception;
 
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.exception.HyscaleException;
 import picocli.CommandLine.IExitCodeExceptionMapper;
 
 @Component

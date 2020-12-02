@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.builder;
+package com.github.srujankujmar.deployer.services.builder;
 
-import io.hyscale.deployer.services.model.Container;
-import io.hyscale.deployer.services.model.Pod;
-import io.hyscale.deployer.services.model.Volume;
+import com.github.srujankujmar.deployer.services.model.Container;
+import com.github.srujankujmar.deployer.services.model.Pod;
+import com.github.srujankujmar.deployer.services.model.Volume;
 
 import java.util.List;
 

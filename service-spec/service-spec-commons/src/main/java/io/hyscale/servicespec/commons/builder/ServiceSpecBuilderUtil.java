@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.servicespec.commons.builder;
+package com.github.srujankujmar.servicespec.commons.builder;
 
 import com.jayway.jsonpath.DocumentContext;
 import com.jayway.jsonpath.JsonPath;
-import io.hyscale.servicespec.commons.fields.HyscaleSpecFields;
+import com.github.srujankujmar.servicespec.commons.fields.HyscaleSpecFields;
 
 public class ServiceSpecBuilderUtil {
 

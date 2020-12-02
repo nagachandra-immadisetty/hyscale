@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.exception;
+package com.github.srujankujmar.controller.exception;
 
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.controller.piccoli.ProfileArgsManipulator;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.controller.piccoli.ProfileArgsManipulator;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

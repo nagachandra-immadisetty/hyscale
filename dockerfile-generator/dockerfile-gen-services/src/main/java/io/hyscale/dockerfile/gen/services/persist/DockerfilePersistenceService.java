@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.dockerfile.gen.services.persist;
+package com.github.srujankujmar.dockerfile.gen.services.persist;
 
 import java.util.List;
 
-import io.hyscale.dockerfile.gen.services.model.DockerfileGenContext;
-import io.hyscale.dockerfile.gen.core.models.DockerfileContent;
-import io.hyscale.commons.models.SupportingFile;
+import com.github.srujankujmar.dockerfile.gen.services.model.DockerfileGenContext;
+import com.github.srujankujmar.dockerfile.gen.core.models.DockerfileContent;
+import com.github.srujankujmar.commons.models.SupportingFile;
 
 public abstract class DockerfilePersistenceService {
 

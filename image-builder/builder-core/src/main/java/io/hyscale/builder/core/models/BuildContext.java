@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.builder.core.models;
+package com.github.srujankujmar.builder.core.models;
 
 import java.util.Map;
 
-import io.hyscale.commons.models.DockerfileEntity;
-import io.hyscale.commons.models.ImageRegistry;
+import com.github.srujankujmar.commons.models.DockerfileEntity;
+import com.github.srujankujmar.commons.models.ImageRegistry;
 
 public class BuildContext {
 

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.builder.services.impl;
+package com.github.srujankujmar.builder.services.impl;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -21,19 +21,19 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.builder.cleanup.services.ImageCleanupProcessor;
-import io.hyscale.builder.core.models.BuildContext;
-import io.hyscale.builder.core.models.ImageBuilderActivity;
-import io.hyscale.builder.services.config.ImageBuilderConfig;
-import io.hyscale.builder.services.exception.ImageBuilderErrorCodes;
-import io.hyscale.builder.services.service.ImageBuildPushService;
-import io.hyscale.builder.services.util.ImageCleanupProcessorFactory;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.models.Status;
-import io.hyscale.servicespec.commons.fields.HyscaleSpecFields;
-import io.hyscale.servicespec.commons.model.service.Dockerfile;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.builder.cleanup.services.ImageCleanupProcessor;
+import com.github.srujankujmar.builder.core.models.BuildContext;
+import com.github.srujankujmar.builder.core.models.ImageBuilderActivity;
+import com.github.srujankujmar.builder.services.config.ImageBuilderConfig;
+import com.github.srujankujmar.builder.services.exception.ImageBuilderErrorCodes;
+import com.github.srujankujmar.builder.services.service.ImageBuildPushService;
+import com.github.srujankujmar.builder.services.util.ImageCleanupProcessorFactory;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.models.Status;
+import com.github.srujankujmar.servicespec.commons.fields.HyscaleSpecFields;
+import com.github.srujankujmar.servicespec.commons.model.service.Dockerfile;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 
 @Component
 public class LocalImageBuildPushServiceImpl implements ImageBuildPushService {

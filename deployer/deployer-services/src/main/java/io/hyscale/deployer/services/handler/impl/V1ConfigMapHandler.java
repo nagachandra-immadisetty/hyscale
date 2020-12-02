@@ -13,29 +13,29 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.handler.impl;
+package com.github.srujankujmar.deployer.services.handler.impl;
 
 import java.util.List;
 
-import io.hyscale.deployer.services.model.DeployerActivity;
-import io.hyscale.deployer.services.model.ResourceStatus;
-import io.hyscale.deployer.services.exception.DeployerErrorCodes;
-import io.hyscale.deployer.services.handler.ResourceLifeCycleHandler;
-import io.hyscale.deployer.services.util.ExceptionHelper;
-import io.hyscale.deployer.services.util.K8sResourcePatchUtil;
+import com.github.srujankujmar.deployer.services.model.DeployerActivity;
+import com.github.srujankujmar.deployer.services.model.ResourceStatus;
+import com.github.srujankujmar.deployer.services.exception.DeployerErrorCodes;
+import com.github.srujankujmar.deployer.services.handler.ResourceLifeCycleHandler;
+import com.github.srujankujmar.deployer.services.util.ExceptionHelper;
+import com.github.srujankujmar.deployer.services.util.K8sResourcePatchUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.google.common.collect.Lists;
 import com.google.gson.JsonSyntaxException;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.logger.ActivityContext;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.models.AnnotationKey;
-import io.hyscale.commons.models.Status;
-import io.hyscale.deployer.core.model.ResourceKind;
-import io.hyscale.deployer.core.model.ResourceOperation;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.logger.ActivityContext;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.models.AnnotationKey;
+import com.github.srujankujmar.commons.models.Status;
+import com.github.srujankujmar.deployer.core.model.ResourceKind;
+import com.github.srujankujmar.deployer.core.model.ResourceOperation;
 import io.kubernetes.client.openapi.ApiClient;
 import io.kubernetes.client.openapi.ApiException;
 import io.kubernetes.client.openapi.apis.CoreV1Api;

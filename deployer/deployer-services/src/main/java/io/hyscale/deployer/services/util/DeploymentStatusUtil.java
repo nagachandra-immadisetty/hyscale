@@ -13,17 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.util;
+package com.github.srujankujmar.deployer.services.util;
 
 import java.util.List;
 
-import io.hyscale.deployer.services.model.PodCondition;
+import com.github.srujankujmar.deployer.services.model.PodCondition;
 import org.apache.commons.lang3.StringUtils;
 import org.joda.time.DateTime;
 
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.commons.utils.HyscaleStringUtil;
-import io.hyscale.deployer.core.model.DeploymentStatus;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.utils.HyscaleStringUtil;
+import com.github.srujankujmar.deployer.core.model.DeploymentStatus;
 import io.kubernetes.client.openapi.models.V1Pod;
 
 /**

@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.commands.deploy;
+package com.github.srujankujmar.controller.commands.deploy;
 
 import java.util.concurrent.Callable;
 
-import io.hyscale.controller.commands.HyscaleCommand;
+import com.github.srujankujmar.controller.commands.HyscaleCommand;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.constants.ToolConstants;
 import picocli.CommandLine;
 import picocli.CommandLine.Command;
 

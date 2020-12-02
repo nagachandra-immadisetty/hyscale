@@ -13,21 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.handler.impl;
+package com.github.srujankujmar.deployer.services.handler.impl;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.exception.CommonErrorCode;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.AuthConfig;
-import io.hyscale.commons.models.K8sAuthorisation;
-import io.hyscale.deployer.core.model.ResourceOperation;
-import io.hyscale.deployer.services.handler.AuthenticationHandler;
-import io.hyscale.deployer.services.provider.K8sClientProvider;
-import io.hyscale.deployer.services.util.ExceptionHelper;
+import com.github.srujankujmar.commons.exception.CommonErrorCode;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.AuthConfig;
+import com.github.srujankujmar.commons.models.K8sAuthorisation;
+import com.github.srujankujmar.deployer.core.model.ResourceOperation;
+import com.github.srujankujmar.deployer.services.handler.AuthenticationHandler;
+import com.github.srujankujmar.deployer.services.provider.K8sClientProvider;
+import com.github.srujankujmar.deployer.services.util.ExceptionHelper;
 import io.kubernetes.client.openapi.ApiClient;
 import io.kubernetes.client.openapi.ApiException;
 import io.kubernetes.client.openapi.apis.AuthenticationV1Api;

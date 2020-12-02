@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.profile;
+package com.github.srujankujmar.controller.profile;
 
 import java.io.File;
 import java.io.IOException;
@@ -23,9 +23,9 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Stream;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.controller.commands.args.ProfileLocator;
-import io.hyscale.controller.validator.impl.HprofSchemaValidator;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.controller.commands.args.ProfileLocator;
+import com.github.srujankujmar.controller.validator.impl.HprofSchemaValidator;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

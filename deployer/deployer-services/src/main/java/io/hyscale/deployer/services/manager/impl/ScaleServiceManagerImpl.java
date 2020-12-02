@@ -13,20 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.manager.impl;
+package com.github.srujankujmar.deployer.services.manager.impl;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.utils.ResourceSelectorUtil;
-import io.hyscale.deployer.core.model.ResourceKind;
-import io.hyscale.deployer.services.exception.DeployerErrorCodes;
-import io.hyscale.deployer.services.factory.PodParentFactory;
-import io.hyscale.deployer.services.handler.PodParentHandler;
-import io.hyscale.deployer.services.handler.ResourceHandlers;
-import io.hyscale.deployer.services.handler.impl.V1HorizontalPodAutoScalerHandler;
-import io.hyscale.deployer.services.manager.ScaleServiceManager;
-import io.hyscale.deployer.services.model.*;
-import io.hyscale.deployer.services.processor.PodParentProvider;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.utils.ResourceSelectorUtil;
+import com.github.srujankujmar.deployer.core.model.ResourceKind;
+import com.github.srujankujmar.deployer.services.exception.DeployerErrorCodes;
+import com.github.srujankujmar.deployer.services.factory.PodParentFactory;
+import com.github.srujankujmar.deployer.services.handler.PodParentHandler;
+import com.github.srujankujmar.deployer.services.handler.ResourceHandlers;
+import com.github.srujankujmar.deployer.services.handler.impl.V1HorizontalPodAutoScalerHandler;
+import com.github.srujankujmar.deployer.services.manager.ScaleServiceManager;
+import com.github.srujankujmar.deployer.services.model.*;
+import com.github.srujankujmar.deployer.services.processor.PodParentProvider;
 import io.kubernetes.client.openapi.ApiClient;
 import io.kubernetes.client.openapi.models.V1HorizontalPodAutoscaler;
 import org.slf4j.Logger;

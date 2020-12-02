@@ -13,20 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.builder;
+package com.github.srujankujmar.controller.builder;
 
 import java.io.File;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.config.SetupConfig;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.AuthConfig;
-import io.hyscale.commons.models.K8sConfigFileAuth;
-import io.hyscale.commons.utils.WindowsUtil;
-import io.hyscale.controller.config.ControllerConfig;
-import io.hyscale.controller.exception.ControllerErrorCodes;
+import com.github.srujankujmar.commons.config.SetupConfig;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.AuthConfig;
+import com.github.srujankujmar.commons.models.K8sConfigFileAuth;
+import com.github.srujankujmar.commons.utils.WindowsUtil;
+import com.github.srujankujmar.controller.config.ControllerConfig;
+import com.github.srujankujmar.controller.exception.ControllerErrorCodes;
 
 /**
  *

@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.utils;
+package com.github.srujankujmar.generator.services.utils;
 
 import org.apache.commons.lang3.StringUtils;
 
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.models.Activity;
-import io.hyscale.generator.services.model.ManifestGeneratorActivity;
-import io.hyscale.servicespec.commons.model.service.Replicas;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.models.Activity;
+import com.github.srujankujmar.generator.services.model.ManifestGeneratorActivity;
+import com.github.srujankujmar.servicespec.commons.model.service.Replicas;
 
 /**
  * Utility class to combine replicas related operations like

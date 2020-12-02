@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.commands.get.service;
+package com.github.srujankujmar.controller.commands.get.service;
 
 import java.util.concurrent.Callable;
 
-import io.hyscale.controller.commands.get.HyscaleGetCommand;
+import com.github.srujankujmar.controller.commands.get.HyscaleGetCommand;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.constants.ToolConstants;
 import picocli.CommandLine;
 
 /**

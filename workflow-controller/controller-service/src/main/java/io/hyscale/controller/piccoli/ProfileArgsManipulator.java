@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.piccoli;
+package com.github.srujankujmar.controller.piccoli;
 
 import java.util.Map;
 

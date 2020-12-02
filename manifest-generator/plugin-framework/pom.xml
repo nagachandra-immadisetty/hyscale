@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<parent>
 		<artifactId>manifest-generator</artifactId>
-		<groupId>io.hyscale</groupId>
+		<groupId>com.github.srujankujmar</groupId>
 		<version>0.9.6.0.1</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
@@ -22,11 +22,11 @@
 			<artifactId>validation-api</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>io.hyscale</groupId>
+			<groupId>com.github.srujankujmar</groupId>
 			<artifactId>service-spec-commons</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>io.hyscale</groupId>
+			<groupId>com.github.srujankujmar</groupId>
 			<artifactId>commons</artifactId>
 		</dependency>
 	</dependencies>

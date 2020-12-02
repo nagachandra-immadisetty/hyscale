@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.builder.cleanup.services.impl;
+package com.github.srujankujmar.builder.cleanup.services.impl;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -24,17 +24,17 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.builder.cleanup.services.ImageCleanupProcessor;
-import io.hyscale.builder.services.config.ImageBuilderConfig;
-import io.hyscale.commons.commands.CommandExecutor;
-import io.hyscale.commons.commands.provider.ImageCommandProvider;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
-import io.hyscale.servicespec.commons.util.ImageUtil;
+import com.github.srujankujmar.builder.cleanup.services.ImageCleanupProcessor;
+import com.github.srujankujmar.builder.services.config.ImageBuilderConfig;
+import com.github.srujankujmar.commons.commands.CommandExecutor;
+import com.github.srujankujmar.commons.commands.provider.ImageCommandProvider;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.servicespec.commons.util.ImageUtil;
 
 /**
  * This class preserves the last 'n' service images built by hyscale, where
- * (n = {@link io.hyscale.builder.services.config.ImageBuilderConfig#getNoOfPreservedImages() }).
+ * (n = {@link com.github.srujankujmar.builder.services.config.ImageBuilderConfig#getNoOfPreservedImages() }).
  * Hyscale adds a label to the image as imageowner = hyscale. This clean up happends on all
  * those images which are tagged with the label imageowner=hyscale
  * <p>

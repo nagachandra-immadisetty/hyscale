@@ -13,33 +13,33 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.util;
+package com.github.srujankujmar.controller.util;
 
 import java.util.List;
 import java.util.Objects;
 
 
-import io.hyscale.controller.service.ReplicaProcessingService;
-import io.hyscale.deployer.services.deployer.Deployer;
+import com.github.srujankujmar.controller.service.ReplicaProcessingService;
+import com.github.srujankujmar.deployer.services.deployer.Deployer;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.builder.core.models.BuildContext;
-import io.hyscale.builder.services.util.ImageLogUtil;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.models.AuthConfig;
-import io.hyscale.commons.utils.HyscaleStringUtil;
-import io.hyscale.controller.activity.ControllerActivity;
-import io.hyscale.controller.constants.WorkflowConstants;
-import io.hyscale.controller.model.WorkflowContext;
-import io.hyscale.deployer.services.model.DeployerActivity;
-import io.hyscale.deployer.services.model.ReplicaInfo;
-import io.hyscale.deployer.services.exception.DeployerErrorCodes;
-import io.hyscale.deployer.services.util.DeployerLogUtil;
+import com.github.srujankujmar.builder.core.models.BuildContext;
+import com.github.srujankujmar.builder.services.util.ImageLogUtil;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.models.AuthConfig;
+import com.github.srujankujmar.commons.utils.HyscaleStringUtil;
+import com.github.srujankujmar.controller.activity.ControllerActivity;
+import com.github.srujankujmar.controller.constants.WorkflowConstants;
+import com.github.srujankujmar.controller.model.WorkflowContext;
+import com.github.srujankujmar.deployer.services.model.DeployerActivity;
+import com.github.srujankujmar.deployer.services.model.ReplicaInfo;
+import com.github.srujankujmar.deployer.services.exception.DeployerErrorCodes;
+import com.github.srujankujmar.deployer.services.util.DeployerLogUtil;
 
 /**
  * Utility to fetch deployment logs of the service specified.

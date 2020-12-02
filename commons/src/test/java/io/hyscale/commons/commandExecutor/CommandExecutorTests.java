@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.commandExecutor;
+package com.github.srujankujmar.commons.commandExecutor;
 
-import io.hyscale.commons.commands.CommandExecutor;
-import io.hyscale.commons.constants.TestConstants;
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.commons.models.CommandResult;
+import com.github.srujankujmar.commons.commands.CommandExecutor;
+import com.github.srujankujmar.commons.constants.TestConstants;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.models.CommandResult;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

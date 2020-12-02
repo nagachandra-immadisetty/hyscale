@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.util;
+package com.github.srujankujmar.controller.util;
 
 import java.util.List;
 
@@ -25,8 +25,8 @@ import org.springframework.stereotype.Component;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.controller.directive.ServiceSpecDirectiveUpdateHandler;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.controller.directive.ServiceSpecDirectiveUpdateHandler;
 
 /**
  * Util class to provide operations on service spec

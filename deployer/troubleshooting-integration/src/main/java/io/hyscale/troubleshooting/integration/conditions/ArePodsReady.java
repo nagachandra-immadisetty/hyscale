@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.troubleshooting.integration.conditions;
+package com.github.srujankujmar.troubleshooting.integration.conditions;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.deployer.core.model.ResourceKind;
-import io.hyscale.deployer.services.model.PodCondition;
-import io.hyscale.troubleshooting.integration.errors.TroubleshootErrorCodes;
-import io.hyscale.troubleshooting.integration.models.*;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.deployer.core.model.ResourceKind;
+import com.github.srujankujmar.deployer.services.model.PodCondition;
+import com.github.srujankujmar.troubleshooting.integration.errors.TroubleshootErrorCodes;
+import com.github.srujankujmar.troubleshooting.integration.models.*;
 import io.kubernetes.client.openapi.models.V1Pod;
 import io.kubernetes.client.openapi.models.V1PodCondition;
 import org.slf4j.Logger;

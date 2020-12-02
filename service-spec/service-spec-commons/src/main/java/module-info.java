@@ -25,14 +25,14 @@ module service_spec_commons {
 	requires com.fasterxml.jackson.annotation;
 	requires org.apache.commons.io;
 
-	exports io.hyscale.servicespec.commons.model;
-	exports io.hyscale.servicespec.commons.exception;
-	exports io.hyscale.servicespec.commons.fields;
-	exports io.hyscale.servicespec.commons.model.service;
-	exports io.hyscale.servicespec.commons.json.parser;
-	exports io.hyscale.servicespec.commons.json.parser.constants;
-	exports io.hyscale.servicespec.commons.json.config;
-	exports io.hyscale.servicespec.commons.util;
-	exports io.hyscale.servicespec.commons.builder;
+	exports com.github.srujankujmar.servicespec.commons.model;
+	exports com.github.srujankujmar.servicespec.commons.exception;
+	exports com.github.srujankujmar.servicespec.commons.fields;
+	exports com.github.srujankujmar.servicespec.commons.model.service;
+	exports com.github.srujankujmar.servicespec.commons.json.parser;
+	exports com.github.srujankujmar.servicespec.commons.json.parser.constants;
+	exports com.github.srujankujmar.servicespec.commons.json.config;
+	exports com.github.srujankujmar.servicespec.commons.util;
+	exports com.github.srujankujmar.servicespec.commons.builder;
 
 }

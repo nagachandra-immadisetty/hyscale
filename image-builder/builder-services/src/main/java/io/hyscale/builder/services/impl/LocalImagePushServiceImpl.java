@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.builder.services.impl;
+package com.github.srujankujmar.builder.services.impl;
 
 import java.io.File;
 import java.io.IOException;
@@ -30,27 +30,27 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import io.hyscale.builder.core.models.BuildContext;
-import io.hyscale.builder.core.models.DockerImage;
-import io.hyscale.builder.core.models.ImageBuilderActivity;
-import io.hyscale.builder.services.config.ImageBuilderConfig;
-import io.hyscale.builder.services.exception.ImageBuilderErrorCodes;
-import io.hyscale.builder.services.service.ImagePushService;
-import io.hyscale.builder.services.util.DockerImageUtil;
-import io.hyscale.builder.services.util.ImageLogUtil;
-import io.hyscale.commons.commands.CommandExecutor;
-import io.hyscale.commons.commands.provider.ImageCommandProvider;
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.models.CommandResult;
-import io.hyscale.commons.models.FileMeta;
-import io.hyscale.commons.models.ImageRegistry;
-import io.hyscale.commons.models.Status;
-import io.hyscale.commons.utils.ObjectMapperFactory;
-import io.hyscale.servicespec.commons.fields.HyscaleSpecFields;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
-import io.hyscale.servicespec.commons.util.ImageUtil;
+import com.github.srujankujmar.builder.core.models.BuildContext;
+import com.github.srujankujmar.builder.core.models.DockerImage;
+import com.github.srujankujmar.builder.core.models.ImageBuilderActivity;
+import com.github.srujankujmar.builder.services.config.ImageBuilderConfig;
+import com.github.srujankujmar.builder.services.exception.ImageBuilderErrorCodes;
+import com.github.srujankujmar.builder.services.service.ImagePushService;
+import com.github.srujankujmar.builder.services.util.DockerImageUtil;
+import com.github.srujankujmar.builder.services.util.ImageLogUtil;
+import com.github.srujankujmar.commons.commands.CommandExecutor;
+import com.github.srujankujmar.commons.commands.provider.ImageCommandProvider;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.models.CommandResult;
+import com.github.srujankujmar.commons.models.FileMeta;
+import com.github.srujankujmar.commons.models.ImageRegistry;
+import com.github.srujankujmar.commons.models.Status;
+import com.github.srujankujmar.commons.utils.ObjectMapperFactory;
+import com.github.srujankujmar.servicespec.commons.fields.HyscaleSpecFields;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.servicespec.commons.util.ImageUtil;
 
 @Component
 public class LocalImagePushServiceImpl implements ImagePushService {

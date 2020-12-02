@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.manager.impl;
+package com.github.srujankujmar.controller.manager.impl;
 
 import java.io.File;
 import java.io.IOException;
@@ -32,20 +32,20 @@ import org.springframework.stereotype.Component;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import io.hyscale.commons.config.SetupConfig;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.models.DockerConfig;
-import io.hyscale.commons.models.DockerCredHelper;
-import io.hyscale.commons.models.DockerHubAliases;
-import io.hyscale.commons.models.ImageRegistry;
-import io.hyscale.commons.utils.ObjectMapperFactory;
-import io.hyscale.commons.utils.WindowsUtil;
-import io.hyscale.controller.activity.ControllerActivity;
-import io.hyscale.controller.builder.ImageRegistryBuilder;
-import io.hyscale.controller.config.ControllerConfig;
-import io.hyscale.controller.exception.ControllerErrorCodes;
-import io.hyscale.controller.manager.RegistryManager;
+import com.github.srujankujmar.commons.config.SetupConfig;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.models.DockerConfig;
+import com.github.srujankujmar.commons.models.DockerCredHelper;
+import com.github.srujankujmar.commons.models.DockerHubAliases;
+import com.github.srujankujmar.commons.models.ImageRegistry;
+import com.github.srujankujmar.commons.utils.ObjectMapperFactory;
+import com.github.srujankujmar.commons.utils.WindowsUtil;
+import com.github.srujankujmar.controller.activity.ControllerActivity;
+import com.github.srujankujmar.controller.builder.ImageRegistryBuilder;
+import com.github.srujankujmar.controller.config.ControllerConfig;
+import com.github.srujankujmar.controller.exception.ControllerErrorCodes;
+import com.github.srujankujmar.controller.manager.RegistryManager;
 
 /**
  * Provides registry credentials.

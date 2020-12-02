@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.util;
+package com.github.srujankujmar.controller.util;
 
 import org.joda.time.DateTime;
 import org.ocpsoft.prettytime.PrettyTime;
 
-import io.hyscale.commons.logger.TableFields;
-import io.hyscale.commons.logger.TableFormatter;
-import io.hyscale.deployer.core.model.DeploymentStatus;
-import io.hyscale.deployer.services.model.ReplicaInfo;
+import com.github.srujankujmar.commons.logger.TableFields;
+import com.github.srujankujmar.commons.logger.TableFormatter;
+import com.github.srujankujmar.deployer.core.model.DeploymentStatus;
+import com.github.srujankujmar.deployer.services.model.ReplicaInfo;
 
 /**
  * Utility for deployment status commands

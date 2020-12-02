@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.dockerfile.gen.services.manager;
+package com.github.srujankujmar.dockerfile.gen.services.manager;
 
 import java.util.List;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.dockerfile.gen.services.model.DockerfileGenContext;
-import io.hyscale.commons.models.SupportingFile;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.dockerfile.gen.services.model.DockerfileGenContext;
+import com.github.srujankujmar.commons.models.SupportingFile;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 
 public interface DockerfileEntityManager {
 

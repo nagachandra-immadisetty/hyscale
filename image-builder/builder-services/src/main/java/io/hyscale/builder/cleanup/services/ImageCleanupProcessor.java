@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.builder.cleanup.services;
+package com.github.srujankujmar.builder.cleanup.services;
 
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 
 public interface ImageCleanupProcessor {
 	

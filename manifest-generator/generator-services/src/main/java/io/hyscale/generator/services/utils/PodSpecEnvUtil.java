@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.utils;
+package com.github.srujankujmar.generator.services.utils;
 
-import io.hyscale.commons.models.DecoratedArrayList;
-import io.hyscale.servicespec.commons.model.PropType;
-import io.hyscale.servicespec.commons.model.service.Props;
-import io.hyscale.servicespec.commons.model.service.Secrets;
-import io.hyscale.servicespec.commons.model.service.*;
+import com.github.srujankujmar.commons.models.DecoratedArrayList;
+import com.github.srujankujmar.servicespec.commons.model.PropType;
+import com.github.srujankujmar.servicespec.commons.model.service.Props;
+import com.github.srujankujmar.servicespec.commons.model.service.Secrets;
+import com.github.srujankujmar.servicespec.commons.model.service.*;
 import io.kubernetes.client.openapi.models.V1ConfigMapKeySelector;
 import io.kubernetes.client.openapi.models.V1EnvVar;
 import io.kubernetes.client.openapi.models.V1EnvVarSource;

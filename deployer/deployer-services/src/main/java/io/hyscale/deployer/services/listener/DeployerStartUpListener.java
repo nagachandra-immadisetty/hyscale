@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.listener;
+package com.github.srujankujmar.deployer.services.listener;
 
-import io.hyscale.deployer.services.factory.PodParentFactory;
-import io.hyscale.deployer.services.handler.ResourceHandlers;
+import com.github.srujankujmar.deployer.services.factory.PodParentFactory;
+import com.github.srujankujmar.deployer.services.handler.ResourceHandlers;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;

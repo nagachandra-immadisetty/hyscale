@@ -13,18 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.processor;
+package com.github.srujankujmar.deployer.services.processor;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.utils.ResourceSelectorUtil;
-import io.hyscale.deployer.services.factory.PodParentFactory;
-import io.hyscale.deployer.services.handler.PodParentHandler;
-import io.hyscale.deployer.services.model.PodParent;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.utils.ResourceSelectorUtil;
+import com.github.srujankujmar.deployer.services.factory.PodParentFactory;
+import com.github.srujankujmar.deployer.services.handler.PodParentHandler;
+import com.github.srujankujmar.deployer.services.model.PodParent;
 import io.kubernetes.client.openapi.ApiClient;
 
 @Component

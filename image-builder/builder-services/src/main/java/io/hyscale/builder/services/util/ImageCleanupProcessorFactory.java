@@ -13,19 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.builder.services.util;
+package com.github.srujankujmar.builder.services.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.builder.cleanup.services.ImageCleanupProcessor;
-import io.hyscale.builder.cleanup.services.impl.DeleteAfterBuild;
-import io.hyscale.builder.cleanup.services.impl.DeleteAllImages;
-import io.hyscale.builder.cleanup.services.impl.PreserveAll;
-import io.hyscale.builder.cleanup.services.impl.PreserveLastNUsed;
-import io.hyscale.builder.core.models.ImageCleanUpPolicy;
+import com.github.srujankujmar.builder.cleanup.services.ImageCleanupProcessor;
+import com.github.srujankujmar.builder.cleanup.services.impl.DeleteAfterBuild;
+import com.github.srujankujmar.builder.cleanup.services.impl.DeleteAllImages;
+import com.github.srujankujmar.builder.cleanup.services.impl.PreserveAll;
+import com.github.srujankujmar.builder.cleanup.services.impl.PreserveLastNUsed;
+import com.github.srujankujmar.builder.core.models.ImageCleanUpPolicy;
 
 @Component
 public class ImageCleanupProcessorFactory {

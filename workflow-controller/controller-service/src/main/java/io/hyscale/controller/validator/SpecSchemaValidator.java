@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.validator;
+package com.github.srujankujmar.controller.validator;
 
 import java.io.File;
 import java.util.Iterator;
@@ -27,17 +27,17 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.github.fge.jsonschema.core.report.ProcessingMessage;
 import com.github.fge.jsonschema.core.report.ProcessingReport;
 
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.logger.LoggerTags;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.models.Activity;
-import io.hyscale.commons.models.HyscaleSpecType;
-import io.hyscale.commons.utils.DataFormatConverter;
-import io.hyscale.commons.validator.Validator;
-import io.hyscale.controller.validator.impl.HprofSchemaValidator;
-import io.hyscale.controller.validator.impl.HSpecSchemaValidator;
-import io.hyscale.schema.validator.SchemaValidator;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.logger.LoggerTags;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.models.Activity;
+import com.github.srujankujmar.commons.models.HyscaleSpecType;
+import com.github.srujankujmar.commons.utils.DataFormatConverter;
+import com.github.srujankujmar.commons.validator.Validator;
+import com.github.srujankujmar.controller.validator.impl.HprofSchemaValidator;
+import com.github.srujankujmar.controller.validator.impl.HSpecSchemaValidator;
+import com.github.srujankujmar.schema.validator.SchemaValidator;
 
 /**
  * Parent level validator to validate schema such as

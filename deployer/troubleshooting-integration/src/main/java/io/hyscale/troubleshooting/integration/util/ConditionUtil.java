@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.troubleshooting.integration.util;
+package com.github.srujankujmar.troubleshooting.integration.util;
 
-import io.hyscale.deployer.core.model.ResourceKind;
-import io.hyscale.troubleshooting.integration.models.TroubleshootingContext;
+import com.github.srujankujmar.deployer.core.model.ResourceKind;
+import com.github.srujankujmar.troubleshooting.integration.models.TroubleshootingContext;
 
 import java.util.List;
 
