@@ -38,6 +38,7 @@ jobs:
            echo "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
            echo "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
            mvn -B deploy
+           gpg2 --keyserver hkp://pool.sks-keyservers.net --send-keys b8ffca81d9642e1d
         env:
           MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}
           MAVEN_PASSWORD: ${{ secrets.OSSRH_TOKEN }}
