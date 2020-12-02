@@ -25,7 +25,7 @@ jobs:
            mkdir -p ~/.gnupg/
            printf "$GPG_PASSPHRASE" | base64 --decode > ~/.gnupg/private.key
            printf "xxxxxxxxxxxxxxxxxxxx"
-           echo "$GPG_PASSPHRASE" | gpg --batch --import
+            gpg --batch --import ~/.gnupg/private.key 
            echo "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
            echo "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
            mvn -B deploy
