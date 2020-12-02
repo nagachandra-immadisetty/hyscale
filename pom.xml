@@ -82,7 +82,7 @@
 		<release.name>First Light</release.name>
 		<hspec.supported.version>0.6.2.1</hspec.supported.version>
 		<gpg.keyname>5B5CB3D1BEA3DB64EB3EEEADB8FFCA81D9642E1D</gpg.keyname>
-    <gpg.passphrase>${env.GPG_PASSPHRASE}</gpg.passphrase>
+    <gpg.passphrase>test123</gpg.passphrase>
 	</properties>
 
 	<licenses>
