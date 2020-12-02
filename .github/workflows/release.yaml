@@ -28,8 +28,6 @@ jobs:
            gpg --batch --import ~/.gnupg/private.key 
            echo "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
            echo "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-           export GPG_TTY=$(tty)
-
            mvn -B deploy
         env:
           MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}
