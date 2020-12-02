@@ -81,6 +81,8 @@
 		<copyright.company>Pramati Prism, Inc.</copyright.company>
 		<release.name>First Light</release.name>
 		<hspec.supported.version>0.6.2.1</hspec.supported.version>
+		<gpg.keyname>48540ECBBF00A28EACCF04E720FD12AFB0C9EBA9</gpg.keyname>
+                <gpg.passphrase>${env.GPG_PASSPHRASE}</gpg.passphrase>
 	</properties>
 
 	<licenses>
