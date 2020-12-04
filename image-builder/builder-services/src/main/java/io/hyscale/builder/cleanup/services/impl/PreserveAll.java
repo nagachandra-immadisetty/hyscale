@@ -27,7 +27,6 @@ import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
  * (n = {@link com.github.srujankujmar.builder.services.config.ImageBuilderConfig#getNoOfPreservedImages() }).
  * Hyscale adds a label to the image as imageowner = hyscale. No images are deleted with this
  * property enabled.
- * <p>
  */
 @Component
 public class PreserveAll implements ImageCleanupProcessor {

@@ -38,7 +38,7 @@ import com.github.srujankujmar.servicespec.commons.util.ImageUtil;
  * Hyscale adds a label to the image as imageowner = hyscale. This clean up happends on all
  * those images which are tagged with the label imageowner=hyscale
  * <p>
- * docker rmi $(docker images <serviceimage> --filter label=imageowner=hyscale -q)
+ * docker rmi $(docker images {@literal <serviceimage>} --filter label=imageowner=hyscale -q)
  */
 
 @Component
