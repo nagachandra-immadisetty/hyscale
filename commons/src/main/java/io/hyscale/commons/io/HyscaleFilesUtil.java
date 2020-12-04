@@ -111,6 +111,7 @@ public class HyscaleFilesUtil {
 	 * @param filename File name to create/update the file
 	 * @param fileData File data to create/update the file
 	 * @throws HyscaleException If failed to update file
+	 * @return File
 	 */
 	public static File updateFile(String filename, String fileData) throws HyscaleException {
 		if (StringUtils.isBlank(filename) || StringUtils.isBlank(fileData)) {
@@ -183,6 +184,7 @@ public class HyscaleFilesUtil {
 	 *
 	 * @param filePath File path to check.
 	 * @return File name
+	 * @throws HyscaleException if failed to get Filename from the path.
 	 */
 	public static String getFileName(String filePath) throws HyscaleException {
 		if (StringUtils.isBlank(filePath)) {

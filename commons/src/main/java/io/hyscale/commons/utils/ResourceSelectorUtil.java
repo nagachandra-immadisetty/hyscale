@@ -47,12 +47,13 @@ public class ResourceSelectorUtil {
     public static String getSelector(String appName) {
         return getSelectorFromLabelMap(ResourceLabelBuilder.build(appName));
     }
-    
-    
 
     /**
-	 *it will return namespace field selector
-	 */
+     *  It will return namespace field selector
+     *
+     * @param namespace Name of the namespace
+     * @return Selector
+     */
     public static String getNamespaceSelector(String namespace) {
     	StringBuilder fieldSelector = new StringBuilder();
 		fieldSelector.append(MetadataFieldSelector.METADATA_NAMESPACE.getFieldName()).append(ToolConstants.EQUALS).append(namespace);

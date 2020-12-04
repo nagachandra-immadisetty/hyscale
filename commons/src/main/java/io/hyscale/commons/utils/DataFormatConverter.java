@@ -57,7 +57,7 @@ public class DataFormatConverter {
     /**
      * Converts the given file to Json.
      *
-     * @param file
+     * @param file File to be converted.
      * @return Json String
      * @throws HyscaleException if any IO Exception occurs while conversion.
      */

@@ -28,7 +28,7 @@ public class DockerHubAliases {
     /**
      * gets docker registry aliases if private docker hub registry given,else returns registry itself.
      *
-     * @param registry
+     * @param registry Registry name.
      * @return list of registry aliases
      */
     public static List<String> getDockerRegistryAliases(String registry) {
