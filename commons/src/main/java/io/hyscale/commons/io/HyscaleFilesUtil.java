@@ -46,9 +46,10 @@ public class HyscaleFilesUtil {
 	/**
 	 * Create file in required directory
 	 *
-	 * @param filename
-	 * @param fileData
-	 * @throws HyscaleException
+	 * @param filename File name to create the file
+	 * @param fileData File data to create the file
+	 * @throws HyscaleException if failed to create file
+	 * @return created file.
 	 */
 	public static File createFile(String filename, String fileData) throws HyscaleException {
 		if (StringUtils.isBlank(filename)) {
@@ -71,8 +72,8 @@ public class HyscaleFilesUtil {
 
 	/**
 	 * Create empty file with name
-	 * 
-	 * @param filename
+	 *
+	 * @param filename File name to create the file
 	 * @return created file
 	 * @throws HyscaleException if failed to create file
 	 */
@@ -83,9 +84,9 @@ public class HyscaleFilesUtil {
 
 	/**
 	 * Creates empty file if does not exist
-	 * @param file
-	 * @return file
-	 * @throws HyscaleException
+	 * @param file file to create
+	 * @return file Returns empty file, if does not exist
+	 * @throws HyscaleException if failed to create file
 	 */
 	public static File createEmptyFile(File file) throws HyscaleException {
 		if (file == null) {
@@ -107,9 +108,9 @@ public class HyscaleFilesUtil {
 	/**
 	 * Update/Create file in required directory
 	 *
-	 * @param filename
-	 * @param fileData
-	 * @throws HyscaleException
+	 * @param filename File name to create/update the file
+	 * @param fileData File data to create/update the file
+	 * @throws HyscaleException If failed to update file
 	 */
 	public static File updateFile(String filename, String fileData) throws HyscaleException {
 		if (StringUtils.isBlank(filename) || StringUtils.isBlank(fileData)) {
@@ -130,9 +131,9 @@ public class HyscaleFilesUtil {
 	/**
 	 * Copy file to given directory Makes directory if not exist
 	 *
-	 * @param sourceFile
-	 * @param dest
-	 * @throws HyscaleException
+	 * @param sourceFile Source file
+	 * @param dest Destination file
+	 * @throws HyscaleException If failed to copy file.
 	 */
 	public static void copyFileToDir(File sourceFile, File dest) throws HyscaleException {
 		if (sourceFile == null || !sourceFile.exists()) {
@@ -154,6 +155,10 @@ public class HyscaleFilesUtil {
 
 	/**
 	 * Copy file to destination file Create parent directory if does not exist
+	 *
+	 * @param sourceFile Source file
+	 * @param destFile Destination file
+	 * @throws HyscaleException If failed to copy file.
 	 */
 	public static void copyFile(File sourceFile, File destFile) throws HyscaleException {
 		if (sourceFile == null || !sourceFile.exists()) {
@@ -176,10 +181,9 @@ public class HyscaleFilesUtil {
 	/**
 	 * Returns the file name from the given filepath
 	 *
-	 * @param filePath
-	 * @return
+	 * @param filePath File path to check.
+	 * @return File name
 	 */
-
 	public static String getFileName(String filePath) throws HyscaleException {
 		if (StringUtils.isBlank(filePath)) {
 			throw new HyscaleException(CommonErrorCode.EMPTY_FILE_PATH);
@@ -200,8 +204,8 @@ public class HyscaleFilesUtil {
 	/**
 	 * Clears directory including internal dirs
 	 *
-	 * @param dir
-	 * @throws HyscaleException
+	 * @param dir directory to clear
+	 * @throws HyscaleException If failed to clear the directory.
 	 */
 	public static void clearDirectory(String dir) throws HyscaleException {
 		File directory = new File(dir);
@@ -216,6 +220,11 @@ public class HyscaleFilesUtil {
 		}
 	}
 
+	/**
+	 * Deletes directory including internal dirs
+	 * @param dir directory to delete
+	 * @throws HyscaleException If failed to delete the directory.
+	 */
 	public static void deleteDirectory(String dir) throws HyscaleException {
 		File directory = new File(dir);
 		if (directory.isDirectory()) {
@@ -228,7 +237,13 @@ public class HyscaleFilesUtil {
 			}
 		}
 	}
-	
+
+	/**
+	 *
+	 * @param filepath File path to check.
+	 * @return File data.
+	 * @throws HyscaleException HyscaleException If failed to read file.
+	 */
 	public static String readFileData(File filepath) throws HyscaleException {
 	    if (filepath == null) {
 	        return null;
@@ -247,8 +262,8 @@ public class HyscaleFilesUtil {
 	
 	/**
 	 * List all files present in directory which matches filename regex pattern
-	 * @param directory
-	 * @param fileNamePattern
+	 * @param directory directory to search
+	 * @param fileNamePattern file name pattern to match
 	 * @return List of files
 	 */
 	public static List<File> listFilesWithPattern(String directory, String fileNamePattern) {
@@ -260,8 +275,8 @@ public class HyscaleFilesUtil {
 	
 	/**
      * List all files present in directory which matches filename regex pattern
-     * @param directory
-     * @param fileNamePattern
+     * @param directory directory to search
+     * @param fileNamePattern file name pattern to match
      * @return List of files
      */
 	public static List<File> listFilesWithPattern(File directory, String fileNamePattern){

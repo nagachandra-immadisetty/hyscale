@@ -23,7 +23,7 @@ import com.github.srujankujmar.commons.exception.HyscaleException;
  * service spec, cluster among others
  * @author tushar
  *
- * @param <T>
+ * @param <T> The type of element to validate.
  */
 public interface Validator<T> {
     

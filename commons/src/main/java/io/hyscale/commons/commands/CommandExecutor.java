@@ -36,7 +36,7 @@ import com.github.srujankujmar.commons.io.StringOutputStream;
 import com.github.srujankujmar.commons.models.CommandResult;
 
 /**
- * Class to execute commands using apache commons exec {@link https://commons.apache.org/proper/commons-exec/}
+ * Class to execute commands using <a href="https://ommons.apache.org/proper/commons-exec/">apache commons exec</a>
  * Use case:
  * To execute command and check if it was successful
  * To execute command and get output in String
@@ -61,7 +61,7 @@ public class CommandExecutor {
     /**
      * Executes command with the given input.
      *
-     * @param command
+     * @param command to be executed
      * @param stdInput it is passed to the command as input
      * @return commandResult  if command execution fails it returns CommandResult with null CommandOutput and exit code as 1.
      */
