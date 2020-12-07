@@ -35,7 +35,7 @@ import java.io.IOException;
  */
 public class JsonSchemaValidator {
     private static final Logger LOGGER = LoggerFactory.getLogger(JsonSchemaValidator.class);
-    private static final JsonSchemaFactory factory = JsonSchemaFactory.byDefault();
+    //private static final JsonSchemaFactory factory = JsonSchemaFactory.byDefault();
 
     /**
      * Validates whether the given input string satisfies schema.
@@ -91,7 +91,7 @@ public class JsonSchemaValidator {
             throw new HyscaleException(CommonErrorCode.EMPTY_REFERENCE_SCHEMA_FOUND);
         }
         try {
-            JsonSchema schema = factory.getJsonSchema(referenceSchema);
+            JsonSchema schema = JsonSchemaFactory.byDefault().getJsonSchema(referenceSchema);
             return schema.validate(inputSpecNode, true);
         }catch (ProcessingException p){
             LOGGER.error(p.getMessage());
