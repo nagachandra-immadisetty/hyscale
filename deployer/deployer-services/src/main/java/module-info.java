@@ -25,6 +25,5 @@ module deployer.services {
     requires com.fasterxml.jackson.databind;
     requires zjsonpatch;
     requires okhttp3;
-    requires client.java.api;
-    requires sundr.codegen;
+    requires client.java;
 }
