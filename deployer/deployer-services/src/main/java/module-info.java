@@ -26,4 +26,5 @@ module deployer.services {
     requires zjsonpatch;
     requires okhttp3;
     requires client.java;
+    requires client.java.api;
 }
