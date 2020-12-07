@@ -24,4 +24,7 @@ module deployer.services {
     requires com.google.common;
     requires com.fasterxml.jackson.databind;
     requires zjsonpatch;
+    requires okhttp3;
+    requires client.java.api;
+    requires sundr.codegen;
 }
