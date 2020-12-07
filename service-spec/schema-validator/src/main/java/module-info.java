@@ -11,5 +11,4 @@ module schema.validator {
     requires com.fasterxml.jackson.databind;
     requires jackson.coreutils;
     requires spring.context;
-    requires com.github.mustachejava;
 }
