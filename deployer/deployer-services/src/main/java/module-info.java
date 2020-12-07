@@ -7,6 +7,7 @@ module deployer.services {
     exports com.github.srujankujmar.deployer.services.exception;
     exports com.github.srujankujmar.deployer.services.factory;
     exports com.github.srujankujmar.deployer.services.handler;
+    exports com.github.srujankujmar.deployer.services.handler.impl;
     exports com.github.srujankujmar.deployer.services.listener;
     exports com.github.srujankujmar.deployer.services.manager;
     exports com.github.srujankujmar.deployer.services.model;

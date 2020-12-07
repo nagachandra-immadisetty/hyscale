@@ -18,4 +18,6 @@ module troubleshooting.integration {
     requires slf4j.api;
     requires spring.core;
     requires java.annotation;
+    requires com.fasterxml.jackson.databind;
+    requires org.apache.commons.lang3;
 }
