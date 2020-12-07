@@ -239,7 +239,7 @@
                             </goals>
                             <configuration>
                                 <detectOfflineLinks>false</detectOfflineLinks>
-                                <debug>true</debug>
+                                <!--<debug>true</debug>-->
                             </configuration>
                         </execution>
                     </executions>
