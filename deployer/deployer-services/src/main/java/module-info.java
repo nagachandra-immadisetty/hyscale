@@ -19,5 +19,4 @@ module deployer.services {
     requires deployerModel;
     requires commons;
     requires slf4j.api;
-    requires io.kubernetes.client.openapi.models;
 }
