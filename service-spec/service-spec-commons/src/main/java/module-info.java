@@ -34,5 +34,6 @@ module service_spec_commons {
 	exports com.github.srujankujmar.servicespec.commons.json.config;
 	exports com.github.srujankujmar.servicespec.commons.util;
 	exports com.github.srujankujmar.servicespec.commons.builder;
+	exports com.github.srujankujmar.servicespec.commons.activity;
 
 }

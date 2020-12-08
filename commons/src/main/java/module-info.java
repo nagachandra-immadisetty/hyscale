@@ -25,6 +25,7 @@ module commons {
 	exports com.github.srujankujmar.commons.framework.patch;
 	exports com.github.srujankujmar.commons.commands.provider;
 	exports com.github.srujankujmar.commons.io;
+	exports com.github.srujankujmar.commons.validator;
 
 	requires com.fasterxml.jackson.annotation;
 	requires client.java.api;
