@@ -11,4 +11,5 @@ module schema.validator {
     requires json.schema.core;
     requires spring.boot;
     requires json.schema.validator;
+    requires btf;
 }
