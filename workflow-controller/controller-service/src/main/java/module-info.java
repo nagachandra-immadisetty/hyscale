@@ -40,4 +40,6 @@ module controller.service {
     requires schema.validator;
     requires spring.boot;
     requires spring.beans;
+    requires spring.boot.autoconfigure;
+    requires java.annotation;
 }

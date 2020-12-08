@@ -19,6 +19,7 @@ module builderservices {
 	exports com.github.srujankujmar.builder.services.config;
 	exports com.github.srujankujmar.builder.services.exception;
 	exports com.github.srujankujmar.builder.services.impl;
+	exports com.github.srujankujmar.builder.services.service;
 
 	requires transitive commons;
 	requires transitive service_spec_commons;
