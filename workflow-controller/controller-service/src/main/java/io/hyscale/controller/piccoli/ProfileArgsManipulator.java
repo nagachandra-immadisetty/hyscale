@@ -27,7 +27,7 @@ import picocli.CommandLine.IHelpSectionRenderer;
  * This class provides workaround to overcome cases not handled by picocli
  * Such as picocli doesn't differentiate between case sensitive args
  * TODO remove this once Picocli supports case sensitive options
- * @see https://github.com/remkop/picocli/issues/154 
+ * <a href="http://github.com/remkop/picocli/issues/154">issue #154</a>
  * 
  * @author tushar
  *

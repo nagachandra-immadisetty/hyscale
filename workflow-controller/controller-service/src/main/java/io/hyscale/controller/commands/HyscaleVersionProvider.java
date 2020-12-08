@@ -29,7 +29,7 @@ import picocli.CommandLine;
  * Provides version when 'hyscale --version' command
  * is executed
  * <p>
- * HyScale Version <version> "<release-name>, build <commitID>
+ * HyScale Version {@literal<version>} {@literal<release-name>}, build {@literal<commitID>}
  */
 @Component
 public class HyscaleVersionProvider implements CommandLine.IVersionProvider {
