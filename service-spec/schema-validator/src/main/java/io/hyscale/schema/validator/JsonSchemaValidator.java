@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.github.srujankujmar.schema.validator;
+package io.hyscale.schema.validator;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.github.fge.jackson.JsonLoader;
@@ -21,8 +21,8 @@ import com.github.fge.jsonschema.core.exceptions.ProcessingException;
 import com.github.fge.jsonschema.core.report.ProcessingReport;
 import com.github.fge.jsonschema.main.JsonSchema;
 import com.github.fge.jsonschema.main.JsonSchemaFactory;
-import com.github.srujankujmar.commons.exception.CommonErrorCode;
-import com.github.srujankujmar.commons.exception.HyscaleException;
+import io.hyscale.commons.exception.CommonErrorCode;
+import io.hyscale.commons.exception.HyscaleException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -35,7 +35,7 @@ import java.io.IOException;
  */
 public class JsonSchemaValidator {
     private static final Logger LOGGER = LoggerFactory.getLogger(JsonSchemaValidator.class);
-    //private static final JsonSchemaFactory factory = JsonSchemaFactory.byDefault();
+    private static final JsonSchemaFactory factory = JsonSchemaFactory.byDefault();
 
     /**
      * Validates whether the given input string satisfies schema.
@@ -87,11 +87,11 @@ public class JsonSchemaValidator {
      */
     public static ProcessingReport validate(JsonNode inputSpecNode,JsonNode referenceSchema) throws HyscaleException{
         if(referenceSchema==null || referenceSchema.isNull()){
-            LOGGER.error(CommonErrorCode.EMPTY_REFERENCE_SCHEMA_FOUND.getErrorMessage());
+            LOGGER.error(CommonErrorCode.EMPTY_REFERENCE_SCHEMA_FOUND.getMessage());
             throw new HyscaleException(CommonErrorCode.EMPTY_REFERENCE_SCHEMA_FOUND);
         }
         try {
-            JsonSchema schema = JsonSchemaFactory.byDefault().getJsonSchema(referenceSchema);
+            JsonSchema schema = factory.getJsonSchema(referenceSchema);
             return schema.validate(inputSpecNode, true);
         }catch (ProcessingException p){
             LOGGER.error(p.getMessage());

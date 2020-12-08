@@ -37,7 +37,7 @@ jobs:
            gpg --batch --import ~/.gnupg/private.key
            echo "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
            echo "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-           mvn -B -X deploy -DskipTests=true
+           mvn -B deploy -DskipTests=true
            echo "zzzzzzzzzzzzzzzzz"
         env:
           MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}
