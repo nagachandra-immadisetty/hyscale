@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.util;
+package com.github.srujankujmar.deployer.services.util;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import io.hyscale.deployer.services.model.ReplicaInfo;
+import com.github.srujankujmar.deployer.services.model.ReplicaInfo;
 import io.kubernetes.client.openapi.models.V1Pod;
 
 public class K8sReplicaUtil {

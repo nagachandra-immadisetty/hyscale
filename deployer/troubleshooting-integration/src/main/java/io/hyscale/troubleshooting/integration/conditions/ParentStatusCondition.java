@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.troubleshooting.integration.conditions;
+package com.github.srujankujmar.troubleshooting.integration.conditions;
 
 import java.util.List;
 
@@ -22,21 +22,21 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.deployer.core.model.ResourceKind;
-import io.hyscale.deployer.services.factory.PodParentFactory;
-import io.hyscale.deployer.services.handler.PodParentHandler;
-import io.hyscale.troubleshooting.integration.actions.ParentFailureAction;
-import io.hyscale.troubleshooting.integration.actions.ServiceNotDeployedAction;
-import io.hyscale.troubleshooting.integration.actions.ServiceWithZeroReplicasAction;
-import io.hyscale.troubleshooting.integration.actions.TryAfterSometimeAction;
-import io.hyscale.troubleshooting.integration.models.AbstractedErrorMessage;
-import io.hyscale.troubleshooting.integration.models.DiagnosisReport;
-import io.hyscale.troubleshooting.integration.models.FailedResourceKey;
-import io.hyscale.troubleshooting.integration.models.Node;
-import io.hyscale.troubleshooting.integration.models.TroubleshootingContext;
-import io.hyscale.troubleshooting.integration.models.TroubleshootingContext.ResourceInfo;
-import io.hyscale.troubleshooting.integration.util.ConditionUtil;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.deployer.core.model.ResourceKind;
+import com.github.srujankujmar.deployer.services.factory.PodParentFactory;
+import com.github.srujankujmar.deployer.services.handler.PodParentHandler;
+import com.github.srujankujmar.troubleshooting.integration.actions.ParentFailureAction;
+import com.github.srujankujmar.troubleshooting.integration.actions.ServiceNotDeployedAction;
+import com.github.srujankujmar.troubleshooting.integration.actions.ServiceWithZeroReplicasAction;
+import com.github.srujankujmar.troubleshooting.integration.actions.TryAfterSometimeAction;
+import com.github.srujankujmar.troubleshooting.integration.models.AbstractedErrorMessage;
+import com.github.srujankujmar.troubleshooting.integration.models.DiagnosisReport;
+import com.github.srujankujmar.troubleshooting.integration.models.FailedResourceKey;
+import com.github.srujankujmar.troubleshooting.integration.models.Node;
+import com.github.srujankujmar.troubleshooting.integration.models.TroubleshootingContext;
+import com.github.srujankujmar.troubleshooting.integration.models.TroubleshootingContext.ResourceInfo;
+import com.github.srujankujmar.troubleshooting.integration.util.ConditionUtil;
 import io.kubernetes.client.openapi.models.V1Event;
 
 @Component

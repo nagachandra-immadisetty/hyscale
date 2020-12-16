@@ -1,4 +1,4 @@
-package io.hyscale.generator.services;
+package com.github.srujankujmar.generator.services;
 /**
  * Copyright 2019 Pramati Prism, Inc.
  *

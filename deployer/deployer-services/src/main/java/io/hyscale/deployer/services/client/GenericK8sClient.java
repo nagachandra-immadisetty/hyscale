@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.client;
+package com.github.srujankujmar.deployer.services.client;
 
-import io.hyscale.commons.constants.K8SRuntimeConstants;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.deployer.core.model.CustomResourceKind;
-import io.hyscale.deployer.services.model.CustomListObject;
-import io.hyscale.deployer.services.model.CustomObject;
+import com.github.srujankujmar.commons.constants.K8SRuntimeConstants;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.deployer.core.model.CustomResourceKind;
+import com.github.srujankujmar.deployer.services.model.CustomListObject;
+import com.github.srujankujmar.deployer.services.model.CustomObject;
 import io.kubernetes.client.openapi.ApiClient;
 import io.kubernetes.client.util.generic.GenericKubernetesApi;
 import org.bouncycastle.util.Strings;

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.framework.patch;
+package com.github.srujankujmar.commons.framework.patch;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
@@ -37,10 +37,10 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.skyscreamer.jsonassert.JSONAssert;
 
-import io.hyscale.commons.exception.CommonErrorCode;
-import io.hyscale.commons.exception.HyscaleError;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.io.HyscaleFilesUtil;
+import com.github.srujankujmar.commons.exception.CommonErrorCode;
+import com.github.srujankujmar.commons.exception.HyscaleError;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.io.HyscaleFilesUtil;
 
 public class StrategicPatchTest {
 

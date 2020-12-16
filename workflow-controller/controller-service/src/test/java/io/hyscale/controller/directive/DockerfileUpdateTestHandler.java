@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.directive;
+package com.github.srujankujmar.controller.directive;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
@@ -23,12 +23,12 @@ import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.utils.WindowsUtil;
-import io.hyscale.controller.directive.impl.DockerfileJsonHandler;
-import io.hyscale.servicespec.commons.fields.HyscaleSpecFields;
-import io.hyscale.servicespec.commons.model.service.Dockerfile;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.utils.WindowsUtil;
+import com.github.srujankujmar.controller.directive.impl.DockerfileJsonHandler;
+import com.github.srujankujmar.servicespec.commons.fields.HyscaleSpecFields;
+import com.github.srujankujmar.servicespec.commons.model.service.Dockerfile;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 
 @Component
 public class DockerfileUpdateTestHandler implements IServiceSpecUpdateTestHandler<Dockerfile> {

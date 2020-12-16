@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.troubleshooting.integration.errors;
+package com.github.srujankujmar.troubleshooting.integration.errors;
 
-import io.hyscale.commons.exception.HyscaleError;
+import com.github.srujankujmar.commons.exception.HyscaleError;
 
 public enum TroubleshootErrorCodes implements HyscaleError {
 

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.servicespec.commons.builder;
+package com.github.srujankujmar.servicespec.commons.builder;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -23,8 +23,8 @@ import java.util.Properties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import io.hyscale.commons.framework.patch.FieldMetaData;
-import io.hyscale.commons.framework.patch.FieldMetaDataProvider;
+import com.github.srujankujmar.commons.framework.patch.FieldMetaData;
+import com.github.srujankujmar.commons.framework.patch.FieldMetaDataProvider;
 
 /**
  * Provides field data map which contains primary key field for an entity

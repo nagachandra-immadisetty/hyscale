@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.generator;
+package com.github.srujankujmar.generator.services.generator;
 
 import java.util.List;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.Manifest;
-import io.hyscale.commons.models.ManifestContext;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.Manifest;
+import com.github.srujankujmar.commons.models.ManifestContext;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 
 /**
  * Interface to generate kubernetes manifests from the service spec

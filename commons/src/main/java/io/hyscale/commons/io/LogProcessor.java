@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.io;
+package com.github.srujankujmar.commons.io;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -27,10 +27,10 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 
-import io.hyscale.commons.exception.CommonErrorCode;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.utils.TailHandler;
-import io.hyscale.commons.utils.ThreadPoolUtil;
+import com.github.srujankujmar.commons.exception.CommonErrorCode;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.utils.TailHandler;
+import com.github.srujankujmar.commons.utils.ThreadPoolUtil;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.dockerfile.gen.services.generator;
+package com.github.srujankujmar.dockerfile.gen.services.generator;
 
 import static org.junit.Assert.assertNull;
 import static org.junit.jupiter.api.Assertions.fail;
@@ -26,13 +26,13 @@ import org.junit.jupiter.params.provider.MethodSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import io.hyscale.commons.exception.CommonErrorCode;
-import io.hyscale.commons.exception.HyscaleError;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.dockerfile.gen.services.exception.DockerfileErrorCodes;
-import io.hyscale.dockerfile.gen.services.model.DockerfileGenContext;
-import io.hyscale.dockerfile.gen.services.util.ServiceSpecTestUtil;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.commons.exception.CommonErrorCode;
+import com.github.srujankujmar.commons.exception.HyscaleError;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.dockerfile.gen.services.exception.DockerfileErrorCodes;
+import com.github.srujankujmar.dockerfile.gen.services.model.DockerfileGenContext;
+import com.github.srujankujmar.dockerfile.gen.services.util.ServiceSpecTestUtil;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 
 @SpringBootTest
 class DockerfileGeneratorTest {

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.servicespec.commons.json.config;
+package com.github.srujankujmar.servicespec.commons.json.config;
 
 import com.jayway.jsonpath.Configuration;
 import com.jayway.jsonpath.Option;
@@ -22,7 +22,7 @@ import com.jayway.jsonpath.spi.json.JsonProvider;
 import com.jayway.jsonpath.spi.mapper.JacksonMappingProvider;
 import com.jayway.jsonpath.spi.mapper.MappingProvider;
 
-import io.hyscale.commons.utils.ObjectMapperFactory;
+import com.github.srujankujmar.commons.utils.ObjectMapperFactory;
 
 public class JsonPathConfiguration {
 

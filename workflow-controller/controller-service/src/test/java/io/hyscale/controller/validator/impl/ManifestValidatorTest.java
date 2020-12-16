@@ -13,23 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.validator.impl;
+package com.github.srujankujmar.controller.validator.impl;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
 import java.util.stream.Stream;
 
-import io.hyscale.controller.model.WorkflowContextBuilder;
+import com.github.srujankujmar.controller.model.WorkflowContextBuilder;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.controller.model.WorkflowContext;
-import io.hyscale.controller.util.ServiceSpecTestUtil;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.controller.model.WorkflowContext;
+import com.github.srujankujmar.controller.util.ServiceSpecTestUtil;
 
 @SpringBootTest
 class ManifestValidatorTest {

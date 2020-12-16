@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.component;
+package com.github.srujankujmar.commons.component;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import io.hyscale.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.exception.HyscaleException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

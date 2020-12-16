@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.exception;
+package com.github.srujankujmar.commons.exception;
 
-import io.hyscale.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.constants.ToolConstants;
 
 public class HyscaleException extends Exception {
 

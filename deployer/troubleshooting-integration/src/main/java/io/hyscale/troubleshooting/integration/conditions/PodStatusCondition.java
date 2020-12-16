@@ -13,17 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.troubleshooting.integration.conditions;
+package com.github.srujankujmar.troubleshooting.integration.conditions;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.utils.HyscaleContextUtil;
-import io.hyscale.deployer.core.model.ResourceKind;
-import io.hyscale.deployer.services.model.PodStatusUtil;
-import io.hyscale.troubleshooting.integration.actions.*;
-import io.hyscale.troubleshooting.integration.models.FailedResourceKey;
-import io.hyscale.troubleshooting.integration.models.Node;
-import io.hyscale.deployer.services.model.PodStatus;
-import io.hyscale.troubleshooting.integration.models.TroubleshootingContext;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.utils.HyscaleContextUtil;
+import com.github.srujankujmar.deployer.core.model.ResourceKind;
+import com.github.srujankujmar.deployer.services.model.PodStatusUtil;
+import com.github.srujankujmar.troubleshooting.integration.actions.*;
+import com.github.srujankujmar.troubleshooting.integration.models.FailedResourceKey;
+import com.github.srujankujmar.troubleshooting.integration.models.Node;
+import com.github.srujankujmar.deployer.services.model.PodStatus;
+import com.github.srujankujmar.troubleshooting.integration.models.TroubleshootingContext;
 import io.kubernetes.client.openapi.models.V1Pod;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

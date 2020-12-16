@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package io.hyscale.generator.services.plugins;
+package com.github.srujankujmar.generator.services.plugins;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.ManifestContext;
-import io.hyscale.generator.services.predicates.ManifestPredicates;
-import io.hyscale.generator.services.utils.AgentBuilder;
-import io.hyscale.plugin.framework.annotation.ManifestPlugin;
-import io.hyscale.plugin.framework.handler.ManifestHandler;
-import io.hyscale.plugin.framework.models.ManifestSnippet;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.ManifestContext;
+import com.github.srujankujmar.generator.services.predicates.ManifestPredicates;
+import com.github.srujankujmar.generator.services.utils.AgentBuilder;
+import com.github.srujankujmar.plugin.framework.annotation.ManifestPlugin;
+import com.github.srujankujmar.plugin.framework.handler.ManifestHandler;
+import com.github.srujankujmar.plugin.framework.models.ManifestSnippet;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

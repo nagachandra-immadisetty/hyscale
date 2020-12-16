@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.dockerfile.gen.services.templates;
+package com.github.srujankujmar.dockerfile.gen.services.templates;
 
 import java.util.Map;
 
@@ -23,8 +23,8 @@ import org.springframework.stereotype.Component;
 
 import com.google.common.collect.Maps;
 
-import io.hyscale.commons.models.ConfigTemplate;
-import io.hyscale.dockerfile.gen.services.model.CommandType;
+import com.github.srujankujmar.commons.models.ConfigTemplate;
+import com.github.srujankujmar.dockerfile.gen.services.model.CommandType;
 
 @Component
 public class CommandsTemplateProvider {

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.servicespec.commons.fields;
+package com.github.srujankujmar.servicespec.commons.fields;
 
 /**
  * Defines fields for hyscale service spec

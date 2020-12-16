@@ -13,16 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.dockerfile.gen.services.util;
+package com.github.srujankujmar.dockerfile.gen.services.util;
 
 import java.io.File;
 import java.net.URL;
 
 import org.apache.commons.lang3.StringUtils;
 
-import io.hyscale.commons.config.SetupConfig;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.commons.config.SetupConfig;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 
 public class ServiceSpecTestUtil {
     

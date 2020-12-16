@@ -13,18 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.dockerfile.gen;
+package com.github.srujankujmar.dockerfile.gen;
 
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.ComponentScan;
 
-import io.hyscale.commons.config.SetupConfig;
-import io.hyscale.commons.utils.MustacheTemplateResolver;
+import com.github.srujankujmar.commons.config.SetupConfig;
+import com.github.srujankujmar.commons.utils.MustacheTemplateResolver;
 
 @SpringBootConfiguration
-@ComponentScan(basePackages = "io.hyscale.dockerfile")
+@ComponentScan(basePackages = "com.github.srujankujmar.dockerfile")
 @EnableAutoConfiguration
 public class DockerfileGenTestConfiguration {
 

@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.io;
+package com.github.srujankujmar.commons.io;
 
-import io.hyscale.commons.constants.TestConstants;
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.io.HyscaleFilesUtil;
+import com.github.srujankujmar.commons.constants.TestConstants;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.io.HyscaleFilesUtil;
 
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterEach;

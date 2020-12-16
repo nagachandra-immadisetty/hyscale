@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.builder.services.exception;
+package com.github.srujankujmar.builder.services.exception;
 
-import io.hyscale.commons.exception.HyscaleError;
-import io.hyscale.commons.exception.HyscaleErrorGroup;
+import com.github.srujankujmar.commons.exception.HyscaleError;
+import com.github.srujankujmar.commons.exception.HyscaleErrorGroup;
 
 public enum ImageBuilderErrorCodes implements HyscaleError {
     DOCKER_NOT_INSTALLED("Docker is not installed",HyscaleErrorGroup.IMAGE_BUILD),

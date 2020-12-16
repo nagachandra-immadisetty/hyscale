@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.builder.services.docker.impl;
+package com.github.srujankujmar.builder.services.docker.impl;
 
 import java.io.File;
 import java.util.Arrays;
@@ -51,25 +51,25 @@ import com.github.dockerjava.core.command.BuildImageResultCallback;
 import com.github.dockerjava.core.command.PullImageResultCallback;
 import com.github.dockerjava.core.command.PushImageResultCallback;
 
-import io.hyscale.builder.core.models.BuildContext;
-import io.hyscale.builder.core.models.DockerImage;
-import io.hyscale.builder.core.models.ImageBuilderActivity;
-import io.hyscale.builder.services.config.ImageBuilderConfig;
-import io.hyscale.builder.services.constants.DockerImageConstants;
-import io.hyscale.builder.services.docker.HyscaleDockerClient;
-import io.hyscale.builder.services.exception.ImageBuilderErrorCodes;
-import io.hyscale.builder.services.spring.DockerClientCondition;
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.io.HyscaleFilesUtil;
-import io.hyscale.commons.logger.ActivityContext;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.models.ImageRegistry;
-import io.hyscale.commons.models.Status;
-import io.hyscale.commons.utils.ImageMetadataProvider;
-import io.hyscale.servicespec.commons.model.service.Dockerfile;
-import io.hyscale.servicespec.commons.model.service.Image;
-import io.hyscale.servicespec.commons.util.ImageUtil;
+import com.github.srujankujmar.builder.core.models.BuildContext;
+import com.github.srujankujmar.builder.core.models.DockerImage;
+import com.github.srujankujmar.builder.core.models.ImageBuilderActivity;
+import com.github.srujankujmar.builder.services.config.ImageBuilderConfig;
+import com.github.srujankujmar.builder.services.constants.DockerImageConstants;
+import com.github.srujankujmar.builder.services.docker.HyscaleDockerClient;
+import com.github.srujankujmar.builder.services.exception.ImageBuilderErrorCodes;
+import com.github.srujankujmar.builder.services.spring.DockerClientCondition;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.io.HyscaleFilesUtil;
+import com.github.srujankujmar.commons.logger.ActivityContext;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.models.ImageRegistry;
+import com.github.srujankujmar.commons.models.Status;
+import com.github.srujankujmar.commons.utils.ImageMetadataProvider;
+import com.github.srujankujmar.servicespec.commons.model.service.Dockerfile;
+import com.github.srujankujmar.servicespec.commons.model.service.Image;
+import com.github.srujankujmar.servicespec.commons.util.ImageUtil;
 
 /**
  * DockerClientImpl is docker client to docker daemon to perform all

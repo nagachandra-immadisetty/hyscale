@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.model;
+package com.github.srujankujmar.deployer.services.model;
 
-import io.hyscale.deployer.core.model.DeploymentStatus;
+import com.github.srujankujmar.deployer.core.model.DeploymentStatus;
 
 /**
  * Status of resource on cluster

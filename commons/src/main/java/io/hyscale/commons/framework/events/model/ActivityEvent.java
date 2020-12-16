@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.framework.events.model;
+package com.github.srujankujmar.commons.framework.events.model;
 
 public abstract class ActivityEvent extends HyscaleEvent {
 

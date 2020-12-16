@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.builder.services.spring;
+package com.github.srujankujmar.builder.services.spring;
 
 
-import io.hyscale.builder.services.config.ImageBuilderConfig;
+import com.github.srujankujmar.builder.services.config.ImageBuilderConfig;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.context.annotation.Condition;
 import org.springframework.context.annotation.ConditionContext;

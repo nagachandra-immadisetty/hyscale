@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.builder.services.docker.impl;
+package com.github.srujankujmar.builder.services.docker.impl;
 
 import java.io.File;
 import java.io.IOException;
@@ -27,17 +27,17 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import io.hyscale.commons.commands.provider.ImageCommandProvider;
-import io.hyscale.builder.services.util.DockerImageUtil;
-import io.hyscale.builder.services.util.ImageLogUtil;
-import io.hyscale.builder.services.spring.DockerBinaryCondition;
-import io.hyscale.commons.config.SetupConfig;
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.commons.models.CommandResult;
-import io.hyscale.commons.utils.ImageMetadataProvider;
-import io.hyscale.commons.utils.ObjectMapperFactory;
-import io.hyscale.servicespec.commons.model.service.Image;
-import io.hyscale.servicespec.commons.util.ImageUtil;
+import com.github.srujankujmar.commons.commands.provider.ImageCommandProvider;
+import com.github.srujankujmar.builder.services.util.DockerImageUtil;
+import com.github.srujankujmar.builder.services.util.ImageLogUtil;
+import com.github.srujankujmar.builder.services.spring.DockerBinaryCondition;
+import com.github.srujankujmar.commons.config.SetupConfig;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.models.CommandResult;
+import com.github.srujankujmar.commons.utils.ImageMetadataProvider;
+import com.github.srujankujmar.commons.utils.ObjectMapperFactory;
+import com.github.srujankujmar.servicespec.commons.model.service.Image;
+import com.github.srujankujmar.servicespec.commons.util.ImageUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -45,17 +45,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Conditional;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.builder.services.config.ImageBuilderConfig;
-import io.hyscale.builder.services.docker.HyscaleDockerClient;
-import io.hyscale.builder.services.exception.ImageBuilderErrorCodes;
-import io.hyscale.builder.core.models.BuildContext;
-import io.hyscale.builder.core.models.DockerImage;
-import io.hyscale.builder.core.models.ImageBuilderActivity;
-import io.hyscale.commons.commands.CommandExecutor;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.servicespec.commons.model.service.Dockerfile;
-import io.hyscale.commons.models.Status;
+import com.github.srujankujmar.builder.services.config.ImageBuilderConfig;
+import com.github.srujankujmar.builder.services.docker.HyscaleDockerClient;
+import com.github.srujankujmar.builder.services.exception.ImageBuilderErrorCodes;
+import com.github.srujankujmar.builder.core.models.BuildContext;
+import com.github.srujankujmar.builder.core.models.DockerImage;
+import com.github.srujankujmar.builder.core.models.ImageBuilderActivity;
+import com.github.srujankujmar.commons.commands.CommandExecutor;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.servicespec.commons.model.service.Dockerfile;
+import com.github.srujankujmar.commons.models.Status;
 
 import javax.annotation.PostConstruct;
 

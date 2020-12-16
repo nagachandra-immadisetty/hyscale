@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.events.model;
+package com.github.srujankujmar.deployer.events.model;
 
-import io.hyscale.commons.framework.events.model.ActivityEvent;
-import io.hyscale.commons.framework.events.model.ActivityState;
-import io.hyscale.commons.models.ServiceMetadata;
+import com.github.srujankujmar.commons.framework.events.model.ActivityEvent;
+import com.github.srujankujmar.commons.framework.events.model.ActivityState;
+import com.github.srujankujmar.commons.models.ServiceMetadata;
 
 public class UnDeployEvent extends ActivityEvent {
 

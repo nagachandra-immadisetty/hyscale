@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.builder.services.handler;
+package com.github.srujankujmar.builder.services.handler;
 
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.utils.TailHandler;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.utils.TailHandler;
 
 public class BuildLogHandler implements TailHandler {
 

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.plugins;
+package com.github.srujankujmar.generator.services.plugins;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -35,18 +35,18 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.ManifestContext;
-import io.hyscale.commons.utils.NormalizationUtil;
-import io.hyscale.generator.services.constants.ManifestGenConstants;
-import io.hyscale.generator.services.model.ManifestResource;
-import io.hyscale.generator.services.model.ResourceName;
-import io.hyscale.generator.services.utils.ServiceSpecTestUtil;
-import io.hyscale.plugin.framework.models.ManifestSnippet;
-import io.hyscale.plugin.framework.util.JsonSnippetConvertor;
-import io.hyscale.servicespec.commons.fields.HyscaleSpecFields;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
-import io.hyscale.servicespec.commons.util.ImageUtil;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.ManifestContext;
+import com.github.srujankujmar.commons.utils.NormalizationUtil;
+import com.github.srujankujmar.generator.services.constants.ManifestGenConstants;
+import com.github.srujankujmar.generator.services.model.ManifestResource;
+import com.github.srujankujmar.generator.services.model.ResourceName;
+import com.github.srujankujmar.generator.services.utils.ServiceSpecTestUtil;
+import com.github.srujankujmar.plugin.framework.models.ManifestSnippet;
+import com.github.srujankujmar.plugin.framework.util.JsonSnippetConvertor;
+import com.github.srujankujmar.servicespec.commons.fields.HyscaleSpecFields;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.servicespec.commons.util.ImageUtil;
 
 @SpringBootTest
 class ImageHandlerTest {

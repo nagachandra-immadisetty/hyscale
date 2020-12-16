@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.servicespec.commons.model.service;
+package com.github.srujankujmar.servicespec.commons.model.service;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -21,7 +21,7 @@ import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.JsonDeserializer;
 import com.fasterxml.jackson.databind.JsonNode;
 
-import io.hyscale.servicespec.commons.fields.HyscaleSpecFields;
+import com.github.srujankujmar.servicespec.commons.fields.HyscaleSpecFields;
 
 import java.io.IOException;
 

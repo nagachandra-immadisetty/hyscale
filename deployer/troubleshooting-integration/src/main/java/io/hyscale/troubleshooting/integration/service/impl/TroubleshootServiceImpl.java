@@ -13,18 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.troubleshooting.integration.service.impl;
+package com.github.srujankujmar.troubleshooting.integration.service.impl;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.framework.events.publisher.EventPublisher;
-import io.hyscale.commons.models.K8sAuthorisation;
-import io.hyscale.commons.models.ServiceMetadata;
-import io.hyscale.troubleshooting.integration.builder.TroubleshootingContextCollector;
-import io.hyscale.troubleshooting.integration.conditions.PodStatusCondition;
-import io.hyscale.troubleshooting.integration.models.DiagnosisReport;
-import io.hyscale.troubleshooting.integration.models.Node;
-import io.hyscale.troubleshooting.integration.models.TroubleshootingContext;
-import io.hyscale.troubleshooting.integration.service.TroubleshootService;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.framework.events.publisher.EventPublisher;
+import com.github.srujankujmar.commons.models.K8sAuthorisation;
+import com.github.srujankujmar.commons.models.ServiceMetadata;
+import com.github.srujankujmar.troubleshooting.integration.builder.TroubleshootingContextCollector;
+import com.github.srujankujmar.troubleshooting.integration.conditions.PodStatusCondition;
+import com.github.srujankujmar.troubleshooting.integration.models.DiagnosisReport;
+import com.github.srujankujmar.troubleshooting.integration.models.Node;
+import com.github.srujankujmar.troubleshooting.integration.models.TroubleshootingContext;
+import com.github.srujankujmar.troubleshooting.integration.service.TroubleshootService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

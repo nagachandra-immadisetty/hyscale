@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.util;
+package com.github.srujankujmar.deployer.services.util;
 
 import java.util.EnumMap;
 import java.util.List;
@@ -22,11 +22,11 @@ import java.util.function.BiPredicate;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
-import io.hyscale.deployer.services.model.PodStatus;
+import com.github.srujankujmar.deployer.services.model.PodStatus;
 import org.apache.commons.lang3.StringUtils;
 
-import io.hyscale.commons.constants.K8SRuntimeConstants;
-import io.hyscale.deployer.services.model.PodCondition;
+import com.github.srujankujmar.commons.constants.K8SRuntimeConstants;
+import com.github.srujankujmar.deployer.services.model.PodCondition;
 import io.kubernetes.client.openapi.models.V1ContainerStatus;
 import io.kubernetes.client.openapi.models.V1OwnerReference;
 import io.kubernetes.client.openapi.models.V1Pod;

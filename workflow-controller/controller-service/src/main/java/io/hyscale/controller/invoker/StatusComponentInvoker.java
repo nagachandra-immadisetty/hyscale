@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.invoker;
+package com.github.srujankujmar.controller.invoker;
 
 import java.util.Collections;
 import java.util.List;
@@ -24,21 +24,21 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.component.ComponentInvoker;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.DeploymentContext;
-import io.hyscale.commons.models.K8sAuthorisation;
-import io.hyscale.commons.models.ServiceMetadata;
-import io.hyscale.controller.builder.DeploymentContextBuilder;
-import io.hyscale.controller.constants.WorkflowConstants;
-import io.hyscale.controller.model.WorkflowContext;
-import io.hyscale.controller.util.TroubleshootUtil;
-import io.hyscale.deployer.core.model.DeploymentStatus;
-import io.hyscale.deployer.services.deployer.Deployer;
-import io.hyscale.troubleshooting.integration.actions.ServiceNotDeployedAction;
-import io.hyscale.troubleshooting.integration.models.DiagnosisReport;
-import io.hyscale.troubleshooting.integration.models.TroubleshootingContext;
-import io.hyscale.troubleshooting.integration.service.TroubleshootService;
+import com.github.srujankujmar.commons.component.ComponentInvoker;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.DeploymentContext;
+import com.github.srujankujmar.commons.models.K8sAuthorisation;
+import com.github.srujankujmar.commons.models.ServiceMetadata;
+import com.github.srujankujmar.controller.builder.DeploymentContextBuilder;
+import com.github.srujankujmar.controller.constants.WorkflowConstants;
+import com.github.srujankujmar.controller.model.WorkflowContext;
+import com.github.srujankujmar.controller.util.TroubleshootUtil;
+import com.github.srujankujmar.deployer.core.model.DeploymentStatus;
+import com.github.srujankujmar.deployer.services.deployer.Deployer;
+import com.github.srujankujmar.troubleshooting.integration.actions.ServiceNotDeployedAction;
+import com.github.srujankujmar.troubleshooting.integration.models.DiagnosisReport;
+import com.github.srujankujmar.troubleshooting.integration.models.TroubleshootingContext;
+import com.github.srujankujmar.troubleshooting.integration.service.TroubleshootService;
 
 /**
  * ServiceStatus component acts as a bridge between workflow controller and deployer for status operation

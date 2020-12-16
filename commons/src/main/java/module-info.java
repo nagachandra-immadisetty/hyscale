@@ -14,22 +14,23 @@
  * limitations under the License.
  */
 module commons {
-	exports io.hyscale.commons.constants;
-	exports io.hyscale.commons.models;
-	exports io.hyscale.commons.utils;
-	exports io.hyscale.commons.logger;
-	exports io.hyscale.commons.commands;
-	exports io.hyscale.commons.config;
-	exports io.hyscale.commons.component;
-	exports io.hyscale.commons.exception;
-	exports io.hyscale.commons.framework.patch;
-	exports io.hyscale.commons.framework.events.model;
-	exports io.hyscale.commons.framework.events.publisher;
-	exports io.hyscale.commons.commands.provider;
-	exports io.hyscale.commons.io;
+	exports com.github.srujankujmar.commons.constants;
+	exports com.github.srujankujmar.commons.models;
+	exports com.github.srujankujmar.commons.utils;
+	exports com.github.srujankujmar.commons.logger;
+	exports com.github.srujankujmar.commons.commands;
+	exports com.github.srujankujmar.commons.config;
+	exports com.github.srujankujmar.commons.component;
+	exports com.github.srujankujmar.commons.exception;
+	exports com.github.srujankujmar.commons.framework.patch;
+	exports com.github.srujankujmar.commons.framework.events.model;
+	exports com.github.srujankujmar.commons.framework.events.publisher;
+	exports com.github.srujankujmar.commons.commands.provider;
+	exports com.github.srujankujmar.commons.io;
+	exports com.github.srujankujmar.commons.validator;
 
 	requires com.fasterxml.jackson.annotation;
-        requires com.google.gson;
+	requires com.google.gson;
 	requires client.java.api;
 	requires com.fasterxml.jackson.core;
 	requires com.fasterxml.jackson.databind;

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.component;
+package com.github.srujankujmar.commons.component;
 
 import javax.annotation.PreDestroy;
 import java.util.Collections;

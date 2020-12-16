@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 module builderCore {
-	exports io.hyscale.builder.core.models;
+	exports com.github.srujankujmar.builder.core.models;
 
 	requires commons;
     requires org.apache.commons.lang3;

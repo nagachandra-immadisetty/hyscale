@@ -13,18 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.validator.impl;
+package com.github.srujankujmar.controller.validator.impl;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.fail;
 
-import io.hyscale.controller.model.WorkflowContextBuilder;
+import com.github.srujankujmar.controller.model.WorkflowContextBuilder;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.controller.validator.impl.ClusterValidator;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.controller.validator.impl.ClusterValidator;
 
 @SpringBootTest
 public class ClusterValidatorTest {

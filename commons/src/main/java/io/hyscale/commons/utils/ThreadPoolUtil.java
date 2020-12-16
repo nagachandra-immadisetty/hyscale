@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.utils;
+package com.github.srujankujmar.commons.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

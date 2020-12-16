@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.utils;
+package com.github.srujankujmar.commons.utils;
 
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -21,7 +21,7 @@ import org.apache.commons.lang3.SystemUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import io.hyscale.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.constants.ToolConstants;
 
 /**
  * Utility class to provide windows os specific changes

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.factory;
+package com.github.srujankujmar.deployer.services.factory;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -22,7 +22,7 @@ import java.util.Map;
 import java.util.ServiceLoader;
 import java.util.stream.Collectors;
 
-import io.hyscale.deployer.services.handler.PodParentHandler;
+import com.github.srujankujmar.deployer.services.handler.PodParentHandler;
 
 /**
  * Factory Class to provide PodParentHandlers based on Kind

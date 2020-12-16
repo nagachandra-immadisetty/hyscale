@@ -13,20 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.service;
+package com.github.srujankujmar.controller.service;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.logger.TableFields;
-import io.hyscale.commons.logger.TableFormatter;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.models.AuthConfig;
-import io.hyscale.commons.models.K8sAuthorisation;
-import io.hyscale.controller.builder.K8sAuthConfigBuilder;
-import io.hyscale.controller.util.StatusUtil;
-import io.hyscale.deployer.services.deployer.Deployer;
-import io.hyscale.deployer.services.model.ReplicaInfo;
-import io.hyscale.deployer.services.processor.PodParentProvider;
-import io.hyscale.deployer.services.provider.K8sClientProvider;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.logger.TableFields;
+import com.github.srujankujmar.commons.logger.TableFormatter;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.models.AuthConfig;
+import com.github.srujankujmar.commons.models.K8sAuthorisation;
+import com.github.srujankujmar.controller.builder.K8sAuthConfigBuilder;
+import com.github.srujankujmar.controller.util.StatusUtil;
+import com.github.srujankujmar.deployer.services.deployer.Deployer;
+import com.github.srujankujmar.deployer.services.model.ReplicaInfo;
+import com.github.srujankujmar.deployer.services.processor.PodParentProvider;
+import com.github.srujankujmar.deployer.services.provider.K8sClientProvider;
 import io.kubernetes.client.openapi.ApiClient;
 
 import org.apache.commons.lang3.ArrayUtils;

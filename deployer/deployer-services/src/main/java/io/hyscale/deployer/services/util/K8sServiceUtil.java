@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.util;
+package com.github.srujankujmar.deployer.services.util;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import io.hyscale.deployer.services.model.ServiceAddress;
+import com.github.srujankujmar.deployer.services.model.ServiceAddress;
 import io.kubernetes.client.openapi.models.V1LoadBalancerIngress;
 import io.kubernetes.client.openapi.models.V1Service;
 import io.kubernetes.client.openapi.models.V1ServicePort;

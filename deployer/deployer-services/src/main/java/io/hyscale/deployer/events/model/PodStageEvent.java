@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.events.model;
+package com.github.srujankujmar.deployer.events.model;
 
-import io.hyscale.commons.framework.events.model.HyscaleEvent;
-import io.hyscale.commons.models.ServiceMetadata;
+import com.github.srujankujmar.commons.framework.events.model.HyscaleEvent;
+import com.github.srujankujmar.commons.models.ServiceMetadata;
 
 public class PodStageEvent extends HyscaleEvent {
 

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.utils;
+package com.github.srujankujmar.generator.services.utils;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -28,10 +28,10 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-import io.hyscale.plugin.framework.models.ManifestSnippet;
-import io.hyscale.plugin.framework.util.JsonSnippetConvertor;
-import io.hyscale.servicespec.commons.model.PropType;
-import io.hyscale.servicespec.commons.model.service.Props;
+import com.github.srujankujmar.plugin.framework.models.ManifestSnippet;
+import com.github.srujankujmar.plugin.framework.util.JsonSnippetConvertor;
+import com.github.srujankujmar.servicespec.commons.model.PropType;
+import com.github.srujankujmar.servicespec.commons.model.service.Props;
 
 class ConfigMapDataUtilTest {
 

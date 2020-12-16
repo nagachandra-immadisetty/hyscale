@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.handler.impl;
+package com.github.srujankujmar.deployer.services.handler.impl;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -22,7 +22,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import io.hyscale.deployer.services.model.PodStatusUtil;
+import com.github.srujankujmar.deployer.services.model.PodStatusUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -30,33 +30,33 @@ import com.google.common.collect.Lists;
 import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.framework.events.model.ActivityState;
-import io.hyscale.commons.framework.events.publisher.EventPublisher;
-import io.hyscale.commons.logger.ActivityContext;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.models.AnnotationKey;
-import io.hyscale.commons.models.ResourceLabelKey;
-import io.hyscale.commons.models.ServiceMetadata;
-import io.hyscale.commons.models.Status;
-import io.hyscale.commons.utils.GsonProviderUtil;
-import io.hyscale.commons.utils.HyscaleContextUtil;
-import io.hyscale.commons.utils.ResourceSelectorUtil;
-import io.hyscale.deployer.core.model.ResourceKind;
-import io.hyscale.deployer.core.model.ResourceOperation;
-import io.hyscale.deployer.events.model.PodStageEvent;
-import io.hyscale.deployer.services.config.DeployerEnvConfig;
-import io.hyscale.deployer.services.constants.DeployerConstants;
-import io.hyscale.deployer.services.exception.DeployerErrorCodes;
-import io.hyscale.deployer.services.factory.PodParentFactory;
-import io.hyscale.deployer.services.handler.PodParentHandler;
-import io.hyscale.deployer.services.handler.ResourceLifeCycleHandler;
-import io.hyscale.deployer.services.model.DeployerActivity;
-import io.hyscale.deployer.services.model.PodParent;
-import io.hyscale.deployer.services.predicates.PodPredicates;
-import io.hyscale.deployer.services.processor.PodParentProvider;
-import io.hyscale.deployer.services.util.ExceptionHelper;
-import io.hyscale.deployer.services.util.K8sResourcePatchUtil;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.framework.events.model.ActivityState;
+import com.github.srujankujmar.commons.framework.events.publisher.EventPublisher;
+import com.github.srujankujmar.commons.logger.ActivityContext;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.models.AnnotationKey;
+import com.github.srujankujmar.commons.models.ResourceLabelKey;
+import com.github.srujankujmar.commons.models.ServiceMetadata;
+import com.github.srujankujmar.commons.models.Status;
+import com.github.srujankujmar.commons.utils.GsonProviderUtil;
+import com.github.srujankujmar.commons.utils.HyscaleContextUtil;
+import com.github.srujankujmar.commons.utils.ResourceSelectorUtil;
+import com.github.srujankujmar.deployer.core.model.ResourceKind;
+import com.github.srujankujmar.deployer.core.model.ResourceOperation;
+import com.github.srujankujmar.deployer.events.model.PodStageEvent;
+import com.github.srujankujmar.deployer.services.config.DeployerEnvConfig;
+import com.github.srujankujmar.deployer.services.constants.DeployerConstants;
+import com.github.srujankujmar.deployer.services.exception.DeployerErrorCodes;
+import com.github.srujankujmar.deployer.services.factory.PodParentFactory;
+import com.github.srujankujmar.deployer.services.handler.PodParentHandler;
+import com.github.srujankujmar.deployer.services.handler.ResourceLifeCycleHandler;
+import com.github.srujankujmar.deployer.services.model.DeployerActivity;
+import com.github.srujankujmar.deployer.services.model.PodParent;
+import com.github.srujankujmar.deployer.services.predicates.PodPredicates;
+import com.github.srujankujmar.deployer.services.processor.PodParentProvider;
+import com.github.srujankujmar.deployer.services.util.ExceptionHelper;
+import com.github.srujankujmar.deployer.services.util.K8sResourcePatchUtil;
 import io.kubernetes.client.PodLogs;
 import io.kubernetes.client.custom.V1Patch;
 import io.kubernetes.client.openapi.ApiClient;

@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.dockerfile.gen.services.exception;
+package com.github.srujankujmar.dockerfile.gen.services.exception;
 
-import io.hyscale.commons.exception.HyscaleError;
-import io.hyscale.commons.exception.HyscaleErrorGroup;
+import com.github.srujankujmar.commons.exception.HyscaleError;
+import com.github.srujankujmar.commons.exception.HyscaleErrorGroup;
 
 public enum DockerfileErrorCodes implements HyscaleError {
     FAILED_TO_GENERATE_DOCKERFILE("Failed to generate Dockerfile",HyscaleErrorGroup.DOCKER_FILE_GENERATION),

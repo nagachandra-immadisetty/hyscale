@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.servicespec.commons.activity;
+package com.github.srujankujmar.servicespec.commons.activity;
 
-import io.hyscale.commons.models.Activity;
+import com.github.srujankujmar.commons.models.Activity;
 
 public enum ServiceSpecActivity implements Activity {
     FAILED_TO_DESERIALIZE_REPLICAS("Cannot process the field 'replicas' with error {} , deployment continued with min 1 replica"),

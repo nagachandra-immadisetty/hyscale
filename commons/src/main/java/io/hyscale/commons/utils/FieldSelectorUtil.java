@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.utils;
+package com.github.srujankujmar.commons.utils;
 
-import io.hyscale.commons.models.ResourceFieldSelectorKey;
+import com.github.srujankujmar.commons.models.ResourceFieldSelectorKey;
 
 import java.util.Map;
 import java.util.stream.Collectors;

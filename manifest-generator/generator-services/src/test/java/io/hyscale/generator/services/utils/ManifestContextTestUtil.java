@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.utils;
+package com.github.srujankujmar.generator.services.utils;
 
-import io.hyscale.commons.models.ManifestContext;
-import io.hyscale.generator.services.constants.ManifestGenConstants;
-import io.hyscale.generator.services.model.ManifestResource;
+import com.github.srujankujmar.commons.models.ManifestContext;
+import com.github.srujankujmar.generator.services.constants.ManifestGenConstants;
+import com.github.srujankujmar.generator.services.model.ManifestResource;
 
 public class ManifestContextTestUtil {
     

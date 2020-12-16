@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.util;
+package com.github.srujankujmar.deployer.services.util;
 
 import java.io.IOException;
 
@@ -23,10 +23,10 @@ import com.flipkart.zjsonpatch.JsonDiff;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.utils.GsonProviderUtil;
-import io.hyscale.commons.utils.ObjectMapperFactory;
-import io.hyscale.deployer.services.exception.DeployerErrorCodes;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.utils.GsonProviderUtil;
+import com.github.srujankujmar.commons.utils.ObjectMapperFactory;
+import com.github.srujankujmar.deployer.services.exception.DeployerErrorCodes;
 
 /**
  * Utility for resource path operations

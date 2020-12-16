@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.dockerfile.gen.services.generator;
+package com.github.srujankujmar.dockerfile.gen.services.generator;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.DockerfileEntity;
-import io.hyscale.dockerfile.gen.services.model.DockerfileGenContext;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.DockerfileEntity;
+import com.github.srujankujmar.dockerfile.gen.services.model.DockerfileGenContext;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 
 /**
  * Interface to generate dockerfile from the service spec file

@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.provider;
+package com.github.srujankujmar.generator.services.provider;
 
-import io.hyscale.commons.framework.patch.FieldMetaData;
-import io.hyscale.commons.framework.patch.FieldMetaDataProvider;
-import io.hyscale.servicespec.commons.builder.MapFieldDataProvider;
+import com.github.srujankujmar.commons.framework.patch.FieldMetaData;
+import com.github.srujankujmar.commons.framework.patch.FieldMetaDataProvider;
+import com.github.srujankujmar.servicespec.commons.builder.MapFieldDataProvider;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

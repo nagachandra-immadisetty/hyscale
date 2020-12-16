@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.predicates;
+package com.github.srujankujmar.deployer.services.predicates;
 
-import io.hyscale.deployer.services.model.PodCondition;
-import io.hyscale.deployer.services.util.K8sPodUtil;
+import com.github.srujankujmar.deployer.services.model.PodCondition;
+import com.github.srujankujmar.deployer.services.util.K8sPodUtil;
 import io.kubernetes.client.openapi.models.V1Pod;
 
 import java.util.List;

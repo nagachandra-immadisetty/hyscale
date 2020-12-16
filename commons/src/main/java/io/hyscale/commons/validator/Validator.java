@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.validator;
+package com.github.srujankujmar.commons.validator;
 
-import io.hyscale.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.exception.HyscaleException;
 
 /**
  * Provides methods to be implemented by validators

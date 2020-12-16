@@ -13,16 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.servicespec.commons.model.service;
+package com.github.srujankujmar.servicespec.commons.model.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.utils.ObjectMapperFactory;
-import io.hyscale.servicespec.commons.exception.ServiceSpecErrorCodes;
-import io.hyscale.servicespec.commons.json.parser.JsonTreeParser;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.utils.ObjectMapperFactory;
+import com.github.srujankujmar.servicespec.commons.exception.ServiceSpecErrorCodes;
+import com.github.srujankujmar.servicespec.commons.json.parser.JsonTreeParser;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.io.FileUtils;
 

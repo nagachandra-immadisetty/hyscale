@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.utils;
+package com.github.srujankujmar.generator.services.utils;
 
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
@@ -30,12 +30,12 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 
-import io.hyscale.plugin.framework.models.ManifestSnippet;
-import io.hyscale.plugin.framework.util.JsonSnippetConvertor;
-import io.hyscale.servicespec.commons.model.service.MapBasedSecrets;
-import io.hyscale.servicespec.commons.model.service.SecretType;
-import io.hyscale.servicespec.commons.model.service.Secrets;
-import io.hyscale.servicespec.commons.model.service.SetBasedSecrets;
+import com.github.srujankujmar.plugin.framework.models.ManifestSnippet;
+import com.github.srujankujmar.plugin.framework.util.JsonSnippetConvertor;
+import com.github.srujankujmar.servicespec.commons.model.service.MapBasedSecrets;
+import com.github.srujankujmar.servicespec.commons.model.service.SecretType;
+import com.github.srujankujmar.servicespec.commons.model.service.Secrets;
+import com.github.srujankujmar.servicespec.commons.model.service.SetBasedSecrets;
 
 class SecretsDataUtilTest {
 

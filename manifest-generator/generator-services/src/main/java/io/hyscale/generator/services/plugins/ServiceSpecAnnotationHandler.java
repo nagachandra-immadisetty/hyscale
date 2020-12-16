@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.plugins;
+package com.github.srujankujmar.generator.services.plugins;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -24,22 +24,22 @@ import java.util.Map;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import io.hyscale.commons.utils.ObjectMapperFactory;
-import io.hyscale.generator.services.constants.ManifestGenConstants;
-import io.hyscale.servicespec.commons.fields.HyscaleSpecFields;
-import io.hyscale.servicespec.commons.model.service.Secrets;
+import com.github.srujankujmar.commons.utils.ObjectMapperFactory;
+import com.github.srujankujmar.generator.services.constants.ManifestGenConstants;
+import com.github.srujankujmar.servicespec.commons.fields.HyscaleSpecFields;
+import com.github.srujankujmar.servicespec.commons.model.service.Secrets;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.AnnotationKey;
-import io.hyscale.commons.models.ManifestContext;
-import io.hyscale.plugin.framework.annotation.ManifestPlugin;
-import io.hyscale.plugin.framework.handler.ManifestHandler;
-import io.hyscale.plugin.framework.models.ManifestSnippet;
-import io.hyscale.plugin.framework.util.JsonSnippetConvertor;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.AnnotationKey;
+import com.github.srujankujmar.commons.models.ManifestContext;
+import com.github.srujankujmar.plugin.framework.annotation.ManifestPlugin;
+import com.github.srujankujmar.plugin.framework.handler.ManifestHandler;
+import com.github.srujankujmar.plugin.framework.models.ManifestSnippet;
+import com.github.srujankujmar.plugin.framework.util.JsonSnippetConvertor;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 
 @Component
 @ManifestPlugin(name = "ServiceSpecAnnotationHandler")

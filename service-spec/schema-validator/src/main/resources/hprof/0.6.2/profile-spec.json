@@ -3,7 +3,7 @@
   "type": "object",
   "description": "Profile Spec declares the changes required in-service specification for a particular environment.",
   "definitions": {
-    "io.hyscale.api.map.string": {
+    "com.github.srujankujmar.api.map.string": {
       "description": "Describes the key-value pair of any attribute",
       "type": "object",
       "additionalProperties": {
@@ -14,7 +14,7 @@
         ]
       }
     },
-    "io.hyscale.api.list.string": {
+    "com.github.srujankujmar.api.list.string": {
       "description": "Describes the keys of any attribute",
       "type": "array",
       "items": {
@@ -25,7 +25,7 @@
         "description": "string key"
       }
     },
-    "io.hyscale.api.replicas.Replicas": {
+    "com.github.srujankujmar.api.replicas.Replicas": {
       "description": "Defines the replicas of the service",
       "required": [
         "max",
@@ -60,7 +60,7 @@
           "type": "integer"
         },
         {
-          "$ref": "#/definitions/io.hyscale.api.replicas.Replicas"
+          "$ref": "#/definitions/com.github.srujankujmar.api.replicas.Replicas"
         }
       ],
       "description": "defines the number of replicas that this service should run",
@@ -95,17 +95,17 @@
     "secrets": {
       "anyOf": [
         {
-          "$ref": "#/definitions/io.hyscale.api.list.string"
+          "$ref": "#/definitions/com.github.srujankujmar.api.list.string"
         },
         {
-          "$ref": "#/definitions/io.hyscale.api.map.string"
+          "$ref": "#/definitions/com.github.srujankujmar.api.map.string"
         }
       ],
       "description": "defines all secrets"
     },
     "props": {
       "description": "props is an unstructured key value map",
-      "$ref": "#/definitions/io.hyscale.api.map.string"
+      "$ref": "#/definitions/com.github.srujankujmar.api.map.string"
     },
     "memory": {
       "description": "Defines the range of memory the service has to use in the container for this environment",
@@ -127,16 +127,16 @@
             "description": "Describes the name of the sidecar"
           },
           "props": {
-            "$ref": "#/definitions/io.hyscale.api.map.string",
+            "$ref": "#/definitions/com.github.srujankujmar.api.map.string",
             "description": "Describes the properties of the service sidecar as key-value pairs "
           },
           "secrets": {
             "anyOf": [
               {
-                "$ref": "#/definitions/io.hyscale.api.list.string"
+                "$ref": "#/definitions/com.github.srujankujmar.api.list.string"
               },
               {
-                "$ref": "#/definitions/io.hyscale.api.map.string"
+                "$ref": "#/definitions/com.github.srujankujmar.api.map.string"
               }
             ],
             "description": "Describes the secrets of the profile that have to be overrided "

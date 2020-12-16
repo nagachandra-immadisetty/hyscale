@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.troubleshooting.integration.util;
+package com.github.srujankujmar.troubleshooting.integration.util;
 
-import io.hyscale.troubleshooting.integration.models.AbstractedErrorMessage;
-import io.hyscale.troubleshooting.integration.models.DiagnosisReport;
+import com.github.srujankujmar.troubleshooting.integration.models.AbstractedErrorMessage;
+import com.github.srujankujmar.troubleshooting.integration.models.DiagnosisReport;
 
 public class DiagnosisReportUtil {
     

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.util;
+package com.github.srujankujmar.controller.util;
 
 import java.io.File;
 import java.io.IOException;
@@ -32,18 +32,18 @@ import org.slf4j.LoggerFactory;
 
 import com.fasterxml.jackson.databind.JsonNode;
 
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.commons.exception.CommonErrorCode;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.io.HyscaleFilesUtil;
-import io.hyscale.commons.logger.LoggerTags;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.utils.HyscaleStringUtil;
-import io.hyscale.controller.activity.ControllerActivity;
-import io.hyscale.controller.exception.ControllerErrorCodes;
-import io.hyscale.servicespec.commons.exception.ServiceSpecErrorCodes;
-import io.hyscale.servicespec.commons.fields.HyscaleSpecFields;
-import io.hyscale.servicespec.commons.model.service.Profile;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.exception.CommonErrorCode;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.io.HyscaleFilesUtil;
+import com.github.srujankujmar.commons.logger.LoggerTags;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.utils.HyscaleStringUtil;
+import com.github.srujankujmar.controller.activity.ControllerActivity;
+import com.github.srujankujmar.controller.exception.ControllerErrorCodes;
+import com.github.srujankujmar.servicespec.commons.exception.ServiceSpecErrorCodes;
+import com.github.srujankujmar.servicespec.commons.fields.HyscaleSpecFields;
+import com.github.srujankujmar.servicespec.commons.model.service.Profile;
 
 public class ServiceProfileUtil {
 

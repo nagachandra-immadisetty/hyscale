@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.config;
+package com.github.srujankujmar.commons.config;
 
 import java.io.File;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.utils.HyscaleStringUtil;
+import com.github.srujankujmar.commons.utils.HyscaleStringUtil;
 
 @Component
 public class SetupConfig {

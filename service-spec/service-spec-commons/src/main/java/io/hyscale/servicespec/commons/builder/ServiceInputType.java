@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.servicespec.commons.builder;
+package com.github.srujankujmar.servicespec.commons.builder;
 
 /**
  * Input type for service profile and spec

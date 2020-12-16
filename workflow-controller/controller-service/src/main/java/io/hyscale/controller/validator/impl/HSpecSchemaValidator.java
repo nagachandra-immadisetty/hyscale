@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.validator.impl;
+package com.github.srujankujmar.controller.validator.impl;
 
 import java.io.File;
 
@@ -21,14 +21,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.models.Activity;
-import io.hyscale.commons.models.HyscaleSpecType;
-import io.hyscale.controller.activity.ValidatorActivity;
-import io.hyscale.controller.util.ServiceSpecUtil;
-import io.hyscale.controller.validator.SpecSchemaValidator;
-import io.hyscale.servicespec.commons.activity.ServiceSpecActivity;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.models.Activity;
+import com.github.srujankujmar.commons.models.HyscaleSpecType;
+import com.github.srujankujmar.controller.activity.ValidatorActivity;
+import com.github.srujankujmar.controller.util.ServiceSpecUtil;
+import com.github.srujankujmar.controller.validator.SpecSchemaValidator;
+import com.github.srujankujmar.servicespec.commons.activity.ServiceSpecActivity;
 
 /**
  * Provides Service spec schema related implementation to {@link SpecSchemaValidator}

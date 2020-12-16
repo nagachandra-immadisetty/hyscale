@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.servicespec.commons.json.parser;
+package com.github.srujankujmar.servicespec.commons.json.parser;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,11 +23,11 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jayway.jsonpath.JsonPath;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.utils.ObjectMapperFactory;
-import io.hyscale.servicespec.commons.exception.ServiceSpecErrorCodes;
-import io.hyscale.servicespec.commons.json.config.JsonPathConfiguration;
-import io.hyscale.servicespec.commons.json.parser.constants.JsonPathConstants;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.utils.ObjectMapperFactory;
+import com.github.srujankujmar.servicespec.commons.exception.ServiceSpecErrorCodes;
+import com.github.srujankujmar.servicespec.commons.json.config.JsonPathConfiguration;
+import com.github.srujankujmar.servicespec.commons.json.parser.constants.JsonPathConstants;
 
 /**
  * Parser for json tree

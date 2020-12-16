@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.troubleshooting.integration.service;
+package com.github.srujankujmar.troubleshooting.integration.service;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.K8sAuthorisation;
-import io.hyscale.commons.models.ServiceMetadata;
-import io.hyscale.troubleshooting.integration.models.DiagnosisReport;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.K8sAuthorisation;
+import com.github.srujankujmar.commons.models.ServiceMetadata;
+import com.github.srujankujmar.troubleshooting.integration.models.DiagnosisReport;
 
 import java.util.List;
 

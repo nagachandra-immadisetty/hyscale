@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.profile;
+package com.github.srujankujmar.controller.profile;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.controller.commands.input.ProfileArg;
-import io.hyscale.controller.exception.ControllerErrorCodes;
-import io.hyscale.controller.model.HyscaleInputSpec;
-import io.hyscale.controller.validator.impl.HprofSchemaValidator;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.controller.commands.input.ProfileArg;
+import com.github.srujankujmar.controller.exception.ControllerErrorCodes;
+import com.github.srujankujmar.controller.model.HyscaleInputSpec;
+import com.github.srujankujmar.controller.validator.impl.HprofSchemaValidator;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;

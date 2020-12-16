@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.hooks;
+package com.github.srujankujmar.controller.hooks;
 
-import io.hyscale.commons.component.InvokerHook;
-import io.hyscale.commons.config.SetupConfig;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.io.HyscaleFilesUtil;
-import io.hyscale.controller.constants.WorkflowConstants;
-import io.hyscale.controller.model.WorkflowContext;
+import com.github.srujankujmar.commons.component.InvokerHook;
+import com.github.srujankujmar.commons.config.SetupConfig;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.io.HyscaleFilesUtil;
+import com.github.srujankujmar.controller.constants.WorkflowConstants;
+import com.github.srujankujmar.controller.model.WorkflowContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

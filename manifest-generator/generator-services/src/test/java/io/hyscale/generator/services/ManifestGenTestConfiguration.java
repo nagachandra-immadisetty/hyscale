@@ -1,4 +1,4 @@
-package io.hyscale.generator.services;
+package com.github.srujankujmar.generator.services;
 
 /**
  * Copyright 2019 Pramati Prism, Inc.
@@ -23,11 +23,11 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.ComponentScan;
 
-import io.hyscale.commons.config.SetupConfig;
-import io.hyscale.commons.utils.MustacheTemplateResolver;
+import com.github.srujankujmar.commons.config.SetupConfig;
+import com.github.srujankujmar.commons.utils.MustacheTemplateResolver;
 
 @SpringBootConfiguration
-@ComponentScan(basePackages = "io.hyscale.generator")
+@ComponentScan(basePackages = "com.github.srujankujmar.generator")
 @EnableAutoConfiguration
 public class ManifestGenTestConfiguration {
 

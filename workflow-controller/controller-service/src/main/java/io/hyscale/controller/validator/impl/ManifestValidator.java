@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.validator.impl;
+package com.github.srujankujmar.controller.validator.impl;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-import io.hyscale.commons.io.StructuredOutputHandler;
-import io.hyscale.controller.exception.ControllerErrorCodes;
+import com.github.srujankujmar.commons.io.StructuredOutputHandler;
+import com.github.srujankujmar.controller.exception.ControllerErrorCodes;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,15 +28,15 @@ import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.logger.LoggerTags;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.validator.Validator;
-import io.hyscale.controller.activity.ValidatorActivity;
-import io.hyscale.controller.model.WorkflowContext;
-import io.hyscale.servicespec.commons.fields.HyscaleSpecFields;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
-import io.hyscale.servicespec.commons.model.service.Volume;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.logger.LoggerTags;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.validator.Validator;
+import com.github.srujankujmar.controller.activity.ValidatorActivity;
+import com.github.srujankujmar.controller.model.WorkflowContext;
+import com.github.srujankujmar.servicespec.commons.fields.HyscaleSpecFields;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.servicespec.commons.model.service.Volume;
 
 @Component
 public class ManifestValidator implements Validator<WorkflowContext> {

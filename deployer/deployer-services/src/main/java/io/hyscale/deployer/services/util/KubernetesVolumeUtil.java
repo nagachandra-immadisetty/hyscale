@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.util;
+package com.github.srujankujmar.deployer.services.util;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -24,11 +24,11 @@ import java.util.Set;
 
 import org.apache.commons.lang3.StringUtils;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.utils.ResourceLabelUtil;
-import io.hyscale.deployer.core.model.ResourceKind;
-import io.hyscale.deployer.services.handler.ResourceHandlers;
-import io.hyscale.deployer.services.handler.impl.V1PodHandler;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.utils.ResourceLabelUtil;
+import com.github.srujankujmar.deployer.core.model.ResourceKind;
+import com.github.srujankujmar.deployer.services.handler.ResourceHandlers;
+import com.github.srujankujmar.deployer.services.handler.impl.V1PodHandler;
 import io.kubernetes.client.openapi.ApiClient;
 import io.kubernetes.client.openapi.models.V1PersistentVolumeClaim;
 import io.kubernetes.client.openapi.models.V1PersistentVolumeClaimVolumeSource;

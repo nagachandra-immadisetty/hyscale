@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.exception;
+package com.github.srujankujmar.commons.exception;
 
 public enum CommonErrorCode implements HyscaleError {
     FAILED_TO_GET_VALID_INPUT("Could not get valid input"),

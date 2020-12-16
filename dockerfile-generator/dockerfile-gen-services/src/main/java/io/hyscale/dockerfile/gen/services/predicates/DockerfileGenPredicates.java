@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.dockerfile.gen.services.predicates;
+package com.github.srujankujmar.dockerfile.gen.services.predicates;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.servicespec.commons.model.service.BuildSpec;
-import io.hyscale.servicespec.commons.model.service.Dockerfile;
-import io.hyscale.servicespec.commons.fields.HyscaleSpecFields;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.servicespec.commons.model.service.BuildSpec;
+import com.github.srujankujmar.servicespec.commons.model.service.Dockerfile;
+import com.github.srujankujmar.servicespec.commons.fields.HyscaleSpecFields;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

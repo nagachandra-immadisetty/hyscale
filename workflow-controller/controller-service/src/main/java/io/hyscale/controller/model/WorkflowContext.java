@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.model;
+package com.github.srujankujmar.controller.model;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import io.hyscale.commons.component.ComponentInvokerContext;
-import io.hyscale.commons.models.AuthConfig;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.commons.component.ComponentInvokerContext;
+import com.github.srujankujmar.commons.models.AuthConfig;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 
 /**
  * Context information for workflow controller

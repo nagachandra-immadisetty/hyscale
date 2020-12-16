@@ -13,28 +13,28 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.invoker;
+package com.github.srujankujmar.controller.invoker;
 
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.models.Manifest;
-import io.hyscale.commons.models.ManifestContext;
-import io.hyscale.controller.activity.ControllerActivity;
-import io.hyscale.controller.builder.ManifestContextBuilder;
-import io.hyscale.controller.constants.WorkflowConstants;
-import io.hyscale.controller.model.WorkflowContext;
-import io.hyscale.controller.hooks.ManifestCleanUpHook;
-import io.hyscale.generator.services.config.ManifestConfig;
-import io.hyscale.generator.services.exception.ManifestErrorCodes;
-import io.hyscale.generator.services.generator.ManifestGenerator;
-import io.hyscale.servicespec.commons.exception.ServiceSpecErrorCodes;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.models.Manifest;
+import com.github.srujankujmar.commons.models.ManifestContext;
+import com.github.srujankujmar.controller.activity.ControllerActivity;
+import com.github.srujankujmar.controller.builder.ManifestContextBuilder;
+import com.github.srujankujmar.controller.constants.WorkflowConstants;
+import com.github.srujankujmar.controller.model.WorkflowContext;
+import com.github.srujankujmar.controller.hooks.ManifestCleanUpHook;
+import com.github.srujankujmar.generator.services.config.ManifestConfig;
+import com.github.srujankujmar.generator.services.exception.ManifestErrorCodes;
+import com.github.srujankujmar.generator.services.generator.ManifestGenerator;
+import com.github.srujankujmar.servicespec.commons.exception.ServiceSpecErrorCodes;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.component.ComponentInvoker;
-import io.hyscale.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.component.ComponentInvoker;
+import com.github.srujankujmar.commons.exception.HyscaleException;
 
 import javax.annotation.PostConstruct;
 import java.util.List;

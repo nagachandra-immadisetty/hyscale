@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.builder.events.model;
+package com.github.srujankujmar.builder.events.model;
 
-import io.hyscale.commons.framework.events.model.ActivityEvent;
-import io.hyscale.commons.framework.events.model.ActivityState;
+import com.github.srujankujmar.commons.framework.events.model.ActivityEvent;
+import com.github.srujankujmar.commons.framework.events.model.ActivityState;
 
 public class ImageTagEvent extends ActivityEvent {
 

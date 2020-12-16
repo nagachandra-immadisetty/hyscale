@@ -13,27 +13,27 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.troubleshooting.integration.builder;
+package com.github.srujankujmar.troubleshooting.integration.builder;
 
-import io.hyscale.commons.constants.K8SRuntimeConstants;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.AnnotationKey;
-import io.hyscale.commons.models.K8sAuthorisation;
-import io.hyscale.commons.models.ResourceFieldSelectorKey;
-import io.hyscale.commons.models.ServiceMetadata;
-import io.hyscale.commons.utils.FieldSelectorUtil;
-import io.hyscale.commons.utils.ResourceSelectorUtil;
-import io.hyscale.deployer.core.model.ResourceKind;
-import io.hyscale.deployer.services.handler.ResourceHandlers;
-import io.hyscale.deployer.services.handler.ResourceLifeCycleHandler;
-import io.hyscale.deployer.services.handler.impl.V1DeploymentHandler;
-import io.hyscale.deployer.services.handler.impl.V1EventHandler;
-import io.hyscale.deployer.services.handler.impl.V1StorageClassHandler;
-import io.hyscale.deployer.services.provider.K8sClientProvider;
-import io.hyscale.deployer.services.util.KubernetesResourceUtil;
-import io.hyscale.troubleshooting.integration.errors.TroubleshootErrorCodes;
-import io.hyscale.troubleshooting.integration.models.TroubleshootingContext;
-import io.hyscale.troubleshooting.integration.spring.TroubleshootingConfig;
+import com.github.srujankujmar.commons.constants.K8SRuntimeConstants;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.AnnotationKey;
+import com.github.srujankujmar.commons.models.K8sAuthorisation;
+import com.github.srujankujmar.commons.models.ResourceFieldSelectorKey;
+import com.github.srujankujmar.commons.models.ServiceMetadata;
+import com.github.srujankujmar.commons.utils.FieldSelectorUtil;
+import com.github.srujankujmar.commons.utils.ResourceSelectorUtil;
+import com.github.srujankujmar.deployer.core.model.ResourceKind;
+import com.github.srujankujmar.deployer.services.handler.ResourceHandlers;
+import com.github.srujankujmar.deployer.services.handler.ResourceLifeCycleHandler;
+import com.github.srujankujmar.deployer.services.handler.impl.V1DeploymentHandler;
+import com.github.srujankujmar.deployer.services.handler.impl.V1EventHandler;
+import com.github.srujankujmar.deployer.services.handler.impl.V1StorageClassHandler;
+import com.github.srujankujmar.deployer.services.provider.K8sClientProvider;
+import com.github.srujankujmar.deployer.services.util.KubernetesResourceUtil;
+import com.github.srujankujmar.troubleshooting.integration.errors.TroubleshootErrorCodes;
+import com.github.srujankujmar.troubleshooting.integration.models.TroubleshootingContext;
+import com.github.srujankujmar.troubleshooting.integration.spring.TroubleshootingConfig;
 import io.kubernetes.client.openapi.ApiClient;
 import io.kubernetes.client.openapi.models.*;
 import org.apache.commons.lang3.StringUtils;

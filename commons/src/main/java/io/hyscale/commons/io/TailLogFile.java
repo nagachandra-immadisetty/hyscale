@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.io;
+package com.github.srujankujmar.commons.io;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
-import io.hyscale.commons.utils.TailHandler;
+import com.github.srujankujmar.commons.utils.TailHandler;
 
 public class TailLogFile implements Runnable {
 

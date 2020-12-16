@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.schema.validator;
+package com.github.srujankujmar.schema.validator;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.github.fge.jackson.JsonLoader;
@@ -21,8 +21,8 @@ import com.github.fge.jsonschema.core.exceptions.ProcessingException;
 import com.github.fge.jsonschema.core.report.ProcessingReport;
 import com.github.fge.jsonschema.main.JsonSchema;
 import com.github.fge.jsonschema.main.JsonSchemaFactory;
-import io.hyscale.commons.exception.CommonErrorCode;
-import io.hyscale.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.exception.CommonErrorCode;
+import com.github.srujankujmar.commons.exception.HyscaleException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

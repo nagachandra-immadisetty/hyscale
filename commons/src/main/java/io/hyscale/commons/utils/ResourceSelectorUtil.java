@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.utils;
+package com.github.srujankujmar.commons.utils;
 
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.commons.models.MetadataFieldSelector;
-import io.hyscale.commons.models.ResourceLabelKey;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.models.MetadataFieldSelector;
+import com.github.srujankujmar.commons.models.ResourceLabelKey;
 
 public class ResourceSelectorUtil {
 

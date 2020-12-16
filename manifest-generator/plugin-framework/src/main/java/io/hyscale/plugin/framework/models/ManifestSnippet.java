@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.plugin.framework.models;
+package com.github.srujankujmar.plugin.framework.models;
 
 import javax.validation.constraints.NotNull;
 

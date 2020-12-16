@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.provider;
+package com.github.srujankujmar.controller.provider;
 
 import java.io.File;
 import java.io.IOException;
@@ -31,23 +31,23 @@ import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.io.HyscaleFilesUtil;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.models.ServiceMetadata;
-import io.hyscale.commons.models.Status;
-import io.hyscale.commons.utils.ObjectMapperFactory;
-import io.hyscale.controller.activity.ControllerActivity;
-import io.hyscale.controller.constants.WorkflowConstants;
-import io.hyscale.controller.exception.ControllerErrorCodes;
-import io.hyscale.controller.model.EffectiveServiceSpec;
-import io.hyscale.controller.model.HyscaleInputSpec;
-import io.hyscale.controller.util.ServiceProfileUtil;
-import io.hyscale.controller.util.ServiceSpecUtil;
-import io.hyscale.servicespec.commons.builder.EffectiveServiceSpecBuilder;
-import io.hyscale.servicespec.commons.builder.MapFieldDataProvider;
-import io.hyscale.servicespec.commons.builder.ServiceInputType;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.io.HyscaleFilesUtil;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.models.ServiceMetadata;
+import com.github.srujankujmar.commons.models.Status;
+import com.github.srujankujmar.commons.utils.ObjectMapperFactory;
+import com.github.srujankujmar.controller.activity.ControllerActivity;
+import com.github.srujankujmar.controller.constants.WorkflowConstants;
+import com.github.srujankujmar.controller.exception.ControllerErrorCodes;
+import com.github.srujankujmar.controller.model.EffectiveServiceSpec;
+import com.github.srujankujmar.controller.model.HyscaleInputSpec;
+import com.github.srujankujmar.controller.util.ServiceProfileUtil;
+import com.github.srujankujmar.controller.util.ServiceSpecUtil;
+import com.github.srujankujmar.servicespec.commons.builder.EffectiveServiceSpecBuilder;
+import com.github.srujankujmar.servicespec.commons.builder.MapFieldDataProvider;
+import com.github.srujankujmar.servicespec.commons.builder.ServiceInputType;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 
 @Component
 public class EffectiveServiceSpecProvider {

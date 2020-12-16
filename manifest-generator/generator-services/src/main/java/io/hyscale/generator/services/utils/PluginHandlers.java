@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.utils;
+package com.github.srujankujmar.generator.services.utils;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -30,9 +30,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.generator.services.exception.ManifestErrorCodes;
-import io.hyscale.plugin.framework.handler.ManifestHandler;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.generator.services.exception.ManifestErrorCodes;
+import com.github.srujankujmar.plugin.framework.handler.ManifestHandler;
 
 @Component
 public class PluginHandlers {

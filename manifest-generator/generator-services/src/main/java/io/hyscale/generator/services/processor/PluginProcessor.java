@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.processor;
+package com.github.srujankujmar.generator.services.processor;
 
 import java.io.IOException;
 import java.util.*;
@@ -21,9 +21,9 @@ import java.util.stream.Collectors;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.google.common.collect.Multimap;
-import io.hyscale.commons.models.*;
-import io.hyscale.generator.services.builder.DefaultLabelBuilder;
-import io.hyscale.generator.services.provider.CustomSnippetsProvider;
+import com.github.srujankujmar.commons.models.*;
+import com.github.srujankujmar.generator.services.builder.DefaultLabelBuilder;
+import com.github.srujankujmar.generator.services.provider.CustomSnippetsProvider;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -35,19 +35,19 @@ import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.fasterxml.jackson.dataformat.yaml.YAMLMapper;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.generator.services.config.ManifestConfig;
-import io.hyscale.generator.services.generator.ManifestFileGenerator;
-import io.hyscale.generator.services.model.ManifestGeneratorActivity;
-import io.hyscale.generator.services.model.ManifestNode;
-import io.hyscale.generator.services.utils.ManifestTreeUtils;
-import io.hyscale.generator.services.utils.PluginHandlers;
-import io.hyscale.plugin.framework.handler.ManifestHandler;
-import io.hyscale.plugin.framework.models.ManifestMeta;
-import io.hyscale.plugin.framework.models.ManifestSnippet;
-import io.hyscale.servicespec.commons.fields.HyscaleSpecFields;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.generator.services.config.ManifestConfig;
+import com.github.srujankujmar.generator.services.generator.ManifestFileGenerator;
+import com.github.srujankujmar.generator.services.model.ManifestGeneratorActivity;
+import com.github.srujankujmar.generator.services.model.ManifestNode;
+import com.github.srujankujmar.generator.services.utils.ManifestTreeUtils;
+import com.github.srujankujmar.generator.services.utils.PluginHandlers;
+import com.github.srujankujmar.plugin.framework.handler.ManifestHandler;
+import com.github.srujankujmar.plugin.framework.models.ManifestMeta;
+import com.github.srujankujmar.plugin.framework.models.ManifestSnippet;
+import com.github.srujankujmar.servicespec.commons.fields.HyscaleSpecFields;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 import org.yaml.snakeyaml.Yaml;
 
 @Component

@@ -13,19 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.validator.impl;
+package com.github.srujankujmar.controller.validator.impl;
 
 import java.io.File;
 
-import io.hyscale.commons.constants.ValidationConstants;
-import io.hyscale.servicespec.commons.activity.ServiceSpecActivity;
+import com.github.srujankujmar.commons.constants.ValidationConstants;
+import com.github.srujankujmar.servicespec.commons.activity.ServiceSpecActivity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.models.Activity;
-import io.hyscale.commons.validator.Validator;
-import io.hyscale.controller.activity.ValidatorActivity;
-import io.hyscale.controller.validator.InputSpecValidator;
+import com.github.srujankujmar.commons.models.Activity;
+import com.github.srujankujmar.commons.validator.Validator;
+import com.github.srujankujmar.controller.activity.ValidatorActivity;
+import com.github.srujankujmar.controller.validator.InputSpecValidator;
 
 /**
  * Provides Service spec related details to {@link InputSpecValidator}

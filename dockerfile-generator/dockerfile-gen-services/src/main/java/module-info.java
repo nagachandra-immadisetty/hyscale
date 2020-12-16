@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 module dockerfilegenservices {
-	exports io.hyscale.dockerfile.gen.services.generator;
-	exports io.hyscale.dockerfile.gen.services.model;
-	exports io.hyscale.dockerfile.gen.services.constants;
-	exports io.hyscale.dockerfile.gen.services.persist;
-	exports io.hyscale.dockerfile.gen.services.templates;
-	exports io.hyscale.dockerfile.gen.services.predicates;
-	exports io.hyscale.dockerfile.gen.services.exception;
-	exports io.hyscale.dockerfile.gen.services.config;
+	exports com.github.srujankujmar.dockerfile.gen.services.generator;
+	exports com.github.srujankujmar.dockerfile.gen.services.model;
+	exports com.github.srujankujmar.dockerfile.gen.services.constants;
+	exports com.github.srujankujmar.dockerfile.gen.services.persist;
+	exports com.github.srujankujmar.dockerfile.gen.services.templates;
+	exports com.github.srujankujmar.dockerfile.gen.services.predicates;
+	exports com.github.srujankujmar.dockerfile.gen.services.exception;
+	exports com.github.srujankujmar.dockerfile.gen.services.config;
 
 	requires service_spec_commons;
 	requires dockerfilegencore;

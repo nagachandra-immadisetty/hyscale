@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.troubleshooting.integration.actions;
+package com.github.srujankujmar.troubleshooting.integration.actions;
 
-import io.hyscale.troubleshooting.integration.models.*;
+import com.github.srujankujmar.troubleshooting.integration.models.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;

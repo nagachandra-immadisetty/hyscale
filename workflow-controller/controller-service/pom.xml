@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>io.hyscale</groupId>
+        <groupId>com.github.srujankujmar</groupId>
         <artifactId>workflow-controller</artifactId>
         <version>0.9.8.1</version>
     </parent>
@@ -21,7 +21,7 @@
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.hyscale</groupId>
+            <groupId>com.github.srujankujmar</groupId>
             <artifactId>controller-core</artifactId>
         </dependency>
         <!-- Validate Command input -->
@@ -45,35 +45,35 @@
             <artifactId>picocli-spring-boot-starter</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.hyscale</groupId>
+            <groupId>com.github.srujankujmar</groupId>
             <artifactId>commons</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.hyscale</groupId>
+            <groupId>com.github.srujankujmar</groupId>
             <artifactId>service-spec-commons</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.hyscale</groupId>
+            <groupId>com.github.srujankujmar</groupId>
             <artifactId>deployer-services</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.hyscale</groupId>
+            <groupId>com.github.srujankujmar</groupId>
             <artifactId>generator-services</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.hyscale</groupId>
+            <groupId>com.github.srujankujmar</groupId>
             <artifactId>dockerfile-gen-services</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.hyscale</groupId>
+            <groupId>com.github.srujankujmar</groupId>
             <artifactId>builder-services</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.hyscale</groupId>
+            <groupId>com.github.srujankujmar</groupId>
             <artifactId>schema-validator</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.hyscale</groupId>
+            <groupId>com.github.srujankujmar</groupId>
             <artifactId>troubleshooting-integration</artifactId>
         </dependency>
         <!-- ServiceStatus time formatting -->
@@ -90,7 +90,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>io.hyscale.controller.initializer.HyscaleInitializer</mainClass>
+                    <mainClass>com.github.srujankujmar.controller.initializer.HyscaleInitializer</mainClass>
                     <requiresUnpack>
                         <dependency>
                             <groupId>io.kubernetes</groupId>

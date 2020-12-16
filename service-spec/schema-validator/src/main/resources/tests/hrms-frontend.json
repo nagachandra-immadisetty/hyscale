@@ -1,7 +1,7 @@
 {
   "namde": "hrmsfrontend",
   "image": {
-    "name": "gcr.io/hyscale-hrms/hrms-frontend:1.0",
+    "name": "gcr.com.github.srujankujmar-hrms/hrms-frontend:1.0",
     "dockerfile": {
       "path": "./"
     }

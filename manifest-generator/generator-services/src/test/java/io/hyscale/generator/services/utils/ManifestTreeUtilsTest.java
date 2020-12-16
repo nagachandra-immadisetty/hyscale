@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.utils;
+package com.github.srujankujmar.generator.services.utils;
 
 import static org.junit.jupiter.api.Assertions.fail;
 
@@ -39,12 +39,12 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
-import io.hyscale.commons.exception.HyscaleError;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.io.HyscaleFilesUtil;
-import io.hyscale.commons.utils.ObjectMapperFactory;
-import io.hyscale.generator.services.exception.ManifestErrorCodes;
-import io.hyscale.plugin.framework.util.JsonSnippetConvertor;
+import com.github.srujankujmar.commons.exception.HyscaleError;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.io.HyscaleFilesUtil;
+import com.github.srujankujmar.commons.utils.ObjectMapperFactory;
+import com.github.srujankujmar.generator.services.exception.ManifestErrorCodes;
+import com.github.srujankujmar.plugin.framework.util.JsonSnippetConvertor;
 
 /**
  * To test JsonNode injectSnippet(String snippet, String path, ObjectNode rootNode)

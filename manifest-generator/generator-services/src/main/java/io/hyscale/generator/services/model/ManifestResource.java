@@ -13,19 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.model;
+package com.github.srujankujmar.generator.services.model;
 
 import java.util.Map;
 import java.util.function.Predicate;
 
-import io.hyscale.generator.services.builder.DefaultLabelBuilder;
-import io.hyscale.generator.services.constants.ManifestGenConstants;
-import io.hyscale.generator.services.predicates.ManifestPredicates;
+import com.github.srujankujmar.generator.services.builder.DefaultLabelBuilder;
+import com.github.srujankujmar.generator.services.constants.ManifestGenConstants;
+import com.github.srujankujmar.generator.services.predicates.ManifestPredicates;
 import org.apache.commons.lang3.StringUtils;
 
-import io.hyscale.commons.models.ServiceMetadata;
-import io.hyscale.commons.utils.NormalizationUtil;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.commons.models.ServiceMetadata;
+import com.github.srujankujmar.commons.utils.NormalizationUtil;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 
 public enum ManifestResource {
 

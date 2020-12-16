@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.exception;
+package com.github.srujankujmar.controller.exception;
 
-import io.hyscale.commons.exception.HyscaleError;
-import io.hyscale.commons.exception.HyscaleErrorGroup;
+import com.github.srujankujmar.commons.exception.HyscaleError;
+import com.github.srujankujmar.commons.exception.HyscaleErrorGroup;
 
 /**
  * Error Codes for Workflow Controller

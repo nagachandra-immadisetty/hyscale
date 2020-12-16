@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.dockerfile.gen.services.templates;
+package com.github.srujankujmar.dockerfile.gen.services.templates;
 
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.models.ConfigTemplate;
+import com.github.srujankujmar.commons.models.ConfigTemplate;
 
 @Component
 public class DockerfileTemplateProvider {

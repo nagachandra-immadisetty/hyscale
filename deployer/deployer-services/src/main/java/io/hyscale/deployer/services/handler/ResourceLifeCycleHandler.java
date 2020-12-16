@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.handler;
+package com.github.srujankujmar.deployer.services.handler;
 
 import java.util.Iterator;
 import java.util.List;
@@ -21,16 +21,16 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.logger.ActivityContext;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.models.Status;
-import io.hyscale.commons.utils.ThreadPoolUtil;
-import io.hyscale.deployer.core.model.ResourceOperation;
-import io.hyscale.deployer.services.constants.DeployerConstants;
-import io.hyscale.deployer.services.exception.DeployerErrorCodes;
-import io.hyscale.deployer.services.model.ResourceStatus;
-import io.hyscale.deployer.services.model.ResourceUpdatePolicy;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.logger.ActivityContext;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.models.Status;
+import com.github.srujankujmar.commons.utils.ThreadPoolUtil;
+import com.github.srujankujmar.deployer.core.model.ResourceOperation;
+import com.github.srujankujmar.deployer.services.constants.DeployerConstants;
+import com.github.srujankujmar.deployer.services.exception.DeployerErrorCodes;
+import com.github.srujankujmar.deployer.services.model.ResourceStatus;
+import com.github.srujankujmar.deployer.services.model.ResourceUpdatePolicy;
 import io.kubernetes.client.openapi.ApiClient;
 import io.kubernetes.client.openapi.models.V1DeleteOptions;
 

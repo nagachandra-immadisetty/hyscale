@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.util;
+package com.github.srujankujmar.controller.util;
 
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.controller.activity.ControllerActivity;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.controller.activity.ControllerActivity;
 
 public class UndeployCommandUtil {
 

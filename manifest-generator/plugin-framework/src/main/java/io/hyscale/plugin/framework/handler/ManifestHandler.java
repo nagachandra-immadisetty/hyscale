@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.plugin.framework.handler;
+package com.github.srujankujmar.plugin.framework.handler;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.ManifestContext;
-import io.hyscale.plugin.framework.models.ManifestSnippet;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.ManifestContext;
+import com.github.srujankujmar.plugin.framework.models.ManifestSnippet;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 
 import java.util.List;
 

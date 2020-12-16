@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.utils;
+package com.github.srujankujmar.commons.utils;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -21,8 +21,8 @@ import java.util.Map;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.commands.provider.ImageCommandProvider;
-import io.hyscale.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.commands.provider.ImageCommandProvider;
+import com.github.srujankujmar.commons.constants.ToolConstants;
 
 @Component
 public class ImageMetadataProvider {

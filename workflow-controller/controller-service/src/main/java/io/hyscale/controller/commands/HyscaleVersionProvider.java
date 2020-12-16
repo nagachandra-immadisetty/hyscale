@@ -13,16 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.commands;
+package com.github.srujankujmar.controller.commands;
 
-import io.hyscale.controller.constants.GitPropertyConstants;
-import io.hyscale.controller.util.GitPropertyProvider;
-import org.apache.commons.lang.StringUtils;
+import com.github.srujankujmar.controller.constants.GitPropertyConstants;
+import com.github.srujankujmar.controller.util.GitPropertyProvider;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.info.BuildProperties;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.constants.ToolConstants;
 import picocli.CommandLine;
 
 /**

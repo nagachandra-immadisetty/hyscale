@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.builder;
+package com.github.srujankujmar.controller.builder;
 
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.commons.models.Auth;
-import io.hyscale.commons.models.CredsStoreEntity;
-import io.hyscale.commons.models.DockerCredHelper;
-import io.hyscale.commons.models.ImageRegistry;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.models.Auth;
+import com.github.srujankujmar.commons.models.CredsStoreEntity;
+import com.github.srujankujmar.commons.models.DockerCredHelper;
+import com.github.srujankujmar.commons.models.ImageRegistry;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.Base64;

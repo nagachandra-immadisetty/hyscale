@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.dockerfile.gen.services.generator.impl;
+package com.github.srujankujmar.dockerfile.gen.services.generator.impl;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -24,24 +24,24 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.ConfigTemplate;
-import io.hyscale.commons.models.DecoratedArrayList;
-import io.hyscale.commons.utils.MustacheTemplateResolver;
-import io.hyscale.commons.utils.WindowsUtil;
-import io.hyscale.dockerfile.gen.services.model.CommandType;
-import io.hyscale.dockerfile.gen.core.models.DockerfileContent;
-import io.hyscale.dockerfile.gen.services.config.DockerfileGenConfig;
-import io.hyscale.dockerfile.gen.services.constants.DockerfileGenConstants;
-import io.hyscale.dockerfile.gen.services.exception.DockerfileErrorCodes;
-import io.hyscale.dockerfile.gen.services.generator.DockerfileContentGenerator;
-import io.hyscale.dockerfile.gen.services.manager.impl.DockerScriptManagerImpl;
-import io.hyscale.dockerfile.gen.services.model.DockerfileGenContext;
-import io.hyscale.dockerfile.gen.services.templates.DockerfileTemplateProvider;
-import io.hyscale.servicespec.commons.fields.HyscaleSpecFields;
-import io.hyscale.servicespec.commons.model.service.BuildSpec;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.ConfigTemplate;
+import com.github.srujankujmar.commons.models.DecoratedArrayList;
+import com.github.srujankujmar.commons.utils.MustacheTemplateResolver;
+import com.github.srujankujmar.commons.utils.WindowsUtil;
+import com.github.srujankujmar.dockerfile.gen.services.model.CommandType;
+import com.github.srujankujmar.dockerfile.gen.core.models.DockerfileContent;
+import com.github.srujankujmar.dockerfile.gen.services.config.DockerfileGenConfig;
+import com.github.srujankujmar.dockerfile.gen.services.constants.DockerfileGenConstants;
+import com.github.srujankujmar.dockerfile.gen.services.exception.DockerfileErrorCodes;
+import com.github.srujankujmar.dockerfile.gen.services.generator.DockerfileContentGenerator;
+import com.github.srujankujmar.dockerfile.gen.services.manager.impl.DockerScriptManagerImpl;
+import com.github.srujankujmar.dockerfile.gen.services.model.DockerfileGenContext;
+import com.github.srujankujmar.dockerfile.gen.services.templates.DockerfileTemplateProvider;
+import com.github.srujankujmar.servicespec.commons.fields.HyscaleSpecFields;
+import com.github.srujankujmar.servicespec.commons.model.service.BuildSpec;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 
 @Component
 public class DockerfileContentGenImpl implements DockerfileContentGenerator {

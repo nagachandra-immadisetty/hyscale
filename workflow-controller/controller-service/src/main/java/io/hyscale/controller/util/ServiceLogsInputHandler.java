@@ -13,23 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.util;
+package com.github.srujankujmar.controller.util;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-import io.hyscale.commons.io.HyscaleInputReader;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.controller.activity.ControllerActivity;
-import io.hyscale.controller.exception.ControllerErrorCodes;
-import io.hyscale.controller.service.ReplicaProcessingService;
+import com.github.srujankujmar.commons.io.HyscaleInputReader;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.controller.activity.ControllerActivity;
+import com.github.srujankujmar.controller.exception.ControllerErrorCodes;
+import com.github.srujankujmar.controller.service.ReplicaProcessingService;
 import org.apache.commons.lang3.math.NumberUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.deployer.services.model.ReplicaInfo;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.deployer.services.model.ReplicaInfo;
 
 @Component
 public class ServiceLogsInputHandler {

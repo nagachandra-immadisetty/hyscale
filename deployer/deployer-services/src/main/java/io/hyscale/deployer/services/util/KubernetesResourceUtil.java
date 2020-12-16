@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.util;
+package com.github.srujankujmar.deployer.services.util;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -22,10 +22,10 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Map;
 
-import io.hyscale.commons.models.KubernetesResource;
-import io.hyscale.commons.models.Manifest;
-import io.hyscale.commons.models.YAMLManifest;
-import io.hyscale.deployer.services.model.CustomObject;
+import com.github.srujankujmar.commons.models.KubernetesResource;
+import com.github.srujankujmar.commons.models.Manifest;
+import com.github.srujankujmar.commons.models.YAMLManifest;
+import com.github.srujankujmar.deployer.services.model.CustomObject;
 import io.kubernetes.client.openapi.models.V1ObjectMeta;
 import io.kubernetes.client.util.Yaml;
 import org.slf4j.Logger;

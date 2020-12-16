@@ -13,20 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.handler.impl;
+package com.github.srujankujmar.deployer.services.handler.impl;
 
 import java.util.List;
 
-import io.hyscale.deployer.services.constants.DeployerConstants;
-import io.hyscale.deployer.services.exception.DeployerErrorCodes;
-import io.hyscale.deployer.services.handler.ResourceLifeCycleHandler;
-import io.hyscale.deployer.services.util.ExceptionHelper;
+import com.github.srujankujmar.deployer.services.constants.DeployerConstants;
+import com.github.srujankujmar.deployer.services.exception.DeployerErrorCodes;
+import com.github.srujankujmar.deployer.services.handler.ResourceLifeCycleHandler;
+import com.github.srujankujmar.deployer.services.util.ExceptionHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.deployer.core.model.ResourceKind;
-import io.hyscale.deployer.core.model.ResourceOperation;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.deployer.core.model.ResourceKind;
+import com.github.srujankujmar.deployer.core.model.ResourceOperation;
 import io.kubernetes.client.openapi.ApiClient;
 import io.kubernetes.client.openapi.ApiException;
 import io.kubernetes.client.openapi.apis.StorageV1Api;

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.dockerfile.gen.services.constants;
+package com.github.srujankujmar.dockerfile.gen.services.constants;
 
 public class DockerfileGenConstants {
 

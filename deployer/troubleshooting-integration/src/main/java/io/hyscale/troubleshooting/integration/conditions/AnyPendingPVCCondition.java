@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.troubleshooting.integration.conditions;
+package com.github.srujankujmar.troubleshooting.integration.conditions;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.deployer.core.model.ResourceKind;
-import io.hyscale.troubleshooting.integration.models.*;
-import io.hyscale.troubleshooting.integration.actions.ContactClusterAdministratorAction;
-import io.hyscale.troubleshooting.integration.actions.PendingPvcAction;
-import io.hyscale.troubleshooting.integration.constants.TroubleshootConstants;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.deployer.core.model.ResourceKind;
+import com.github.srujankujmar.troubleshooting.integration.models.*;
+import com.github.srujankujmar.troubleshooting.integration.actions.ContactClusterAdministratorAction;
+import com.github.srujankujmar.troubleshooting.integration.actions.PendingPvcAction;
+import com.github.srujankujmar.troubleshooting.integration.constants.TroubleshootConstants;
 import io.kubernetes.client.openapi.models.V1PersistentVolumeClaim;
 import io.kubernetes.client.openapi.models.V1Pod;
 import org.slf4j.Logger;

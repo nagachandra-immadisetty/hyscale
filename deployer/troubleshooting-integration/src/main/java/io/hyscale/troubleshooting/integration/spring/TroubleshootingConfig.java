@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.troubleshooting.integration.spring;
+package com.github.srujankujmar.troubleshooting.integration.spring;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
@@ -23,7 +23,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class TroubleshootingConfig {
 
-    @Value("${io.hyscale.troubleshooting.trace:false}")
+    @Value("${com.github.srujankujmar.troubleshooting.trace:false}")
     private boolean trace;
 
     public boolean isTrace() {

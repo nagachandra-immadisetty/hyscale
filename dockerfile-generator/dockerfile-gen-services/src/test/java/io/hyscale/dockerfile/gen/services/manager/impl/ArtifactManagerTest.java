@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.dockerfile.gen.services.manager.impl;
+package com.github.srujankujmar.dockerfile.gen.services.manager.impl;
 
 import static org.junit.jupiter.api.Assertions.fail;
 
@@ -28,16 +28,16 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 
-import io.hyscale.commons.exception.CommonErrorCode;
-import io.hyscale.commons.exception.HyscaleError;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.SupportingFile;
-import io.hyscale.dockerfile.gen.services.config.DockerfileGenConfig;
-import io.hyscale.dockerfile.gen.services.exception.DockerfileErrorCodes;
-import io.hyscale.dockerfile.gen.services.util.ServiceSpecTestUtil;
-import io.hyscale.servicespec.commons.fields.HyscaleSpecFields;
-import io.hyscale.servicespec.commons.model.service.Artifact;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.commons.exception.CommonErrorCode;
+import com.github.srujankujmar.commons.exception.HyscaleError;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.SupportingFile;
+import com.github.srujankujmar.dockerfile.gen.services.config.DockerfileGenConfig;
+import com.github.srujankujmar.dockerfile.gen.services.exception.DockerfileErrorCodes;
+import com.github.srujankujmar.dockerfile.gen.services.util.ServiceSpecTestUtil;
+import com.github.srujankujmar.servicespec.commons.fields.HyscaleSpecFields;
+import com.github.srujankujmar.servicespec.commons.model.service.Artifact;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 
 @SpringBootTest
 class ArtifactManagerTest {

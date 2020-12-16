@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.dockerfile.gen.services.model;
+package com.github.srujankujmar.dockerfile.gen.services.model;
 
 
-import io.hyscale.dockerfile.gen.services.constants.DockerfileGenConstants;
+import com.github.srujankujmar.dockerfile.gen.services.constants.DockerfileGenConstants;
 
 public enum CommandType {
     CONFIGURE {

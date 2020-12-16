@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.troubleshooting.integration.models;
+package com.github.srujankujmar.troubleshooting.integration.models;
 
-import io.hyscale.commons.models.ServiceMetadata;
+import com.github.srujankujmar.commons.models.ServiceMetadata;
 import io.kubernetes.client.openapi.models.V1Event;
 
 import java.util.*;

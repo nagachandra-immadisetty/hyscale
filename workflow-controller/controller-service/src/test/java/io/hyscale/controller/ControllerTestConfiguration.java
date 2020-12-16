@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller;
+package com.github.srujankujmar.controller;
 
 import java.net.URL;
 
@@ -28,10 +28,10 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ComponentScan.Filter;
 import org.springframework.context.annotation.FilterType;
 
-import io.hyscale.controller.config.ControllerConfig;
+import com.github.srujankujmar.controller.config.ControllerConfig;
 
 @SpringBootConfiguration
-@ComponentScan(basePackages = "io.hyscale", 
+@ComponentScan(basePackages = "com.github.srujankujmar", 
 excludeFilters = @Filter(type = FilterType.ASSIGNABLE_TYPE, classes = CommandLineRunner.class))
 @EnableAutoConfiguration
 public class ControllerTestConfiguration {

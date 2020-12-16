@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.util;
+package com.github.srujankujmar.deployer.services.util;
 
 import org.apache.commons.lang3.StringUtils;
 
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.deployer.services.exception.DeployerErrorCodes;
-import io.hyscale.deployer.core.model.ResourceOperation;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.deployer.services.exception.DeployerErrorCodes;
+import com.github.srujankujmar.deployer.core.model.ResourceOperation;
 import io.kubernetes.client.openapi.ApiException;
 
 /**

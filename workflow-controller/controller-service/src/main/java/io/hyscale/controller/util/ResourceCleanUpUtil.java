@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.util;
+package com.github.srujankujmar.controller.util;
 
-import io.hyscale.commons.utils.ThreadPoolUtil;
+import com.github.srujankujmar.commons.utils.ThreadPoolUtil;
 
 /**
  * Executed after completion of command

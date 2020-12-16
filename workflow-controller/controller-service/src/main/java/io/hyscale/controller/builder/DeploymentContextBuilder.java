@@ -13,16 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.builder;
+package com.github.srujankujmar.controller.builder;
 
 import java.util.List;
 
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.models.DeploymentContext;
-import io.hyscale.commons.models.Manifest;
-import io.hyscale.controller.constants.WorkflowConstants;
-import io.hyscale.controller.model.WorkflowContext;
+import com.github.srujankujmar.commons.models.DeploymentContext;
+import com.github.srujankujmar.commons.models.Manifest;
+import com.github.srujankujmar.controller.constants.WorkflowConstants;
+import com.github.srujankujmar.controller.model.WorkflowContext;
 
 /**
  * Builder to create {@link DeploymentContext} from {@link WorkflowContext}

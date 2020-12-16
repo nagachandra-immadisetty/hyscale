@@ -13,21 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.processor;
+package com.github.srujankujmar.generator.services.processor;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
-import io.hyscale.commons.exception.CommonErrorCode;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.framework.patch.StrategicPatch;
-import io.hyscale.commons.io.HyscaleFilesUtil;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.utils.DataFormatConverter;
-import io.hyscale.commons.utils.ObjectMapperFactory;
-import io.hyscale.generator.services.exception.ManifestErrorCodes;
-import io.hyscale.generator.services.model.ManifestGeneratorActivity;
-import io.hyscale.generator.services.provider.CustomSnippetsFieldDataProvider;
+import com.github.srujankujmar.commons.exception.CommonErrorCode;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.framework.patch.StrategicPatch;
+import com.github.srujankujmar.commons.io.HyscaleFilesUtil;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.utils.DataFormatConverter;
+import com.github.srujankujmar.commons.utils.ObjectMapperFactory;
+import com.github.srujankujmar.generator.services.exception.ManifestErrorCodes;
+import com.github.srujankujmar.generator.services.model.ManifestGeneratorActivity;
+import com.github.srujankujmar.generator.services.provider.CustomSnippetsFieldDataProvider;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;

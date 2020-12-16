@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.generator;
+package com.github.srujankujmar.generator.services.generator;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 
-import io.hyscale.commons.models.ServiceMetadata;
-import io.hyscale.generator.services.builder.DefaultLabelBuilder;
-import io.hyscale.generator.services.model.ManifestResource;
-import io.hyscale.plugin.framework.models.ManifestSnippet;
-import io.hyscale.plugin.framework.util.JsonSnippetConvertor;
+import com.github.srujankujmar.commons.models.ServiceMetadata;
+import com.github.srujankujmar.generator.services.builder.DefaultLabelBuilder;
+import com.github.srujankujmar.generator.services.model.ManifestResource;
+import com.github.srujankujmar.plugin.framework.models.ManifestSnippet;
+import com.github.srujankujmar.plugin.framework.util.JsonSnippetConvertor;
 import io.kubernetes.client.openapi.models.V1ObjectMeta;
 
 public class MetadataManifestSnippetGenerator {

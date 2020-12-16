@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.commands.provider;
+package com.github.srujankujmar.commons.commands.provider;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -24,10 +24,10 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.config.SetupConfig;
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.commons.utils.ImageMetadataProvider;
-import io.hyscale.commons.utils.NormalizationUtil;
+import com.github.srujankujmar.commons.config.SetupConfig;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.utils.ImageMetadataProvider;
+import com.github.srujankujmar.commons.utils.NormalizationUtil;
 
 @Component
 public class ImageCommandProvider {

@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.manager;
+package com.github.srujankujmar.deployer.services.manager;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.deployer.services.model.ScaleSpec;
-import io.hyscale.deployer.services.model.ScaleStatus;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.deployer.services.model.ScaleSpec;
+import com.github.srujankujmar.deployer.services.model.ScaleStatus;
 import io.kubernetes.client.openapi.ApiClient;
 
 public interface ScaleServiceManager {

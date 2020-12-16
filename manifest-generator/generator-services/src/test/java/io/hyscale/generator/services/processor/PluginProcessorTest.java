@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.processor;
+package com.github.srujankujmar.generator.services.processor;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
@@ -37,13 +37,13 @@ import org.junit.jupiter.params.provider.MethodSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.ManifestContext;
-import io.hyscale.generator.services.model.ManifestNode;
-import io.hyscale.generator.services.model.ManifestResource;
-import io.hyscale.generator.services.utils.ServiceSpecTestUtil;
-import io.hyscale.plugin.framework.models.ManifestMeta;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.ManifestContext;
+import com.github.srujankujmar.generator.services.model.ManifestNode;
+import com.github.srujankujmar.generator.services.model.ManifestResource;
+import com.github.srujankujmar.generator.services.utils.ServiceSpecTestUtil;
+import com.github.srujankujmar.plugin.framework.models.ManifestMeta;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 
 /**
  * Test to ensure snippets are generated for each expected resource

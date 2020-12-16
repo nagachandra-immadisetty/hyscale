@@ -13,23 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.servicespec.commons.builder;
+package com.github.srujankujmar.servicespec.commons.builder;
 
 
 import java.io.IOException;
 
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.utils.DataFormatConverter;
-import io.hyscale.servicespec.commons.activity.ServiceSpecActivity;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.utils.DataFormatConverter;
+import com.github.srujankujmar.servicespec.commons.activity.ServiceSpecActivity;
 import org.apache.commons.lang3.StringUtils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.framework.patch.FieldMetaDataProvider;
-import io.hyscale.commons.framework.patch.StrategicPatch;
-import io.hyscale.commons.utils.ObjectMapperFactory;
-import io.hyscale.servicespec.commons.exception.ServiceSpecErrorCodes;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.framework.patch.FieldMetaDataProvider;
+import com.github.srujankujmar.commons.framework.patch.StrategicPatch;
+import com.github.srujankujmar.commons.utils.ObjectMapperFactory;
+import com.github.srujankujmar.servicespec.commons.exception.ServiceSpecErrorCodes;
 
 /**
  * Builder to create effective service spec by merging service spec and service profile

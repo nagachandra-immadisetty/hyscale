@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.plugins;
+package com.github.srujankujmar.generator.services.plugins;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -37,17 +37,17 @@ import org.springframework.boot.test.context.SpringBootTest;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.Auth;
-import io.hyscale.commons.models.DockerConfig;
-import io.hyscale.commons.models.ImageRegistry;
-import io.hyscale.commons.models.ManifestContext;
-import io.hyscale.commons.utils.ObjectMapperFactory;
-import io.hyscale.generator.services.model.ManifestResource;
-import io.hyscale.generator.services.utils.ServiceSpecTestUtil;
-import io.hyscale.plugin.framework.models.ManifestSnippet;
-import io.hyscale.plugin.framework.util.JsonSnippetConvertor;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.Auth;
+import com.github.srujankujmar.commons.models.DockerConfig;
+import com.github.srujankujmar.commons.models.ImageRegistry;
+import com.github.srujankujmar.commons.models.ManifestContext;
+import com.github.srujankujmar.commons.utils.ObjectMapperFactory;
+import com.github.srujankujmar.generator.services.model.ManifestResource;
+import com.github.srujankujmar.generator.services.utils.ServiceSpecTestUtil;
+import com.github.srujankujmar.plugin.framework.models.ManifestSnippet;
+import com.github.srujankujmar.plugin.framework.util.JsonSnippetConvertor;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 
 @SpringBootTest
 class ImagePullSecretHandlerTest {

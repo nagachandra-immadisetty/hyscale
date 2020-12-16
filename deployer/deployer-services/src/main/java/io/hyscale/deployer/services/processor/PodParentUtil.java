@@ -13,16 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.processor;
+package com.github.srujankujmar.deployer.services.processor;
 
-import io.hyscale.commons.models.AnnotationKey;
-import io.hyscale.commons.utils.ResourceSelectorUtil;
-import io.hyscale.deployer.core.model.CustomResourceKind;
-import io.hyscale.deployer.core.model.ResourceKind;
-import io.hyscale.deployer.services.client.GenericK8sClient;
-import io.hyscale.deployer.services.client.K8sResourceClient;
-import io.hyscale.deployer.services.model.CustomObject;
-import io.hyscale.deployer.services.model.PodParent;
+import com.github.srujankujmar.commons.models.AnnotationKey;
+import com.github.srujankujmar.commons.utils.ResourceSelectorUtil;
+import com.github.srujankujmar.deployer.core.model.CustomResourceKind;
+import com.github.srujankujmar.deployer.core.model.ResourceKind;
+import com.github.srujankujmar.deployer.services.client.GenericK8sClient;
+import com.github.srujankujmar.deployer.services.client.K8sResourceClient;
+import com.github.srujankujmar.deployer.services.model.CustomObject;
+import com.github.srujankujmar.deployer.services.model.PodParent;
 import io.kubernetes.client.openapi.ApiClient;
 
 import java.util.*;

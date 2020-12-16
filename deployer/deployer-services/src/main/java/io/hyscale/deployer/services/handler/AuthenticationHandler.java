@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.handler;
+package com.github.srujankujmar.deployer.services.handler;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.AuthConfig;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.AuthConfig;
 
 public interface AuthenticationHandler<T extends AuthConfig> {
 	public boolean authenticate(T authConfig) throws HyscaleException;

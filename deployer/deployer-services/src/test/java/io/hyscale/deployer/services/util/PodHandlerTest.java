@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.util;
+package com.github.srujankujmar.deployer.services.util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.hyscale.commons.utils.ObjectMapperFactory;
+import com.github.srujankujmar.commons.utils.ObjectMapperFactory;
 import io.kubernetes.client.openapi.ApiClient;
 import io.kubernetes.client.openapi.models.*;
 import org.junit.jupiter.api.Assertions;

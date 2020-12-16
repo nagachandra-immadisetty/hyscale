@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.utils;
+package com.github.srujankujmar.commons.utils;
 
 import java.util.EnumMap;
 import java.util.Map;
 
-import io.hyscale.commons.constants.K8SRuntimeConstants;
+import com.github.srujankujmar.commons.constants.K8SRuntimeConstants;
 import org.apache.commons.lang3.StringUtils;
 
-import io.hyscale.commons.models.ResourceLabelKey;
+import com.github.srujankujmar.commons.models.ResourceLabelKey;
 
 public class ResourceLabelBuilder {
 

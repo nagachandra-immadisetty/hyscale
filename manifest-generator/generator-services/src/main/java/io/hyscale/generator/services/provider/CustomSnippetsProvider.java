@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.provider;
+package com.github.srujankujmar.generator.services.provider;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.generator.services.processor.CustomSnippetsProcessor;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.generator.services.processor.CustomSnippetsProcessor;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 import org.springframework.beans.factory.annotation.Autowired;

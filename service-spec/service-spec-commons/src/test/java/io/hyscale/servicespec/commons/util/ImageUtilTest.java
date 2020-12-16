@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.servicespec.commons.util;
+package com.github.srujankujmar.servicespec.commons.util;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -37,11 +37,11 @@ import org.junit.jupiter.params.provider.MethodSource;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.utils.ObjectMapperFactory;
-import io.hyscale.servicespec.BaseFieldsTest;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.utils.ObjectMapperFactory;
+import com.github.srujankujmar.servicespec.BaseFieldsTest;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 
 public class ImageUtilTest {
     

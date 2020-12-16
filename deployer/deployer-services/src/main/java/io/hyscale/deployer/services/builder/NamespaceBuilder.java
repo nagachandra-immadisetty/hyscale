@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.builder;
+package com.github.srujankujmar.deployer.services.builder;
 
-import io.hyscale.deployer.core.model.ResourceKind;
+import com.github.srujankujmar.deployer.core.model.ResourceKind;
 import io.kubernetes.client.openapi.models.V1Namespace;
 import io.kubernetes.client.openapi.models.V1ObjectMeta;
 

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.dockerfile.gen.services.manager.impl;
+package com.github.srujankujmar.dockerfile.gen.services.manager.impl;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.anyMap;
@@ -35,16 +35,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.CollectionUtils;
 
-import io.hyscale.commons.exception.CommonErrorCode;
-import io.hyscale.commons.exception.HyscaleError;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.SupportingFile;
-import io.hyscale.commons.utils.MustacheTemplateResolver;
-import io.hyscale.dockerfile.gen.services.exception.DockerfileErrorCodes;
-import io.hyscale.dockerfile.gen.services.model.CommandType;
-import io.hyscale.dockerfile.gen.services.model.DockerfileGenContext;
-import io.hyscale.dockerfile.gen.services.util.ServiceSpecTestUtil;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.commons.exception.CommonErrorCode;
+import com.github.srujankujmar.commons.exception.HyscaleError;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.SupportingFile;
+import com.github.srujankujmar.commons.utils.MustacheTemplateResolver;
+import com.github.srujankujmar.dockerfile.gen.services.exception.DockerfileErrorCodes;
+import com.github.srujankujmar.dockerfile.gen.services.model.CommandType;
+import com.github.srujankujmar.dockerfile.gen.services.model.DockerfileGenContext;
+import com.github.srujankujmar.dockerfile.gen.services.util.ServiceSpecTestUtil;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 
 @SpringBootTest
 @TestInstance(Lifecycle.PER_CLASS)

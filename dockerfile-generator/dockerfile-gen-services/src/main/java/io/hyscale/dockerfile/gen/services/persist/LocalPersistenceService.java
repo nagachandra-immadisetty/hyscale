@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.dockerfile.gen.services.persist;
+package com.github.srujankujmar.dockerfile.gen.services.persist;
 
 import java.io.File;
 import java.util.List;
@@ -23,16 +23,16 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.io.HyscaleFilesUtil;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.models.Status;
-import io.hyscale.dockerfile.gen.services.model.DockerfileGenContext;
-import io.hyscale.dockerfile.gen.core.models.DockerfileActivity;
-import io.hyscale.dockerfile.gen.core.models.DockerfileContent;
-import io.hyscale.commons.models.FileSpec;
-import io.hyscale.commons.models.SupportingFile;
-import io.hyscale.dockerfile.gen.services.config.DockerfileGenConfig;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.io.HyscaleFilesUtil;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.models.Status;
+import com.github.srujankujmar.dockerfile.gen.services.model.DockerfileGenContext;
+import com.github.srujankujmar.dockerfile.gen.core.models.DockerfileActivity;
+import com.github.srujankujmar.dockerfile.gen.core.models.DockerfileContent;
+import com.github.srujankujmar.commons.models.FileSpec;
+import com.github.srujankujmar.commons.models.SupportingFile;
+import com.github.srujankujmar.dockerfile.gen.services.config.DockerfileGenConfig;
 
 @Component
 public class LocalPersistenceService extends DockerfilePersistenceService {

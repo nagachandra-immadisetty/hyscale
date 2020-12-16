@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.util;
+package com.github.srujankujmar.deployer.services.util;
 
-import io.hyscale.deployer.services.builder.NamespaceBuilder;
+import com.github.srujankujmar.deployer.services.builder.NamespaceBuilder;
 import io.kubernetes.client.openapi.models.V1Namespace;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

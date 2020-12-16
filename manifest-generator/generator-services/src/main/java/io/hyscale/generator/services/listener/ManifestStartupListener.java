@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.listener;
+package com.github.srujankujmar.generator.services.listener;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.generator.services.utils.PluginHandlers;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.generator.services.utils.PluginHandlers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

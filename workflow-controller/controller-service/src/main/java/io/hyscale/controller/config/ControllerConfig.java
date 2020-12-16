@@ -13,19 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.config;
+package com.github.srujankujmar.controller.config;
 
 import javax.annotation.PostConstruct;
 
-import io.hyscale.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.constants.ToolConstants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.config.SetupConfig;
-import io.hyscale.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.config.SetupConfig;
+import com.github.srujankujmar.commons.exception.HyscaleException;
 
 /**
  * Controller level config details such as docker registry config, kube config
@@ -37,10 +37,10 @@ public class ControllerConfig {
 
     private static final Logger logger = LoggerFactory.getLogger(ControllerConfig.class);
 
-    @Value(("${io.hyscale.default.registry.conf}"))
+    @Value(("${com.github.srujankujmar.default.registry.conf}"))
     private String defaultRegistryConfAsString;
 
-    @Value(("${io.hyscale.default.kube.conf}"))
+    @Value(("${com.github.srujankujmar.default.kube.conf}"))
     private String defaultKubeConfAsString;
 
     private String defaultRegistryConf;

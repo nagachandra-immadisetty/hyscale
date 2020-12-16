@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.builder.services.impl;
+package com.github.srujankujmar.builder.services.impl;
 
 import java.io.File;
 
@@ -23,31 +23,31 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.builder.core.models.BuildContext;
-import io.hyscale.builder.core.models.DockerImage;
-import io.hyscale.builder.core.models.ImageBuilderActivity;
-import io.hyscale.builder.events.model.ImageBuildEvent;
-import io.hyscale.builder.events.model.ImagePullEvent;
-import io.hyscale.builder.events.model.ImagePushEvent;
-import io.hyscale.builder.events.model.ImageTagEvent;
-import io.hyscale.builder.services.cleanup.ImageCleanUpProcessor;
-import io.hyscale.builder.services.config.ImageBuilderConfig;
-import io.hyscale.builder.services.constants.DockerImageConstants;
-import io.hyscale.builder.services.docker.HyscaleDockerClient;
-import io.hyscale.builder.services.exception.ImageBuilderErrorCodes;
-import io.hyscale.builder.services.service.ImageBuildPushService;
-import io.hyscale.commons.config.SetupConfig;
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.framework.events.model.ActivityState;
-import io.hyscale.commons.framework.events.publisher.EventPublisher;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.models.Status;
-import io.hyscale.servicespec.commons.fields.HyscaleSpecFields;
-import io.hyscale.servicespec.commons.model.service.Dockerfile;
-import io.hyscale.servicespec.commons.model.service.Image;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
-import io.hyscale.servicespec.commons.util.ImageUtil;
+import com.github.srujankujmar.builder.core.models.BuildContext;
+import com.github.srujankujmar.builder.core.models.DockerImage;
+import com.github.srujankujmar.builder.core.models.ImageBuilderActivity;
+import com.github.srujankujmar.builder.events.model.ImageBuildEvent;
+import com.github.srujankujmar.builder.events.model.ImagePullEvent;
+import com.github.srujankujmar.builder.events.model.ImagePushEvent;
+import com.github.srujankujmar.builder.events.model.ImageTagEvent;
+import com.github.srujankujmar.builder.services.cleanup.ImageCleanUpProcessor;
+import com.github.srujankujmar.builder.services.config.ImageBuilderConfig;
+import com.github.srujankujmar.builder.services.constants.DockerImageConstants;
+import com.github.srujankujmar.builder.services.docker.HyscaleDockerClient;
+import com.github.srujankujmar.builder.services.exception.ImageBuilderErrorCodes;
+import com.github.srujankujmar.builder.services.service.ImageBuildPushService;
+import com.github.srujankujmar.commons.config.SetupConfig;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.framework.events.model.ActivityState;
+import com.github.srujankujmar.commons.framework.events.publisher.EventPublisher;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.models.Status;
+import com.github.srujankujmar.servicespec.commons.fields.HyscaleSpecFields;
+import com.github.srujankujmar.servicespec.commons.model.service.Dockerfile;
+import com.github.srujankujmar.servicespec.commons.model.service.Image;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.servicespec.commons.util.ImageUtil;
 
 @Component
 public class LocalImageBuildPushServiceImpl implements ImageBuildPushService {

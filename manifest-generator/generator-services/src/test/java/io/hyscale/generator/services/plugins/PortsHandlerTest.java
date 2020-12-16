@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.plugins;
+package com.github.srujankujmar.generator.services.plugins;
 
 import static org.junit.Assert.assertTrue;
 
@@ -32,18 +32,18 @@ import org.springframework.boot.test.context.SpringBootTest;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.google.common.reflect.TypeToken;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.ManifestContext;
-import io.hyscale.commons.utils.NormalizationUtil;
-import io.hyscale.generator.services.constants.ManifestGenConstants;
-import io.hyscale.generator.services.model.ManifestResource;
-import io.hyscale.generator.services.plugins.PortsHandler.ServiceProtocol;
-import io.hyscale.generator.services.utils.ServiceSpecTestUtil;
-import io.hyscale.plugin.framework.models.ManifestSnippet;
-import io.hyscale.plugin.framework.util.GsonSnippetConvertor;
-import io.hyscale.servicespec.commons.fields.HyscaleSpecFields;
-import io.hyscale.servicespec.commons.model.service.Port;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.ManifestContext;
+import com.github.srujankujmar.commons.utils.NormalizationUtil;
+import com.github.srujankujmar.generator.services.constants.ManifestGenConstants;
+import com.github.srujankujmar.generator.services.model.ManifestResource;
+import com.github.srujankujmar.generator.services.plugins.PortsHandler.ServiceProtocol;
+import com.github.srujankujmar.generator.services.utils.ServiceSpecTestUtil;
+import com.github.srujankujmar.plugin.framework.models.ManifestSnippet;
+import com.github.srujankujmar.plugin.framework.util.GsonSnippetConvertor;
+import com.github.srujankujmar.servicespec.commons.fields.HyscaleSpecFields;
+import com.github.srujankujmar.servicespec.commons.model.service.Port;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 import io.kubernetes.client.openapi.models.V1ContainerPort;
 import io.kubernetes.client.openapi.models.V1ServicePort;
 

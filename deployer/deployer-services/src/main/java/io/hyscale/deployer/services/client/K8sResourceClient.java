@@ -13,17 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.client;
+package com.github.srujankujmar.deployer.services.client;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.AnnotationKey;
-import io.hyscale.commons.utils.GsonProviderUtil;
-import io.hyscale.commons.utils.ThreadPoolUtil;
-import io.hyscale.deployer.services.constants.DeployerConstants;
-import io.hyscale.deployer.services.exception.DeployerErrorCodes;
-import io.hyscale.deployer.services.model.CustomListObject;
-import io.hyscale.deployer.services.model.CustomObject;
-import io.hyscale.deployer.services.util.K8sResourcePatchUtil;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.AnnotationKey;
+import com.github.srujankujmar.commons.utils.GsonProviderUtil;
+import com.github.srujankujmar.commons.utils.ThreadPoolUtil;
+import com.github.srujankujmar.deployer.services.constants.DeployerConstants;
+import com.github.srujankujmar.deployer.services.exception.DeployerErrorCodes;
+import com.github.srujankujmar.deployer.services.model.CustomListObject;
+import com.github.srujankujmar.deployer.services.model.CustomObject;
+import com.github.srujankujmar.deployer.services.util.K8sResourcePatchUtil;
 import io.kubernetes.client.custom.V1Patch;
 import io.kubernetes.client.openapi.ApiClient;
 import io.kubernetes.client.util.generic.KubernetesApiResponse;
@@ -33,7 +33,7 @@ import org.slf4j.LoggerFactory;
 
 import java.util.*;
 
-public class K8sResourceClient extends GenericK8sClient {
+public class K8sResourceClient extends com.github.srujankujmar.deployer.services.client.GenericK8sClient {
     private static final Logger logger = LoggerFactory.getLogger(K8sResourceClient.class);
     private static final String annotations = "annotations";
 

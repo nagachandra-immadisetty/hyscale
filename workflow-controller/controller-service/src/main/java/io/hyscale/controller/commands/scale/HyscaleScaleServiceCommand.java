@@ -13,22 +13,22 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.commands.scale;
+package com.github.srujankujmar.controller.commands.scale;
 
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.commons.constants.ValidationConstants;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.models.AuthConfig;
-import io.hyscale.controller.activity.ControllerActivity;
-import io.hyscale.controller.builder.K8sAuthConfigBuilder;
-import io.hyscale.controller.commands.input.ScaleArg;
-import io.hyscale.controller.exception.ControllerErrorCodes;
-import io.hyscale.controller.util.CommandUtil;
-import io.hyscale.deployer.services.deployer.Deployer;
-import io.hyscale.deployer.services.model.ScaleOperation;
-import io.hyscale.deployer.services.model.ScaleSpec;
-import io.hyscale.deployer.services.model.ScaleStatus;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.constants.ValidationConstants;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.models.AuthConfig;
+import com.github.srujankujmar.controller.activity.ControllerActivity;
+import com.github.srujankujmar.controller.builder.K8sAuthConfigBuilder;
+import com.github.srujankujmar.controller.commands.input.ScaleArg;
+import com.github.srujankujmar.controller.exception.ControllerErrorCodes;
+import com.github.srujankujmar.controller.util.CommandUtil;
+import com.github.srujankujmar.deployer.services.deployer.Deployer;
+import com.github.srujankujmar.deployer.services.model.ScaleOperation;
+import com.github.srujankujmar.deployer.services.model.ScaleSpec;
+import com.github.srujankujmar.deployer.services.model.ScaleStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,7 +42,7 @@ import java.util.concurrent.Callable;
  * This class executes  'hyscale scale service' command
  * It is a sub-command of the 'hyscale scale' command
  *
- * @see io.hyscale.controller.commands.scale.HyscaleScaleCommand
+ * @see com.github.srujankujmar.controller.commands.scale.HyscaleScaleCommand
  * Every command/sub-command has to implement the {@link Callable} so that
  * whenever the command is executed the {@link #call()}
  * method will be invoked

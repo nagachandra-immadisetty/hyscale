@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.constants;
+package com.github.srujankujmar.generator.services.constants;
 
 public class ManifestGenConstants {
     

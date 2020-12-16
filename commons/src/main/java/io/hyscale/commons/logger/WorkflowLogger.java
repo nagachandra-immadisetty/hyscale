@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.logger;
+package com.github.srujankujmar.commons.logger;
 
-import io.hyscale.commons.models.Activity;
-import io.hyscale.commons.models.Status;
+import com.github.srujankujmar.commons.models.Activity;
+import com.github.srujankujmar.commons.models.Status;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;

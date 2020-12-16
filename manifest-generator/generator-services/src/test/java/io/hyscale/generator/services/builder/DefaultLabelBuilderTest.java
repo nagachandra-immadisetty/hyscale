@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.builder;
+package com.github.srujankujmar.generator.services.builder;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -26,9 +26,9 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-import io.hyscale.commons.models.ResourceLabelKey;
-import io.hyscale.commons.models.ServiceMetadata;
-import io.hyscale.commons.utils.ResourceLabelBuilder;
+import com.github.srujankujmar.commons.models.ResourceLabelKey;
+import com.github.srujankujmar.commons.models.ServiceMetadata;
+import com.github.srujankujmar.commons.utils.ResourceLabelBuilder;
 
 class DefaultLabelBuilderTest {
 

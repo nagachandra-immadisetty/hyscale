@@ -13,26 +13,26 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.provider.impl;
+package com.github.srujankujmar.deployer.services.provider.impl;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import io.hyscale.commons.config.SetupConfig;
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.deployer.services.model.K8sKubeConfigAuth;
-import io.hyscale.deployer.services.exception.DeployerErrorCodes;
+import com.github.srujankujmar.commons.config.SetupConfig;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.deployer.services.model.K8sKubeConfigAuth;
+import com.github.srujankujmar.deployer.services.exception.DeployerErrorCodes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.K8sAuthorisation;
-import io.hyscale.commons.models.K8sBasicAuth;
-import io.hyscale.commons.models.K8sConfigFileAuth;
-import io.hyscale.commons.models.K8sConfigReaderAuth;
-import io.hyscale.deployer.services.provider.K8sClientProvider;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.K8sAuthorisation;
+import com.github.srujankujmar.commons.models.K8sBasicAuth;
+import com.github.srujankujmar.commons.models.K8sConfigFileAuth;
+import com.github.srujankujmar.commons.models.K8sConfigReaderAuth;
+import com.github.srujankujmar.deployer.services.provider.K8sClientProvider;
 import io.kubernetes.client.openapi.ApiClient;
 import io.kubernetes.client.util.Config;
 

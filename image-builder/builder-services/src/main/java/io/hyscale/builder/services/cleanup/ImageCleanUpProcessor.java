@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.builder.services.cleanup;
+package com.github.srujankujmar.builder.services.cleanup;
 
 import java.util.List;
 import java.util.Map;
@@ -24,16 +24,16 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.builder.core.models.BuildContext;
-import io.hyscale.builder.core.models.ImageCleanUpPolicy;
-import io.hyscale.builder.services.config.ImageBuilderConfig;
-import io.hyscale.builder.services.docker.HyscaleDockerClient;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.utils.ImageMetadataProvider;
-import io.hyscale.servicespec.commons.fields.HyscaleSpecFields;
-import io.hyscale.servicespec.commons.model.service.Image;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
-import io.hyscale.servicespec.commons.util.ImageUtil;
+import com.github.srujankujmar.builder.core.models.BuildContext;
+import com.github.srujankujmar.builder.core.models.ImageCleanUpPolicy;
+import com.github.srujankujmar.builder.services.config.ImageBuilderConfig;
+import com.github.srujankujmar.builder.services.docker.HyscaleDockerClient;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.utils.ImageMetadataProvider;
+import com.github.srujankujmar.servicespec.commons.fields.HyscaleSpecFields;
+import com.github.srujankujmar.servicespec.commons.model.service.Image;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.servicespec.commons.util.ImageUtil;
 
 /**
  * This class is responsible for cleaning up local images

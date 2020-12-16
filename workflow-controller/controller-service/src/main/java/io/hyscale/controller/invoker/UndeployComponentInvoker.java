@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.invoker;
+package com.github.srujankujmar.controller.invoker;
 
 import javax.annotation.PostConstruct;
 
@@ -22,18 +22,18 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.component.ComponentInvoker;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.models.DeploymentContext;
-import io.hyscale.controller.activity.ControllerActivity;
-import io.hyscale.controller.builder.DeploymentContextBuilder;
-import io.hyscale.controller.exception.ControllerErrorCodes;
-import io.hyscale.controller.hooks.AppDirCleanUpHook;
-import io.hyscale.controller.hooks.ServiceDirCleanUpHook;
-import io.hyscale.controller.hooks.StaleVolumeDetailsHook;
-import io.hyscale.controller.model.WorkflowContext;
-import io.hyscale.deployer.services.deployer.Deployer;
+import com.github.srujankujmar.commons.component.ComponentInvoker;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.models.DeploymentContext;
+import com.github.srujankujmar.controller.activity.ControllerActivity;
+import com.github.srujankujmar.controller.builder.DeploymentContextBuilder;
+import com.github.srujankujmar.controller.exception.ControllerErrorCodes;
+import com.github.srujankujmar.controller.hooks.AppDirCleanUpHook;
+import com.github.srujankujmar.controller.hooks.ServiceDirCleanUpHook;
+import com.github.srujankujmar.controller.hooks.StaleVolumeDetailsHook;
+import com.github.srujankujmar.controller.model.WorkflowContext;
+import com.github.srujankujmar.deployer.services.deployer.Deployer;
 
 /**
  *	Undeploy component acts as a bridge between workflow controller and deployer for undeploy operation

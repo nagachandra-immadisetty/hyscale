@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.troubleshooting.integration.models;
+package com.github.srujankujmar.troubleshooting.integration.models;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 public enum AbstractedErrorMessage implements IMessage, IReason {
 

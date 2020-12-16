@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.servicespec.commons.model.service;
+package com.github.srujankujmar.servicespec.commons.model.service;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 

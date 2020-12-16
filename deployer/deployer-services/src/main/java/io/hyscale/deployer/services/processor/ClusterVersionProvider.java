@@ -13,16 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.processor;
+package com.github.srujankujmar.deployer.services.processor;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.models.ClusterVersionInfo;
-import io.hyscale.commons.models.K8sAuthorisation;
-import io.hyscale.deployer.services.handler.impl.K8sVersionHandler;
-import io.hyscale.deployer.services.provider.K8sClientProvider;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.models.ClusterVersionInfo;
+import com.github.srujankujmar.commons.models.K8sAuthorisation;
+import com.github.srujankujmar.deployer.services.handler.impl.K8sVersionHandler;
+import com.github.srujankujmar.deployer.services.provider.K8sClientProvider;
 import io.kubernetes.client.openapi.ApiClient;
 import io.kubernetes.client.openapi.models.VersionInfo;
 

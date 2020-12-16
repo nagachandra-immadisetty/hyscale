@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.commons.logger;
+package com.github.srujankujmar.commons.logger;
 
 import java.util.ArrayList;
 import java.util.List;

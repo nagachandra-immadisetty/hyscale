@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.generator.services.utils;
+package com.github.srujankujmar.generator.services.utils;
 
 import java.io.IOException;
 
@@ -30,11 +30,11 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.utils.ObjectMapperFactory;
-import io.hyscale.generator.services.exception.ManifestErrorCodes;
-import io.hyscale.generator.services.json.JsonTreeOperations;
-import io.hyscale.generator.services.json.JsonTreeUtil;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.utils.ObjectMapperFactory;
+import com.github.srujankujmar.generator.services.exception.ManifestErrorCodes;
+import com.github.srujankujmar.generator.services.json.JsonTreeOperations;
+import com.github.srujankujmar.generator.services.json.JsonTreeUtil;
 
 @Component
 public class ManifestTreeUtils {

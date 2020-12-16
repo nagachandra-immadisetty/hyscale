@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.deployer.services.model;
+package com.github.srujankujmar.deployer.services.model;
 
 
-import io.hyscale.commons.models.K8sAuthType;
-import io.hyscale.commons.models.K8sAuthorisation;
+import com.github.srujankujmar.commons.models.K8sAuthType;
+import com.github.srujankujmar.commons.models.K8sAuthorisation;
 import io.kubernetes.client.util.KubeConfig;
 
 import java.util.Objects;

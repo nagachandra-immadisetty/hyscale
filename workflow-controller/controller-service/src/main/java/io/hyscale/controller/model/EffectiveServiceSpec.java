@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.model;
+package com.github.srujankujmar.controller.model;
 
-import io.hyscale.commons.models.ServiceMetadata;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.commons.models.ServiceMetadata;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 
 import java.util.Objects;
 

@@ -3,7 +3,7 @@
   "type": "object",
   "description": "Service Spec declares the image specification and the desired state of the service ",
   "definitions": {
-    "io.hyscale.api.image.Dockerfile": {
+    "com.github.srujankujmar.api.image.Dockerfile": {
       "description": "Describes dockerfile settings to create container image.",
       "properties": {
         "path": {
@@ -18,12 +18,12 @@
         },
         "args": {
           "description": "args is the list of build arguments to be passed during container image build. should be given in this format <key>=<value> ",
-          "$ref": "#/definitions/io.hyscale.api.map.string"
+          "$ref": "#/definitions/com.github.srujankujmar.api.map.string"
         }
       },
       "type": "object"
     },
-    "io.hyscale.api.image.buildSpec.Artifact": {
+    "com.github.srujankujmar.api.image.buildSpec.Artifact": {
       "description": "Describes artifact source and destination inside container.",
       "properties": {
         "name": {
@@ -46,7 +46,7 @@
       ],
       "type": "object"
     },
-    "io.hyscale.api.image.BuildSpec": {
+    "com.github.srujankujmar.api.image.BuildSpec": {
       "description": "Describes buildSpec settings to create container image.",
       "properties": {
         "stackImage": {
@@ -56,7 +56,7 @@
         "artifacts": {
           "description": "defines the artifact list",
           "items": {
-            "$ref": "#/definitions/io.hyscale.api.image.buildSpec.Artifact"
+            "$ref": "#/definitions/com.github.srujankujmar.api.image.buildSpec.Artifact"
           },
           "type": "array"
         },
@@ -82,7 +82,7 @@
       ],
       "type": "object"
     },
-    "io.hyscale.api.image.Image": {
+    "com.github.srujankujmar.api.image.Image": {
       "description": "Describes container Image, could be from dockerfile or buildSpec",
       "properties": {
         "name": {
@@ -107,11 +107,11 @@
           "default": "registry.hub.docker.com"
         },
         "dockerfile": {
-          "$ref": "#/definitions/io.hyscale.api.image.Dockerfile",
+          "$ref": "#/definitions/com.github.srujankujmar.api.image.Dockerfile",
           "description": "dockerfile describes how to build container image using dockerfile."
         },
         "buildSpec": {
-          "$ref": "#/definitions/io.hyscale.api.image.BuildSpec",
+          "$ref": "#/definitions/com.github.srujankujmar.api.image.BuildSpec",
           "description": "buildSpec describes what the image should contain like stack, artifact and configuration. It is considered as an alternative to dockerfile spec"
         }
       },
@@ -120,15 +120,15 @@
       ],
       "type": "object"
     },
-    "io.hyscale.api.props.PropsVolumePath": {
+    "com.github.srujankujmar.api.props.PropsVolumePath": {
       "description": "Defines the absolute path to where the props have to be mounted in the container",
       "type": "string"
     },
-    "io.hyscale.api.secrets.SecretsVolumePath": {
+    "com.github.srujankujmar.api.secrets.SecretsVolumePath": {
       "description": "Defines the absolute path to where the secrets have to be mounted in the container",
       "type": "string"
     },
-    "io.hyscale.api.map.string": {
+    "com.github.srujankujmar.api.map.string": {
       "description": "Describes the key-value pair of any attribute",
       "type": "object",
       "additionalProperties": {
@@ -139,7 +139,7 @@
         ]
       }
     },
-    "io.hyscale.api.list.string": {
+    "com.github.srujankujmar.api.list.string": {
       "description": "Defines the keys of any attribute the service",
       "type": "array",
       "items": {
@@ -150,7 +150,7 @@
         "description": "string key"
       }
     },
-    "io.hyscale.api.replicas.Replicas": {
+    "com.github.srujankujmar.api.replicas.Replicas": {
       "description": "Defines the replicas of the service",
       "type": "object",
       "properties": {
@@ -194,7 +194,7 @@
     },
     "image": {
       "description": "image specification",
-      "$ref": "#/definitions/io.hyscale.api.image.Image"
+      "$ref": "#/definitions/com.github.srujankujmar.api.image.Image"
     },
     "replicas": {
       "anyOf": [
@@ -202,7 +202,7 @@
           "type": "integer"
         },
         {
-          "$ref": "#/definitions/io.hyscale.api.replicas.Replicas"
+          "$ref": "#/definitions/com.github.srujankujmar.api.replicas.Replicas"
         }
       ],
       "description": "number of replicas of this service",
@@ -242,20 +242,20 @@
       "description": "defines all secrets",
       "anyOf": [
         {
-          "$ref": "#/definitions/io.hyscale.api.list.string"
+          "$ref": "#/definitions/com.github.srujankujmar.api.list.string"
         },
         {
-          "$ref": "#/definitions/io.hyscale.api.map.string"
+          "$ref": "#/definitions/com.github.srujankujmar.api.map.string"
         }
       ]
     },
     "props": {
       "description": "props is an unstructured key value map",
-      "$ref": "#/definitions/io.hyscale.api.map.string"
+      "$ref": "#/definitions/com.github.srujankujmar.api.map.string"
     },
     "propsVolumePath": {
       "description": "Defines the absolute path to where the props have to be mounted in the container",
-      "$ref": "#/definitions/io.hyscale.api.props.PropsVolumePath"
+      "$ref": "#/definitions/com.github.srujankujmar.api.props.PropsVolumePath"
     },
     "external": {
       "description": "Exposes the service externally ",
@@ -297,7 +297,7 @@
     },
     "secretsVolumePath": {
       "description": "Defines the absolute path to where the secrets have to be mounted in the container",
-      "$ref": "#/definitions/io.hyscale.api.secrets.SecretsVolumePath"
+      "$ref": "#/definitions/com.github.srujankujmar.api.secrets.SecretsVolumePath"
     },
     "memory": {
       "description": "Defines the range of memory the service has to use in the container",
@@ -328,26 +328,26 @@
             "description": "Describes the name of the sidecar"
           },
           "props": {
-            "$ref": "#/definitions/io.hyscale.api.map.string",
+            "$ref": "#/definitions/com.github.srujankujmar.api.map.string",
             "description": "Describes the properties of the service sidecar as key-value pairs "
           },
           "propsVolumePath": {
-            "$ref": "#/definitions/io.hyscale.api.props.PropsVolumePath",
+            "$ref": "#/definitions/com.github.srujankujmar.api.props.PropsVolumePath",
             "description": "Describes the properties volume of the service"
           },
           "secrets": {
             "anyOf": [
               {
-                "$ref": "#/definitions/io.hyscale.api.list.string"
+                "$ref": "#/definitions/com.github.srujankujmar.api.list.string"
               },
               {
-                "$ref": "#/definitions/io.hyscale.api.map.string"
+                "$ref": "#/definitions/com.github.srujankujmar.api.map.string"
               }
             ],
             "description": "Describes the secrets of the service as an array"
           },
           "secretsVolumePath": {
-            "$ref": "#/definitions/io.hyscale.api.secrets.SecretsVolumePath",
+            "$ref": "#/definitions/com.github.srujankujmar.api.secrets.SecretsVolumePath",
             "description": "Describes the secrets volume of the service."
           },
           "volumes": {

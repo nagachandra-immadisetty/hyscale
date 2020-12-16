@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.commands.generate;
+package com.github.srujankujmar.controller.commands.generate;
 
 import java.io.File;
 import java.util.*;
@@ -23,32 +23,32 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.validation.constraints.Pattern;
 
-import io.hyscale.commons.validator.Validator;
-import io.hyscale.controller.profile.ServiceSpecProcessor;
-import io.hyscale.controller.validator.impl.ManifestValidator;
-import io.hyscale.controller.validator.impl.RegistryValidator;
-import io.hyscale.controller.validator.impl.ServiceSpecInputValidator;
+import com.github.srujankujmar.commons.validator.Validator;
+import com.github.srujankujmar.controller.profile.ServiceSpecProcessor;
+import com.github.srujankujmar.controller.validator.impl.ManifestValidator;
+import com.github.srujankujmar.controller.validator.impl.RegistryValidator;
+import com.github.srujankujmar.controller.validator.impl.ServiceSpecInputValidator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import io.hyscale.commons.config.SetupConfig;
-import io.hyscale.commons.constants.ToolConstants;
-import io.hyscale.commons.constants.ValidationConstants;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.controller.activity.ControllerActivity;
-import io.hyscale.controller.model.WorkflowContextBuilder;
-import io.hyscale.controller.commands.args.FileConverter;
-import io.hyscale.controller.commands.input.ProfileArg;
-import io.hyscale.controller.constants.WorkflowConstants;
-import io.hyscale.controller.invoker.ManifestGeneratorComponentInvoker;
-import io.hyscale.controller.model.EffectiveServiceSpec;
-import io.hyscale.controller.model.WorkflowContext;
-import io.hyscale.controller.util.CommandUtil;
-import io.hyscale.controller.util.ServiceSpecUtil;
-import io.hyscale.controller.validator.impl.InputSpecPostValidator;
+import com.github.srujankujmar.commons.config.SetupConfig;
+import com.github.srujankujmar.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.constants.ValidationConstants;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.controller.activity.ControllerActivity;
+import com.github.srujankujmar.controller.model.WorkflowContextBuilder;
+import com.github.srujankujmar.controller.commands.args.FileConverter;
+import com.github.srujankujmar.controller.commands.input.ProfileArg;
+import com.github.srujankujmar.controller.constants.WorkflowConstants;
+import com.github.srujankujmar.controller.invoker.ManifestGeneratorComponentInvoker;
+import com.github.srujankujmar.controller.model.EffectiveServiceSpec;
+import com.github.srujankujmar.controller.model.WorkflowContext;
+import com.github.srujankujmar.controller.util.CommandUtil;
+import com.github.srujankujmar.controller.util.ServiceSpecUtil;
+import com.github.srujankujmar.controller.validator.impl.InputSpecPostValidator;
 import picocli.CommandLine;
 import picocli.CommandLine.ArgGroup;
 

@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.dockerfile.gen.services.manager.impl;
+package com.github.srujankujmar.dockerfile.gen.services.manager.impl;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import io.hyscale.commons.config.SetupConfig;
-import io.hyscale.dockerfile.gen.services.manager.DockerfileEntityManager;
+import com.github.srujankujmar.commons.config.SetupConfig;
+import com.github.srujankujmar.dockerfile.gen.services.manager.DockerfileEntityManager;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,16 +29,16 @@ import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 
-import io.hyscale.commons.exception.CommonErrorCode;
-import io.hyscale.commons.exception.HyscaleException;
-import io.hyscale.servicespec.commons.model.service.Artifact;
-import io.hyscale.commons.models.DecoratedArrayList;
-import io.hyscale.dockerfile.gen.services.model.DockerfileGenContext;
-import io.hyscale.commons.models.SupportingFile;
-import io.hyscale.dockerfile.gen.services.config.DockerfileGenConfig;
-import io.hyscale.dockerfile.gen.services.exception.DockerfileErrorCodes;
-import io.hyscale.servicespec.commons.fields.HyscaleSpecFields;
-import io.hyscale.servicespec.commons.model.service.ServiceSpec;
+import com.github.srujankujmar.commons.exception.CommonErrorCode;
+import com.github.srujankujmar.commons.exception.HyscaleException;
+import com.github.srujankujmar.servicespec.commons.model.service.Artifact;
+import com.github.srujankujmar.commons.models.DecoratedArrayList;
+import com.github.srujankujmar.dockerfile.gen.services.model.DockerfileGenContext;
+import com.github.srujankujmar.commons.models.SupportingFile;
+import com.github.srujankujmar.dockerfile.gen.services.config.DockerfileGenConfig;
+import com.github.srujankujmar.dockerfile.gen.services.exception.DockerfileErrorCodes;
+import com.github.srujankujmar.servicespec.commons.fields.HyscaleSpecFields;
+import com.github.srujankujmar.servicespec.commons.model.service.ServiceSpec;
 
 @Component
 public class ArtifactManagerImpl implements DockerfileEntityManager {

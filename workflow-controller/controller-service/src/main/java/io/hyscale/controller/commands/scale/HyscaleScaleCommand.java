@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.commands.scale;
+package com.github.srujankujmar.controller.commands.scale;
 
-import io.hyscale.commons.constants.ToolConstants;
+import com.github.srujankujmar.commons.constants.ToolConstants;
 import org.springframework.stereotype.Component;
 import picocli.CommandLine;
 
@@ -25,7 +25,7 @@ import java.util.concurrent.Callable;
  * This class executes  'hyscale scale ' command
  * It is a sub-command of the 'hyscale ' command
  *
- * @see io.hyscale.controller.commands.HyscaleCommand .
+ * @see com.github.srujankujmar.controller.commands.HyscaleCommand .
  * Every command/sub-command has to implement the {@link Callable} so that
  * whenever the command is executed the {@link #call()}
  * method will be invoked

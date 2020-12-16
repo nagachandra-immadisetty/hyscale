@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.hyscale.controller.util;
+package com.github.srujankujmar.controller.util;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,10 +26,10 @@ import javax.validation.ValidatorFactory;
 
 import org.apache.commons.lang3.StringUtils;
 
-import io.hyscale.commons.logger.WorkflowLogger;
-import io.hyscale.commons.utils.WindowsUtil;
-import io.hyscale.controller.activity.ControllerActivity;
-import io.hyscale.controller.constants.WorkflowConstants;
+import com.github.srujankujmar.commons.logger.WorkflowLogger;
+import com.github.srujankujmar.commons.utils.WindowsUtil;
+import com.github.srujankujmar.controller.activity.ControllerActivity;
+import com.github.srujankujmar.controller.constants.WorkflowConstants;
 
 /**
  * Utility for commands
