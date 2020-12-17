@@ -81,7 +81,7 @@
 		<copyright.company>Pramati Prism, Inc.</copyright.company>
 		<release.name>First Light</release.name>
 		<hspec.supported.version>0.6.2.1</hspec.supported.version>
-		<gpg.keyname>5B5CB3D1BEA3DB64EB3EEEADB8FFCA81D9642E1D</gpg.keyname>
+		<gpg.keyname>DF746A6D535E11DD94DBCD6CD2F9DAAD5AA5A3B4</gpg.keyname>
 		<gpg.passphrase>${env.GPG_PASSPHRASE}</gpg.passphrase>
 		<docker.java.version>3.1.5</docker.java.version>
 		<sonar.organization>hyscale</sonar.organization>
